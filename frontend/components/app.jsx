@@ -8,17 +8,19 @@ import LogInFormContainer from './session_form/login_form_container';
 import NavbarContainer from './navbar/navbar_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import Index from './index';
+import Modal from './modal/modal';
 // import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
   <div>
+    <Modal />
     <header>
       <h1>hipCamp</h1>
-      <NavbarContainer />
+      <GreetingContainer />
     </header>
 
-        <AuthRoute exact path="/login" component={LogInFormContainer} />
-        <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+        // <AuthRoute exact path="/login" component={LogInFormContainer} />
+        // <AuthRoute exact path="/signup" component={SignUpFormContainer} />
         <ProtectedRoute path="/" component={Index}/>
 
 
