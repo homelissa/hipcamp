@@ -14,6 +14,10 @@ class SessionForm extends React.Component {
 
   }
 
+  componentWillUnmount () {
+    this.props.clearErrors();
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -43,62 +47,99 @@ class SessionForm extends React.Component {
 
   render() {
 
-
-
-   return (
-     <div className="login-form-container">
-       <form onSubmit={this.handleSubmit} className="login-form-box">
-         Welcome to hipCamp!
-         <br/>
-         Please {this.props.formType} or {this.props.otherForm}
-         <div onClick={this.props.closeModal} className="close-x">X</div>
-         {this.renderErrors()}
-         <div className="login-form">
-           <br/>
-           <label>Email Address:
-             <input type="text"
-               value={this.state.email_address}
-               onChange={this.update('email_address')}
-               className="login-input"
-             />
-            </label>
-
-
-           <br/>
-           <label>First Name:
-             <input type="text"
-               value={this.state.first_name}
-               onChange={this.update('first_name')}
-               className="login-input"
-             />
-            </label>
-             <br/>
-
-           <br/>
-           <label>Last Name:
-             <input type="text"
-               value={this.state.last_name}
-               onChange={this.update('last_name')}
-               className="login-input"
-             />
-            </label>
+    if (this.props.formType === 'signup') {
+      return (
+        <div className="login-form-container">
+          <form onSubmit={this.handleSubmit} className="login-form-box">
+            Welcome to hipCamp!
             <br/>
+            Please {this.props.formType} or {this.props.otherForm}
+            <div onClick={this.props.closeModal} className="close-x">X</div>
+            {this.renderErrors()}
+            <div className="login-form">
+              <br/>
+              <label>Email Address:
+                <input type="text"
+                  value={this.state.email_address}
+                  onChange={this.update('email_address')}
+                  className="login-input"
+                />
+               </label>
 
 
-           <br/>
-           <label>Password:
-             <input type="password"
-               value={this.state.password}
-               onChange={this.update('password')}
-               className="login-input"
-             />
-           </label>
-           <br/>
-           <input className="session-submit" type="submit" value={this.props.formType} />
-         </div>
-       </form>
-     </div>
-   );
+              <br/>
+              <label>First Name:
+                <input type="text"
+                  value={this.state.first_name}
+                  onChange={this.update('first_name')}
+                  className="login-input"
+                />
+               </label>
+                <br/>
+
+              <br/>
+              <label>Last Name:
+                <input type="text"
+                  value={this.state.last_name}
+                  onChange={this.update('last_name')}
+                  className="login-input"
+                />
+               </label>
+               <br/>
+
+
+              <br/>
+              <label>Password:
+                <input type="password"
+                  value={this.state.password}
+                  onChange={this.update('password')}
+                  className="login-input"
+                />
+              </label>
+              <br/>
+              <input className="session-submit" type="submit" value={this.props.formType} />
+            </div>
+          </form>
+        </div>
+      );
+    } else {
+      return (
+        <div className="login-form-container">
+        <form onSubmit={this.handleSubmit} className="login-form-box">
+        Welcome to hipCamp!
+        <br/>
+        Please {this.props.formType} or {this.props.otherForm}
+        <div onClick={this.props.closeModal} className="close-x">X</div>
+        {this.renderErrors()}
+        <div className="login-form">
+        <br/>
+        <label>Email Address:
+        <input type="text"
+        value={this.state.email_address}
+        onChange={this.update('email_address')}
+        className="login-input"
+        />
+        </label>
+
+
+        <br/>
+        <label>Password:
+        <input type="password"
+        value={this.state.password}
+        onChange={this.update('password')}
+        className="login-input"
+        />
+        </label>
+        <br/>
+        <input className="session-submit" type="submit" value={this.props.formType} />
+        </div>
+        </form>
+        </div>
+      );
+
+    }
+
+
  }
 
 
