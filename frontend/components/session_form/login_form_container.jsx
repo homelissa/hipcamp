@@ -11,15 +11,22 @@ const mSTP = ({ errors }) => {
     errors: errors.session,
     formType: 'login',
     navLink: <Link to="/signup">sign up instead</Link>,
+    demoUser: {
+      email_address: 'seedemail',
+      first_name: 'Beyonce',
+      last_name: 'Knowles',
+      password: 'password'
+    }
   };
 };
 
 const mDTP = dispatch => {
   return {
+    login: user => dispatch(login(user)),
     processForm: (user) => dispatch(login(user)),
     otherForm: (
       <button onClick={() => dispatch(openModal('signup'))}>
-        Signup
+        SIGNUP
       </button>
     ),
     closeModal: () => dispatch(closeModal()),

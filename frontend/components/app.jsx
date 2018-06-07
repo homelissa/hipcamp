@@ -19,7 +19,7 @@ const App = () => (
     </header>
 
 
-        <ProtectedRoute path="/" component={Index}/>
+        <Route path="/" component={Index}/>
 
 
 

@@ -1,5 +1,7 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
+import { login } from '../../actions/session_actions';
+
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -12,6 +14,11 @@ class SessionForm extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
 
+  }
+
+  demo(e) {
+    e.preventDefault();
+    this.props.login(this.props.demoUser).then(this.props.closeModal);
   }
 
   componentWillUnmount () {
@@ -53,88 +60,100 @@ class SessionForm extends React.Component {
           <form onSubmit={this.handleSubmit} className="login-form-box">
             Welcome to hipCamp!
             <br/>
-            Please {this.props.formType} or {this.props.otherForm}
+
             <div onClick={this.props.closeModal} className="close-x">X</div>
             {this.renderErrors()}
             <div className="login-form">
               <br/>
               <label>Email Address:
-                <input type="text"
+                <input className="session-form-input login-input" type="text"
                   value={this.state.email_address}
                   onChange={this.update('email_address')}
-                  className="login-input"
+
                 />
                </label>
 
 
               <br/>
               <label>First Name:
-                <input type="text"
+                <input className="session-form-input login-input" type="text"
                   value={this.state.first_name}
                   onChange={this.update('first_name')}
-                  className="login-input"
+
                 />
                </label>
-                <br/>
+
 
               <br/>
               <label>Last Name:
-                <input type="text"
+                <input className="session-form-input login-input" type="text"
                   value={this.state.last_name}
                   onChange={this.update('last_name')}
-                  className="login-input"
+
                 />
                </label>
-               <br/>
-
 
               <br/>
               <label>Password:
-                <input type="password"
+                <input className="session-form-input login-input" type="password"
                   value={this.state.password}
                   onChange={this.update('password')}
-                  className="login-input"
+
                 />
               </label>
+
               <br/>
               <input className="session-submit" type="submit" value={this.props.formType} />
-            </div>
+          </div>
+
+            <div className='session-question'>Already a hipCamp member?</div>
+            <div>{this.props.otherForm}</div>
+
+              <button onClick={this.demo.bind(this)} >DEMO</button>
+
+
           </form>
         </div>
       );
     } else {
       return (
+
+      <div className='outerDivSessionForm' >
         <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
         Welcome to hipCamp!
         <br/>
-        Please {this.props.formType} or {this.props.otherForm}
+
         <div onClick={this.props.closeModal} className="close-x">X</div>
         {this.renderErrors()}
         <div className="login-form">
         <br/>
         <label>Email Address:
-        <input type="text"
+        <input className="session-form-input login-input" type="text"
         value={this.state.email_address}
         onChange={this.update('email_address')}
-        className="login-input"
+
         />
         </label>
 
 
         <br/>
         <label>Password:
-        <input type="password"
+        <input className="session-form-input login-input" type="password"
         value={this.state.password}
         onChange={this.update('password')}
-        className="login-input"
+
         />
         </label>
         <br/>
         <input className="session-submit" type="submit" value={this.props.formType} />
         </div>
+          <div className='session-question'>Don't have an account?</div>
+        {this.props.otherForm}
+            <button onClick={(e) => this.demo(e)} >DEMO</button>
         </form>
         </div>
+      </div>
       );
 
     }
