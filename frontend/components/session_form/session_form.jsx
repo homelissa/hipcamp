@@ -11,6 +11,7 @@ class SessionForm extends React.Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.formType = this.props.formType
   }
 
   update(field) {
@@ -22,7 +23,7 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user);
+    this.props.processForm(user)
   }
 
   renderErrors() {
@@ -38,13 +39,15 @@ class SessionForm extends React.Component {
   }
 
   render() {
+
+
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Welcome to hipCamp!
           <br/>
-          // Please {this.props.formType} or {this.props.navLink}
-          // {this.renderErrors()}
+          Please {this.props.formType} or {this.props.navLink}
+          {this.renderErrors()}
           <div className="login-form">
             <br/>
             <label>Email Address:
@@ -56,23 +59,27 @@ class SessionForm extends React.Component {
             </label>
 
             <br/>
-              
+
+
             <label>First Name:
-              <input type="text"
-                value={this.state.first_name}
-                onChange={this.update('first_name')}
-                className="login-input"
-              />
+            <input type="text"
+            value={this.state.first_name}
+            onChange={this.update('first_name')}
+            className="login-input"
+            />
             </label>
 
             <br/>
             <label>Last Name:
-              <input type="text"
-                value={this.state.last_name}
-                onChange={this.update('last_name')}
-                className="login-input"
-              />
+            <input type="text"
+            value={this.state.last_name}
+            onChange={this.update('last_name')}
+            className="login-input"
+            />
             </label>
+
+
+
 
             <br/>
             <label>Password:
