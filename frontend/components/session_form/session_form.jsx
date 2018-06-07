@@ -58,7 +58,7 @@ class SessionForm extends React.Component {
       return (
         <div className="login-form-container">
           <form onSubmit={this.handleSubmit} className="login-form-box">
-            Welcome to hipCamp!
+            <div className="session-welcome-header">Welcome to hipCamp!</div>
             <br/>
 
             <div onClick={this.props.closeModal} className="close-x">X</div>
@@ -107,10 +107,11 @@ class SessionForm extends React.Component {
           </div>
 
             <div className='session-question'>Already a hipCamp member?</div>
-            <div>{this.props.otherForm}</div>
-
-              <button onClick={this.demo.bind(this)} >DEMO</button>
-
+            <div className='session-options'>
+            {this.props.otherForm}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
+           </div>
 
           </form>
         </div>
@@ -121,7 +122,7 @@ class SessionForm extends React.Component {
       <div className='outerDivSessionForm' >
         <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-        Welcome to hipCamp!
+        <div className="session-welcome-header">Welcome to hipCamp!</div>
         <br/>
 
         <div onClick={this.props.closeModal} className="close-x">X</div>
@@ -149,8 +150,11 @@ class SessionForm extends React.Component {
         <input className="session-submit" type="submit" value={this.props.formType} />
         </div>
           <div className='session-question'>Don't have an account?</div>
-        {this.props.otherForm}
-            <button onClick={(e) => this.demo(e)} >DEMO</button>
+          <div className='session-options'>
+          {this.props.otherForm}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
+         </div>
         </form>
         </div>
       </div>

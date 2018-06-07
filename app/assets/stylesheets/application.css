@@ -97,11 +97,16 @@
   justify-content: space-between;
   margin: auto;
   margin-right: 0px;
+  font-family: 'Abel', sans-serif;
 }
 
 .header-button {
   margin: auto;
   margin-right: 0px;
+}
+
+.session-welcome-header {
+  font-size: 30px;
 }
 
 .session-form-input {
@@ -113,16 +118,45 @@
   width: 100px;
   height: 20px;
   text-align: left;
-  border-radius: 5px;
+  border-radius: 3px;
 
 }
 
+.session-options {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: underline
+
+}
+
+.session-submit {
+  text-transform: uppercase;
+  border: 1px solid gray;
+  font-family: 'Abel', sans-serif;
+  margin: 10px;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+
 .session-question {
+  margin: 10px;
   font-family: 'Abel', sans-serif;
   font-size: 12px;
 }
 .session-errors {
   color: red;
+}
+
+.session-other {
+  border-bottom: 1px solid gray;
+}
+
+.session-demo {
+  border-bottom: 1px solid gray;
 }
 
 .landing-page {
@@ -166,6 +200,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
 }
 
 
