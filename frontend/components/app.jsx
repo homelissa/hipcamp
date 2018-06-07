@@ -15,12 +15,10 @@ const App = () => (
   <div>
     <Modal />
     <header>
-      <h1>hipCamp</h1>
       <GreetingContainer />
     </header>
 
-        // <AuthRoute exact path="/login" component={LogInFormContainer} />
-        // <AuthRoute exact path="/signup" component={SignUpFormContainer} />
+
         <ProtectedRoute path="/" component={Index}/>
 
 

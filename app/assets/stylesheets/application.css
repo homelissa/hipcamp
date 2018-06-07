@@ -17,10 +17,37 @@
     font-family: 'Abel', sans-serif;
   }
 
-
-.navbar {
-  color: blue
+.login-signup {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-right: 0px;
+  /* position: fixed;
+  right: 10px;
+  top: 10px; */
 }
+
+.login-signup-button {
+  margin: auto;
+  margin-right: 0px;
+}
+
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-button {
+  margin: auto;
+  margin-right: 0px;
+}
+
+.session-errors {
+  color: red;
+}
+
+
 
 .login-form-container {
   display: flex;
