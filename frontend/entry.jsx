@@ -23,11 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // TESTING START
-  // window.login = login;
-  // window.signup = signup;
-  // window.logout = logout;
-  // window.getState = store.getState;
-  // window.dispatch = store.dispatch;
+  window.store = store 
+  window.login = login;
+  window.signup = signup;
+  window.logout = logout;
+  window.getState = store.getState;
+  window.dispatch = store.dispatch;
   // TESTING END
 
   const root = document.getElementById("root");
