@@ -34,7 +34,7 @@ ActiveRecord::Base.transaction do
   Listing.destroy_all
 
   Listing.create!(
-    host_id: 88,
+    host_id: User.find_by(first_name: "Beyonce").id,
     name: "AppAcademyCampsite",
     description:"coding with smores",
     address:"825 Battery Street, San Francisco, CA",
@@ -59,7 +59,7 @@ ActiveRecord::Base.transaction do
 )
 
   Listing.create!(
-    host_id: 88,
+    host_id: User.find_by(first_name: "Kevin").id,
     name: "Muir Woods",
     description:"coding in muir woods",
     address:"San Francisco",

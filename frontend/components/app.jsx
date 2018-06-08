@@ -11,6 +11,7 @@ import Index from './index';
 import Modal from './modal/modal';
 import SearchContainer from './search/search_container';
 // import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import ListingIndexItem from './search/listing_index_item';
 
 const App = () => (
   <div>
@@ -18,7 +19,8 @@ const App = () => (
     <header>
       <GreetingContainer />
     </header>
-    <Route exact path="/" component={SearchContainer}/>
+    <Route path="/" component={SearchContainer}/>
+    // <Route path="/listings/:listingId" component={ListingIndexItem}/>
   </div>
 );
 
