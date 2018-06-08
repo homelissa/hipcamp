@@ -30,7 +30,7 @@ gem 'pry-rails'
 gem 'annotate'
 gem 'bcrypt'
 gem 'jquery-rails'
-gem 'rails_12factor'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
