@@ -54,10 +54,6 @@
  }
 
 
- @import 'reset.scss'
- body {
-    font-family: 'Abel', sans-serif;
-  }
 
 .login-signup {
   display: flex;
@@ -66,9 +62,7 @@
   margin-right: 0px;
   padding: 15px;
   font-family: 'Abel', sans-serif;
-  /* position: fixed;
-  right: 10px;
-  top: 10px; */
+
 }
 
 .login-signup-button {
