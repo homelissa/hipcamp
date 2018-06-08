@@ -78,11 +78,19 @@
 
 }
 
+.login-form label {
+  width: 250px;
+  text-align: right;
+}
+
+
 .login-form-container {
   display: flex;
   align-items: center;
   text-align: center;
 }
+
+
 
 
 .header-group {
@@ -231,4 +239,10 @@
   top: 5px;
   right: 5px;
   cursor: pointer;
+}
+
+.map {
+  width: 500px;
+  height: 500px;
+  background-color: blue;
 }

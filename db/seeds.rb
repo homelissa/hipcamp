@@ -29,4 +29,59 @@ ActiveRecord::Base.transaction do
     User.create!(user)
   end
 
+
+  Listing.create!(
+    host_id: 5,
+    name: AppAcademyCampsite,
+    description:"coding with smores",
+    address:"825 Battery Street, San Francisco, CA"
+    daily_cost: 50
+    max_guest: 5,
+    lat: 37.7749,
+    lng: 122.4194
+    is_camping: true,
+    allow_pets: false,
+    is_wifi: true,
+    is_toilets: true,
+    is_showers: false,
+    is_biking: true,
+    is_fishing: false,
+    is_paddling: false,
+    is_horseback_riding: false,
+    is_surfing: true,
+    is_climbing: true
+    elevation: 50,
+    check_in_after: "4:00",
+    check_in_before: "12:00",
+    icon_url: "https://s3-media3.fl.yelpcdn.com/bphoto/6ARXnljJb1g7brn0e7gT-Q/ls.jpg"
+)
+
+Listing.create!(
+  host_id: 5,
+  name: Muir Woods,
+  description:"coding in muir woods",
+  address:"San Francisco"
+  daily_cost: 100
+  max_guest: 3,
+  lat: 40.7749,
+  lng: 122.4194
+  is_camping: true,
+  allow_pets: true,
+  is_wifi: true,
+  is_toilets: true,
+  is_showers: false,
+  is_biking: true,
+  is_fishing: true,
+  is_paddling: false,
+  is_horseback_riding: false,
+  is_surfing: true,
+  is_climbing: true
+  elevation: 50,
+  check_in_after: "12:00",
+  check_in_before: "4:00",
+  icon_url: "https://www.nationalparks.org/sites/default/files/MuirWoods_iStock_000016266405-VGNT.jpg"
+)
+
+
+
 end

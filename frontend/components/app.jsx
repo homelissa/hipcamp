@@ -9,6 +9,7 @@ import NavbarContainer from './navbar/navbar_container';
 import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import Index from './index';
 import Modal from './modal/modal';
+import SearchContainer from './search/search_container';
 // import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
@@ -17,12 +18,7 @@ const App = () => (
     <header>
       <GreetingContainer />
     </header>
-
-
-        <Route path="/" component={Index}/>
-
-
-
+    <Route exact path="/" component={SearchContainer}/>
   </div>
 );
 
