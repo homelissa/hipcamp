@@ -54,7 +54,6 @@
  }
 
 
- 
 
 .login-signup {
   display: flex;
@@ -63,9 +62,7 @@
   margin-right: 0px;
   padding: 15px;
   font-family: 'Abel', sans-serif;
-  /* position: fixed;
-  right: 10px;
-  top: 10px; */
+
 }
 
 .login-signup-button {
@@ -75,11 +72,19 @@
 
 }
 
+.login-form label {
+  width: 250px;
+  text-align: right;
+}
+
+
 .login-form-container {
   display: flex;
   align-items: center;
   text-align: center;
 }
+
+
 
 
 .header-group {
@@ -228,4 +233,20 @@
   top: 5px;
   right: 5px;
   cursor: pointer;
+}
+
+.map {
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+}
+
+.listing-photo {
+  width: 500px;
+  height: 500px;
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
 }

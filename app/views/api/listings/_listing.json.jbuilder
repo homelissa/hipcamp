@@ -1,4 +1,5 @@
 json.extract! listing,
+  :id,
   :host_id,
   :name,
   :description,

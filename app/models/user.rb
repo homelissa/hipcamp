@@ -3,11 +3,11 @@
 # Table name: users
 #
 #  id              :bigint(8)        not null, primary key
-#  email_address   :string
-#  password_digest :string
-#  session_token   :string
-#  first_name      :string
-#  last_name       :string
+#  email_address   :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  first_name      :string           not null
+#  last_name       :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
 #
@@ -15,10 +15,15 @@
 class User < ApplicationRecord
   validates :email_address, :password_digest, :session_token, :first_name, :last_name, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
-  validates :email_address, uniqueness: true 
+  validates :email_address, uniqueness: true
 
   attr_reader :password
   before_validation :ensure_session_token
+
+  has_many :listings,
+  primary_key: :id,
+  foreign_key: :host_id,
+  class_name: :Listing
 
 
   def self.find_by_credentials(email_address, password)
