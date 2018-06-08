@@ -55,10 +55,7 @@
 
 
  @import 'reset.scss'
- body {
-    font-family: 'Abel', sans-serif;
-  }
-
+ 
 .login-signup {
   display: flex;
   justify-content: space-between;

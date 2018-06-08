@@ -45,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/homelissa/hipcamp/issues"
   },
-  "homepage": "https://github.com/homelissa/hipcamp#readme"
+  "homepage": "https://github.com/homelissa/hipcamp#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.0.3"
+  }
 }
