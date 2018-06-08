@@ -54,8 +54,8 @@
  }
 
 
- @import 'reset.scss'
  
+
 .login-signup {
   display: flex;
   justify-content: space-between;
