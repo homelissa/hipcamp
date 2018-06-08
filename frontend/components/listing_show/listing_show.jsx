@@ -9,6 +9,10 @@ class ListingShow extends React.Component {
 
   render(){
 
+    if (!this.props.listing) {
+      return null;
+    }
+
     return(
       <div>
         {this.props.listing.name}

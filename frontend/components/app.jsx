@@ -20,7 +20,8 @@ const App = () => (
       <GreetingContainer />
     </header>
     <Switch>
-      <Route exact path="/" component={SearchContainer}/>
+      <Route exact path="/" component={Index}/>
+      <Route exact path="/listings" component={SearchContainer}/>
       <Route path="/listings/:listingId" component={ListingShowContainer}/>
     </Switch>
   </div>
