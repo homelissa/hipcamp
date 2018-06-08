@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
 const ListingIndexItem = ({listing}) => {
-  console.log(listing);
 
   return (
     <li>
-      <Link to={`/listings/${listing.id}`}>{listing.name}</Link>
+      <h1>{listing.name}</h1>
+      <Link to={`/listings/${listing.id}`}>
+        <img className="listing-photo" src={listing.icon_url}></img>
+      </Link>
     </li>
 
   )

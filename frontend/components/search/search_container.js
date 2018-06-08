@@ -10,6 +10,7 @@ const mDTP = dispatch => ({
   fetchListings: () => dispatch(fetchListings())
 });
 
+
 export default connect(
   mSTP,
   mDTP

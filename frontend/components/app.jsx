@@ -10,8 +10,8 @@ import {AuthRoute, ProtectedRoute} from '../util/route_util';
 import Index from './index';
 import Modal from './modal/modal';
 import SearchContainer from './search/search_container';
-// import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import ListingIndexItem from './search/listing_index_item';
+import ListingShowContainer from './listing_show/listing_show_container';
 
 const App = () => (
   <div>
@@ -19,8 +19,10 @@ const App = () => (
     <header>
       <GreetingContainer />
     </header>
-    <Route path="/" component={SearchContainer}/>
-    // <Route path="/listings/:listingId" component={ListingIndexItem}/>
+    <Switch>
+      <Route exact path="/" component={SearchContainer}/>
+      <Route path="/listings/:listingId" component={ListingShowContainer}/>
+    </Switch>
   </div>
 );
 

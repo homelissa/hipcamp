@@ -55,7 +55,7 @@ ActiveRecord::Base.transaction do
     is_climbing: true,
     check_in_after: "4:00",
     check_out_before: "12:00",
-    icon_url: "https://s3-media3.fl.yelpcdn.com/bphoto/6ARXnljJb1g7brn0e7gT-Q/ls.jpg"
+    icon_url: "https://images.unsplash.com/photo-1500367215255-0e0b25b396af?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=193a2a1fa9c7ee1a2d4db00f22e41552&auto=format&fit=crop&w=1500&q=80"
 )
 
   Listing.create!(
@@ -80,7 +80,7 @@ ActiveRecord::Base.transaction do
     is_climbing: true,
     check_in_after: "12:00",
     check_out_before: "4:00",
-    icon_url: "https://www.nationalparks.org/sites/default/files/MuirWoods_iStock_000016266405-VGNT.jpg"
+    icon_url: "https://images.unsplash.com/photo-1486999619268-6aa409dbecd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f86046749a2c99bb728c6c72e4603f5a&auto=format&fit=crop&w=1500&q=80"
   )
 
 
