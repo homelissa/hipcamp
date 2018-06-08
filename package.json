@@ -24,10 +24,15 @@
     "lib": "lib",
     "test": "test"
   },
+  "engines": {
+    "node": "9.3.0",
+    "npm": "6.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
-    "start": "webpack --watch --mode=development"
+    "start": "webpack --watch --mode=development",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
@@ -40,4 +45,5 @@
     "url": "https://github.com/homelissa/hipcamp/issues"
   },
   "homepage": "https://github.com/homelissa/hipcamp#readme"
+
 }
