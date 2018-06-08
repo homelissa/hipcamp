@@ -19,5 +19,5 @@ json.extract! listing,
   :is_surfing,
   :is_climbing,
   :check_in_after,
-  :check_in_before,
+  :check_out_before,
   :icon_url
