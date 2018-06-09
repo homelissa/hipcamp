@@ -35,9 +35,9 @@ ActiveRecord::Base.transaction do
 
   Listing.create!(
     host_id: User.find_by(first_name: "Beyonce").id,
-    name: "AppAcademyCampsite",
+    name: "App Academy Campsite",
     description:"coding with smores",
-    address:"825 Battery Street, San Francisco, CA",
+    address:"San Francisco, CA",
     daily_cost: 50,
     max_guest: 5,
     lat: 37.7749,
@@ -62,7 +62,7 @@ ActiveRecord::Base.transaction do
     host_id: User.find_by(first_name: "Kevin").id,
     name: "Muir Woods",
     description:"coding in muir woods",
-    address:"San Francisco",
+    address:"San Francisco, CA",
     daily_cost: 100,
     max_guest: 3,
     lat: 40.7749,

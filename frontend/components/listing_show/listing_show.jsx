@@ -14,12 +14,36 @@ class ListingShow extends React.Component {
     }
 
     return(
-      <div>
-        {this.props.listing.name}
+      <div className='listing-show-container'>
+        <h1>{this.props.listing.name}</h1>
+        <h2>{this.props.listing.description}</h2>
+          <ul>
+            <li>Location:
+               <strong>{this.props.listing.address}</strong>
+            </li>
 
-        {this.props.listing.description}
-        <img className="listing-photo" src={this.props.listing.icon_url}></img>
-        <Link to={`/`}>Index</Link>
+            <li>Daily Cost:
+               <strong>{this.props.listing.daily_cost}</strong>
+            </li>
+
+            <li>Maximum Guests:
+               <strong>{this.props.listing.max_guest}</strong>
+            </li>
+
+            <li>Check In After:
+               <strong>{this.props.listing.check_in_after}</strong>
+            </li>
+
+
+            <li>Check Out Before:
+               <strong>{this.props.listing.check_out_before}</strong>
+            </li>
+
+          </ul>
+          <img className="listing-photo" src={this.props.listing.icon_url}></img>
+          <h2><Link to={`/listings`}>CLICK ME to return to all listings</Link></h2>
+          <h2>Book Now Button will be on this page when implemented</h2>
+          <h2>Listing Reviews will be on this page when implemented</h2>
       </div>
     );
   }

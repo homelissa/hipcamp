@@ -236,23 +236,34 @@
 }
 
 .map {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   background-color: blue;
 }
 
 .listing-photo {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
 }
 
 h1 {
   font-family: 'Abel', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 15px;
 }
 
 .search {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  margin: 17px;
 
+}
+
+.listing-show-container {
+  margin: 13px;
+  margin-bottom: 20px;
 }
