@@ -13,8 +13,20 @@ class ListingShow extends React.Component {
       return null;
     }
 
+    let photos = this.props.listingPhotos.map((photo) =>
+      <li key={photo.id}><img className="listing-photo" src={photo.image_url}></img></li>
+    )
+
     return(
       <div className='listing-show-container'>
+        <div className='listing-show-carousel'>
+          <img className="listing-photo" src={this.props.listing.icon_url}></img>
+          <ul className='listing-show-photos'>
+            {photos}
+          </ul>
+        </div>
+
+
         <h1>{this.props.listing.name}</h1>
         <h2>{this.props.listing.description}</h2>
           <ul>
@@ -40,7 +52,6 @@ class ListingShow extends React.Component {
             </li>
 
           </ul>
-          <img className="listing-photo" src={this.props.listing.icon_url}></img>
           <h2><Link to={`/listings`}>CLICK ME to return to all listings</Link></h2>
           <h2>Book Now Button will be on this page when implemented</h2>
           <h2>Listing Reviews will be on this page when implemented</h2>

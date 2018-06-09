@@ -241,9 +241,23 @@
   background-color: blue;
 }
 
+.listing-index {
+  padding-top: 5px;
+  font-weight: 600px;
+  max-width: 550px;
+  border-top: 3px solid #333333;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
 .listing-photo {
   width: 300px;
   height: 300px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  font-weight: 400px;
 }
 
 h1 {
@@ -266,4 +280,14 @@ h2 {
 .listing-show-container {
   margin: 13px;
   margin-bottom: 20px;
+}
+
+.listing-show-carousel {
+  display: flex;
+  max-width: 100%;
+}
+
+.listing-show-photos {
+  display: flex;
+  margin-right: 100px;
 }

@@ -35,8 +35,8 @@ ActiveRecord::Base.transaction do
 
   Listing.create!(
     host_id: User.find_by(first_name: "Beyonce").id,
-    name: "App Academy Campsite",
-    description:"coding with smores",
+    name: "Yosemite",
+    description:"coding in Yosemite",
     address:"San Francisco, CA",
     daily_cost: 50,
     max_guest: 5,
@@ -83,6 +83,28 @@ ActiveRecord::Base.transaction do
     icon_url: "https://images.unsplash.com/photo-1486999619268-6aa409dbecd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f86046749a2c99bb728c6c72e4603f5a&auto=format&fit=crop&w=1500&q=80"
   )
 
+  ListingPhoto.create!(
+    listing_id: Listing.find_by(name: "Yosemite").id,
+    image_url: "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=835b3fbc757d3cac3e8253f64888279e&auto=format&fit=crop&w=800&q=60",
+    order: 1
+  )
 
+  ListingPhoto.create!(
+    listing_id: Listing.find_by(name: "Yosemite").id,
+    image_url: "https://images.unsplash.com/photo-1518623380242-d992d3c57b37?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=009a0fa0da7c86368e810557b7273dfb&auto=format&fit=crop&w=800&q=60",
+    order: 2
+  )
+
+  ListingPhoto.create!(
+    listing_id: Listing.find_by(name: "Muir Woods").id,
+    image_url: "https://images.unsplash.com/photo-1507500844113-546121f3ac51?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6255ecea6ab0a14d8d84073af301e7fa&auto=format&fit=crop&w=1502&q=80",
+    order: 1
+  )
+
+  ListingPhoto.create!(
+    listing_id: Listing.find_by(name: "Muir Woods").id,
+    image_url: "https://images.unsplash.com/photo-1521208728055-d69f6d428ccb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=570bbf33043d1d6dcc7f9e0d2eb3adb6&auto=format&fit=crop&w=800&q=60",
+    order: 2
+  )
 
 end

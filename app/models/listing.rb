@@ -40,4 +40,9 @@ class Listing < ApplicationRecord
     primary_key: :id,
     foreign_key: :host_id,
     class_name: :User
+
+  has_many :listing_photos,
+    primary_key: :id,
+    foreign_key: :listing_id,
+    class_name: :ListingPhoto
 end

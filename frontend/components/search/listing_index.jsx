@@ -21,7 +21,7 @@ class ListingIndex extends React.Component {
 
     return (
       <div className="listing-index">
-        <h1>Listings: </h1>
+        <h1>The best camping near San Francisco, California. </h1>
         <ul>
           {listings}
         </ul>

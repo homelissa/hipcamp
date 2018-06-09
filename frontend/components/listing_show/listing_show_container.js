@@ -4,7 +4,8 @@ import { fetchListing } from '../../actions/listing_actions';
 import ListingShow from './listing_show';
 
 const mSTP = (state, ownProps) => ({
-  listing: state.entities.listings[ownProps.match.params.listingId]
+  listing: state.entities.listings[ownProps.match.params.listingId],
+  listingPhotos: Object.values(state.entities.listingPhotos)
 });
 
 const mDTP = dispatch => ({
