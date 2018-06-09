@@ -5,23 +5,25 @@ import { withRouter } from 'react-router-dom';
 const ListingIndexItem = ({listing}) => {
 
   return (
-    <div>
+    <div className='listing-index-li'>
       <Link to={`/listings/${listing.id}`}>
         <img className="listing-photo" src={listing.icon_url}></img>
       </Link>
-      <h1>{listing.name}</h1>
-      <h2>{listing.description}</h2>
-        <ul>
-          <li>Location:
-             <strong>{listing.address}</strong>
-          </li>
+      <div className='listing-index-name'>{listing.name}</div>
+        <ul className='listing-index-details'>
 
-          <li>Daily Cost:
-             <strong>{listing.daily_cost}</strong>
-          </li>
+          <div className='address-and-cost'>
+            <li>
+               <strong>{listing.address}</strong>
+            </li>
 
+            <li className='daily-cost'>
+               <strong>${listing.daily_cost}/night</strong>
+            </li>
+          </div>
+
+          <Link to={`/listings/${listing.id}`}>See More Details</Link>
         </ul>
-      <Link to={`/listings/${listing.id}`}>CLICK ME FOR MORE DETAILS</Link>
     </div>
 
   )

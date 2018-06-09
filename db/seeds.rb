@@ -35,8 +35,8 @@ ActiveRecord::Base.transaction do
 
   Listing.create!(
     host_id: User.find_by(first_name: "Beyonce").id,
-    name: "Yosemite",
-    description:"coding in Yosemite",
+    name: "Wawona Campgrounds",
+    description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
     address:"San Francisco, CA",
     daily_cost: 50,
     max_guest: 5,
@@ -61,7 +61,7 @@ ActiveRecord::Base.transaction do
   Listing.create!(
     host_id: User.find_by(first_name: "Kevin").id,
     name: "Muir Woods",
-    description:"coding in muir woods",
+    description:"Will add creative description later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
     address:"San Francisco, CA",
     daily_cost: 100,
     max_guest: 3,
@@ -84,13 +84,13 @@ ActiveRecord::Base.transaction do
   )
 
   ListingPhoto.create!(
-    listing_id: Listing.find_by(name: "Yosemite").id,
+    listing_id: Listing.find_by(name: "Wawona Campgrounds").id,
     image_url: "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=835b3fbc757d3cac3e8253f64888279e&auto=format&fit=crop&w=800&q=60",
     order: 1
   )
 
   ListingPhoto.create!(
-    listing_id: Listing.find_by(name: "Yosemite").id,
+    listing_id: Listing.find_by(name: "Wawona Campgrounds").id,
     image_url: "https://images.unsplash.com/photo-1518623380242-d992d3c57b37?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=009a0fa0da7c86368e810557b7273dfb&auto=format&fit=crop&w=800&q=60",
     order: 2
   )

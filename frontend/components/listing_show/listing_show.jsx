@@ -27,33 +27,43 @@ class ListingShow extends React.Component {
         </div>
 
 
-        <h1>{this.props.listing.name}</h1>
-        <h2>{this.props.listing.description}</h2>
-          <ul>
-            <li>Location:
-               <strong>{this.props.listing.address}</strong>
-            </li>
 
-            <li>Daily Cost:
-               <strong>{this.props.listing.daily_cost}</strong>
-            </li>
+          <div className="listing-show-name">{this.props.listing.name}</div>
+          <div className="listing-show-description">{this.props.listing.description}</div>
 
-            <li>Maximum Guests:
-               <strong>{this.props.listing.max_guest}</strong>
-            </li>
+          <div className='listing-description-booking'>
 
-            <li>Check In After:
-               <strong>{this.props.listing.check_in_after}</strong>
-            </li>
+              <ul className='listing-show-details'>
+                <li>
+                   <strong>{this.props.listing.address}</strong>
+                </li>
+
+                <li>
+                  <strong>${this.props.listing.daily_cost}/night</strong>
+
+                </li>
+
+                <li>Maximum Guests:
+                   <strong> {this.props.listing.max_guest}</strong>
+                </li>
+
+                <li>Check In After:
+                   <strong> {this.props.listing.check_in_after}</strong>
+                </li>
 
 
-            <li>Check Out Before:
-               <strong>{this.props.listing.check_out_before}</strong>
-            </li>
+                <li>Check Out Before:
+                   <strong> {this.props.listing.check_out_before}</strong>
+                </li>
+              </ul>
 
-          </ul>
-          <h2><Link to={`/listings`}>CLICK ME to return to all listings</Link></h2>
-          <h2>Book Now Button will be on this page when implemented</h2>
+
+              <div className='booking-container'>
+                <h2>Book Now Button will be on this page when implemented</h2>
+              </div>
+
+            </div>
+
           <h2>Listing Reviews will be on this page when implemented</h2>
       </div>
     );
