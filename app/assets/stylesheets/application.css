@@ -163,7 +163,7 @@
 
 .landing-page {
   background-image: url(https://www.banfflakelouise.com/sites/default/files/styles/l_1600_natural/public/canoeing_bow_lake_noel_hendrickson_3_horizontal.jpg?itok=2PiMOrY6);
-  height: calc(100vh);
+  height: 500px;
   background-position: center;
   background-size: cover;
   max-width: 100%;

@@ -23,6 +23,7 @@ const App = () => (
       <Route exact path="/" component={Index}/>
       <Route exact path="/listings" component={SearchContainer}/>
       <Route path="/listings/:listingId" component={ListingShowContainer}/>
+      <Redirect to="/" />
     </Switch>
   </div>
 );
