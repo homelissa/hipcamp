@@ -250,3 +250,9 @@ h1 {
   font-family: 'Abel', sans-serif;
   font-size: 20px;
 }
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+
+}

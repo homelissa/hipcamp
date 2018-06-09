@@ -18,8 +18,8 @@ class Search extends React.Component {
     return(
 
       <div className="search">
-        <ListingMap className="map" listings={this.props.listings}  />
         <ListingIndex listings={this.props.listings} fetchListings={this.props.fetchListings}/>
+        <ListingMap listings={this.props.listings}  />
       </div>
     )
   }
