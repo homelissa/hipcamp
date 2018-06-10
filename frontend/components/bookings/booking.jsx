@@ -21,13 +21,41 @@ class Booking extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount() {
+    this.setState({
+      checkInErrors: document.getElementById("checkInErrors"),
+      checkOutErrors: document.getElementById("checkOutErrors")
+    })
+  }
+
   handleChangeStart(date) {
+    if (this.state.check_out.diff(date) < 0) {
+      this.state.checkInErrors.style.display = "inline-block";
+      return;
+    } else {
+      this.state.checkInErrors.style.display = 'none';
+    }
     this.setState({check_in: date});
   }
 
   handleChangeEnd(date) {
-    
+    if (this.state.check_in.diff(date) > 0) {
+      this.state.checkOutErrors.style.display = "inline-block";
+      return;
+    } else {
+      this.state.checkOutErrors.style.display = 'none';
+    }
     this.setState({check_out: date});
+  }
+
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    this.setState({
+      [name]: value
+    });
   }
 
   handleSubmit(e) {
@@ -56,19 +84,25 @@ class Booking extends React.Component {
       <div>
         Check-In
         <DatePicker
+        minDate={moment()}
         selected={this.state.check_in}
         selectsStart
         check_in={this.state.check_in}
         check_out={this.state.check_out}
-        onChange={this.handleChangeStart} />,
+        onChange={this.handleChangeStart}
+        placeholderText="Click to select a date" />,
+        <p id="checkInErrors">Can't pick a check in date after check out</p>
 
         Check-Out
         <DatePicker
+        minDate={moment()}
         selected={this.state.check_out}
         selectsEnd
         check_in={this.state.check_in}
         check_out={this.state.check_out}
-        onChange={this.handleChangeEnd} />
+        onChange={this.handleChangeEnd}
+        placeholderText="Click to select a date"/>
+        <p id="checkOutErrors">Can't pick a check out date before check in</p>
 
         <form onSubmit={this.handleSubmit}>
           <label>Number of Guests:
@@ -81,12 +115,12 @@ class Booking extends React.Component {
           <label>Total Price:
             <input
               type='text'
-              value={"50"}
+              value={50}
               onChange={this.update('total_price')} />
           </label>
 
 
-            <input type='submit' value="Submit" />
+            <input type='submit' value="Book Now!" />
         </form>
       </div>
     )
