@@ -23,7 +23,8 @@ export const createBooking = bookingParams => (
         listing_id: bookingParams.listing_id,
         check_in: bookingParams.check_in,
         check_out: bookingParams.check_out,
-        num_guest: bookingParams.num_guest
+        num_guest: bookingParams.num_guest,
+        total_price: bookingParams.total_price
 
       }
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Booking from '../bookings/booking'
+import BookingContainer from '../bookings/booking_container'
 
 class ListingShow extends React.Component {
 
@@ -61,7 +61,7 @@ class ListingShow extends React.Component {
 
               <div className='booking-container'>
                 <h2>Book Now Button will be on this page when implemented</h2>
-                <div><Booking /></div>
+                <div><BookingContainer /></div>
               </div>
 
             </div>

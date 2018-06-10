@@ -58,7 +58,7 @@ class Booking < ApplicationRecord
 
 
   def start_must_come_before_end
-    return if check_in < check_out
+    return if :check_in < :check_out
     errors[:check_in] << 'must come before check out'
     errors[:check_out] << 'must come after check in'
   end
