@@ -12,6 +12,8 @@ const bookingsReducer = (state = {}, action) => {
       let newState = merge({}, state);
       delete newState[action.id];
       return newState;
+    default:
+      return state;
   }
 };
 
