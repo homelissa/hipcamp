@@ -19,6 +19,18 @@ class CreateReview extends React.Component {
 
   }
 
+  renderErrors() {
+    return(
+      <ul className='review-errors'>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   update(field) {
     return(e) => {
       this.setState({ [field]: e.target.value })
@@ -34,6 +46,7 @@ class CreateReview extends React.Component {
 
     return(
       <div>
+        {this.renderErrors()}
         <form onSubmit={this.handleSubmit}>
             <label>Date
               <input
@@ -48,7 +61,6 @@ class CreateReview extends React.Component {
                 value={this.state.description}
                 onChange={this.update('description')}  />
             </label>
-
             <input type='submit' value='Submit Review'/>
           </form>
       </div>

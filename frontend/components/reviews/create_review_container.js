@@ -6,7 +6,8 @@ import { withRouter } from 'react-router';
 
 const mSTP = (state, ownProps) => ({
   reviews: state.entities.reviews,
-  current_user: state.session.id
+  current_user: state.session.id,
+  errors: state.errors.review
 });
 
 const mDTP = dispatch => ({
