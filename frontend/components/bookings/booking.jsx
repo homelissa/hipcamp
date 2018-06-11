@@ -67,8 +67,8 @@ class Booking extends React.Component {
   handleSubmit(e) {
      e.preventDefault();
      let submission = {
-       check_in: this.state.check_in.format('MM/DD/YYYY'),
-       check_out: this.state.check_out.format('MM/DD/YYYY'),
+       check_in: this.state.check_in.format(),
+       check_out: this.state.check_out.format(),
        num_guest: this.state.num_guest,
        listing_id: this.state.listing_id,
        guest_id: this.state.guest_id,
@@ -104,7 +104,7 @@ class Booking extends React.Component {
 
         <div className='check-in-out-label'>Check Out:</div>
         <DatePicker
-        minDate={moment()}
+        minDate={this.state.check_in}
         selected={this.state.check_out}
         selectsEnd
         check_in={this.state.check_in}

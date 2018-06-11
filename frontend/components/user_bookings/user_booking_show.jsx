@@ -3,13 +3,20 @@ import { Link } from 'react-router-dom';
 
 const UserBookingItem = ({booking, deleteBooking}) => (
 
-  <li>
-    {booking.listing.name}
-    <img className="listing-photo" src={booking.listing.icon_url}></img>
-    {booking.check_in}
-    {booking.check_out}
-    <button onClick={() => deleteBooking(booking.id)}>Delete</button>
-  </li>
+  <div>
+      <div className='user-booking-container'>
+        <div className='booking-name-photo'>
+          <div className='booking-listing-name'>{booking.listing.name}</div>
+          <img className="listing-photo" src={booking.listing.icon_url}></img>
+        </div>
+        <div className='booking-details'>
+          <div className='booking-status'>{booking.status}</div>
+          <div>{booking.check_in}</div>
+          <div>{booking.check_out}</div>
+          <button onClick={() => deleteBooking(booking.id)}>Delete</button>
+        </div>
+      </div>
+  </div>
 );
 
 export default UserBookingItem;
