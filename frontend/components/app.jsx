@@ -12,6 +12,7 @@ import Modal from './modal/modal';
 import SearchContainer from './search/search_container';
 import ListingIndexItem from './search/listing_index_item';
 import ListingShowContainer from './listing_show/listing_show_container';
+import UserBookingContainer from './user_bookings/user_bookings_container';
 
 const App = () => (
   <div>
@@ -23,6 +24,7 @@ const App = () => (
       <Route exact path="/" component={Index}/>
       <Route exact path="/listings" component={SearchContainer}/>
       <Route path="/listings/:listingId" component={ListingShowContainer}/>
+      <Route path="/user/:userId" component={UserBookingContainer}/>
       <Redirect to="/" />
     </Switch>
   </div>

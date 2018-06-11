@@ -8,7 +8,8 @@ class Api::BookingsController < ApplicationController
   #  end
 
   def show
-    current_user.bookings
+    @bookings = current_user.bookings
+    render :index 
   end
 
   def create

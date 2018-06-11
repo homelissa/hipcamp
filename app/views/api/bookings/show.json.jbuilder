@@ -1,4 +1,5 @@
 json.extract! @booking,
+  :id,
   :guest_id,
   :listing_id,
   :check_in,

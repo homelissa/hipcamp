@@ -10,7 +10,7 @@ class Booking extends React.Component {
     console.log(this.props)
     this.state = {
       check_in: moment(),
-      check_out: moment(),
+      check_out: moment().add(30, "days"),
       num_guest: 1,
       listing_id: this.props.match.params.listingId,
       guest_id: this.props.current_user,
@@ -68,7 +68,7 @@ class Booking extends React.Component {
        guest_id: this.state.guest_id,
        total_price: this.state.total_price
      }
-     this.props.createBooking(submission).then(() => this.props.history.push('/'));
+     this.props.createBooking(submission).then(() => this.props.history.push(`/user/${this.state.guest_id}`));
    }
 
 
@@ -85,6 +85,7 @@ class Booking extends React.Component {
         Check-In
         <DatePicker
         minDate={moment()}
+        maxDate={this.state.check_out}
         selected={this.state.check_in}
         selectsStart
         check_in={this.state.check_in}
