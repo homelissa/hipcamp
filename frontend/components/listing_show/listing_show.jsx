@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BookingContainer from '../bookings/booking_container'
-import CreateReviewContainer from '../reviews/create_review_container'
+import CreateReviewContainer from '../reviews/create_review_container';
+import ReviewIndexContainer from '../reviews/review_index_container';
 
 class ListingShow extends React.Component {
 
@@ -67,6 +68,9 @@ class ListingShow extends React.Component {
             </div>
 
           <Link to={`/listings/${this.props.listing.id}/review/new`}>Add a Review!</Link>
+          <div><ReviewIndexContainer listingId={this.props.match.params.listingId}/></div>
+
+
       </div>
     );
   }
