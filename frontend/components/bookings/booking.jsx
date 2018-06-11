@@ -28,6 +28,12 @@ class Booking extends React.Component {
     })
   }
 
+  componentWillReceiveProps(newProps) {
+    if (this.props.current_user !== newProps.current_user) {
+      this.setState({guest_id: newProps.current_user})
+    }
+  }
+
   handleChangeStart(date) {
     if (this.state.check_out.diff(date) < 0) {
       this.state.checkInErrors.style.display = "inline-block";
@@ -82,7 +88,9 @@ class Booking extends React.Component {
   render() {
     return (
       <div>
-        Check-In
+
+        <div className='check-in-out'>
+        <div className='check-in-out-label'>Check In:</div>
         <DatePicker
         minDate={moment()}
         maxDate={this.state.check_out}
@@ -91,10 +99,10 @@ class Booking extends React.Component {
         check_in={this.state.check_in}
         check_out={this.state.check_out}
         onChange={this.handleChangeStart}
-        placeholderText="Click to select a date" />,
+        placeholderText="Click to select a date" />
         <p id="checkInErrors">Can't pick a check in date after check out</p>
 
-        Check-Out
+        <div className='check-in-out-label'>Check Out:</div>
         <DatePicker
         minDate={moment()}
         selected={this.state.check_out}
@@ -104,17 +112,18 @@ class Booking extends React.Component {
         onChange={this.handleChangeEnd}
         placeholderText="Click to select a date"/>
         <p id="checkOutErrors">Can't pick a check out date before check in</p>
+        </div>
 
         <form onSubmit={this.handleSubmit}>
           <label>Number of Guests:
-            <input
+            <input className='form-input'
               type='text'
               value= {this.state.num_guest}
               onChange={this.update('num_guest')} />
           </label>
 
           <label>Total Price:
-            <input
+            <input className='form-input'
               type='text'
               value={50}
               onChange={this.update('total_price')} />
