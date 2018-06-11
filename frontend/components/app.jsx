@@ -13,6 +13,7 @@ import SearchContainer from './search/search_container';
 import ListingIndexItem from './search/listing_index_item';
 import ListingShowContainer from './listing_show/listing_show_container';
 import UserBookingContainer from './user_bookings/user_bookings_container';
+import CreateReviewContainer from './reviews/create_review_container';
 
 const App = () => (
   <div>
@@ -23,8 +24,9 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Index}/>
       <Route exact path="/listings" component={SearchContainer}/>
-      <Route path="/listings/:listingId" component={ListingShowContainer}/>
+      <Route exact path="/listings/:listingId" component={ListingShowContainer}/>
       <Route path="/user/:userId" component={UserBookingContainer}/>
+      <Route path="/listings/:listingId/review/new" component={CreateReviewContainer}/>
       <Redirect to="/" />
     </Switch>
   </div>

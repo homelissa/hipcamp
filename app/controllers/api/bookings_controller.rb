@@ -1,6 +1,6 @@
 class Api::BookingsController < ApplicationController
 
-  before_action :require_login
+  # before_action :require_login
 
   # helper method in application controller
   #  def current_user
@@ -9,7 +9,7 @@ class Api::BookingsController < ApplicationController
 
   def show
     @bookings = current_user.bookings
-    render :index 
+    render :index
   end
 
   def create

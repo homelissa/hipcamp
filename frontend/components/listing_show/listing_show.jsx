@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BookingContainer from '../bookings/booking_container'
+import CreateReviewContainer from '../reviews/create_review_container'
 
 class ListingShow extends React.Component {
 
@@ -65,10 +66,12 @@ class ListingShow extends React.Component {
 
             </div>
 
-          <h2>Listing Reviews will be on this page when implemented</h2>
+          <Link to={`/listings/${this.props.listing.id}/review/new`}>Add a Review!</Link>
       </div>
     );
   }
 }
+
+
 
 export default ListingShow;

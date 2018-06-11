@@ -9,6 +9,7 @@
 #  check_out   :datetime         not null
 #  num_guest   :integer          not null
 #  total_price :float            not null
+#  status      :string
 #
 
 class Booking < ApplicationRecord

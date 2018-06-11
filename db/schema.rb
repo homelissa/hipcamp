@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_10_020336) do
+ActiveRecord::Schema.define(version: 2018_06_11_130754) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,15 @@ ActiveRecord::Schema.define(version: 2018_06_10_020336) do
     t.string "check_in_after", null: false
     t.string "check_out_before", null: false
     t.string "icon_url", null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer "author", null: false
+    t.integer "listing_id", null: false
+    t.datetime "created_at", null: false
+    t.text "description", null: false
+    t.index ["author"], name: "index_reviews_on_author"
+    t.index ["listing_id"], name: "index_reviews_on_listing_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -49,5 +49,10 @@ class Listing < ApplicationRecord
   has_many :bookings,
     primary_key: :id,
     foreign_key: :listing_id,
-    class_name: :Booking 
+    class_name: :Booking
+
+  has_many :reviews,
+    primary_key: :id,
+    foreign_key: :listing_id,
+    class_name: :Review
 end
