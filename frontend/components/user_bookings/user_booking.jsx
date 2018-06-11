@@ -9,6 +9,7 @@ class UserBooking extends React.Component {
 
   render(){
 
+
     if (Object.values(this.props.bookings).length < 1) {
       return null;
     } else {

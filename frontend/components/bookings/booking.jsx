@@ -61,8 +61,8 @@ class Booking extends React.Component {
   handleSubmit(e) {
      e.preventDefault();
      let submission = {
-       check_in: this.state.check_in.format(),
-       check_out: this.state.check_out.format(),
+       check_in: this.state.check_in.format('MM/DD/YYYY'),
+       check_out: this.state.check_out.format('MM/DD/YYYY'),
        num_guest: this.state.num_guest,
        listing_id: this.state.listing_id,
        guest_id: this.state.guest_id,
