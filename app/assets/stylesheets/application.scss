@@ -113,22 +113,45 @@
 }
 
 .session-welcome-header {
-  font-size: 30px;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.modal-discover-caption {
+  font-size: 12px;
+  color: gray;
 }
 
 .session-form-input {
   color: black;
-  margin-top: 10px;
+  margin-top: 5px;
   border-width: 10px;
   border: 1px solid gray;
   border-style: solid;
-  width: 100px;
-  height: 20px;
+  width: 180px;
+  height: 40px;
   text-align: left;
   border-radius: 3px;
+  padding-left: 5px;
+  font-family: Helvetica;
+  margin-left: 0px;
 
 }
 
+.session-submit {
+  text-transform: capitalize;
+  border: 1px solid gray;
+  font-family: Helvetica;
+  margin: 10px;
+  font-size: 12px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: rgb(64, 217, 172);
+  color: white;
+  width: 100%;
+}
 .session-options {
   display: flex;
   align-items: center;
@@ -138,16 +161,6 @@
 
 }
 
-.session-submit {
-  text-transform: uppercase;
-  border: 1px solid gray;
-  font-family: 'Abel', sans-serif;
-  margin: 10px;
-  font-size: 12px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  border-radius: 5px;
-}
 
 .session-question {
   margin: 10px;
@@ -208,19 +221,23 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .login-input {
-  margin-left: 20px;
+
 }
 
 .login-form-box {
   outline: 1px solid black;
-  padding: 20px;
+  padding: 40px;
   background: white;
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
 
 }
 
@@ -231,7 +248,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
