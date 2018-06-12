@@ -33,7 +33,7 @@ end
 ActiveRecord::Base.transaction do
   Listing.destroy_all
   ListingPhoto.destroy_all
-  Reviews.destroy_all
+
 
   Listing.create!(
     host_id: User.find_by(first_name: "Beyonce").id,
