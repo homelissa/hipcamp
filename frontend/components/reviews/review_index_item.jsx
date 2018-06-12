@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 const ReviewIndexItem = ({review, currentUser, deleteReview, updateReview}) => {
 
+  const listingId = review.listing_id;
+
   if (review.user.id === currentUser) {
     return (
       <div className='review-index-item'>
@@ -16,7 +18,7 @@ const ReviewIndexItem = ({review, currentUser, deleteReview, updateReview}) => {
       <div>{review.user.first_name}</div>
       <div>{review.created_at}</div>
       <div>{review.description}</div>
-      <li><button onClick={() => updateReview(this.props.match.params.listingId, review)}>Edit</button></li>
+      <Link to={`/listings/${listingId}/reviews/${review.id}`}>Edit</Link>
       <li><button onClick={() => deleteReview(review.id)}>Delete</button></li>
       </div>
       </div>

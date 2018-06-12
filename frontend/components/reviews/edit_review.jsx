@@ -23,7 +23,7 @@ class EditReview extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.updateReview(this.props.match.params.listingId, this.state).then(() => this.props.history.push(`/`))
+    this.props.updateReview(this.props.match.params.listingId, this.state).then(() => this.props.history.push(`/listings/${this.props.match.params.listingId}`))
   }
 
   render(){
