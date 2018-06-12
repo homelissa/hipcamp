@@ -20,6 +20,8 @@ class ReviewIndex extends React.Component {
           key={review.id}
           review={review}
           deleteReview={this.props.deleteReview}
+          updateReview={this.props.updateReview}
+          currentUser={this.props.currentUser}
           />
       )
     })

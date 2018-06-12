@@ -34,6 +34,19 @@ class Booking extends React.Component {
     }
   }
 
+  renderErrors() {
+    return(
+      <ul className='session-errors'>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+
   handleChangeStart(date) {
     if (this.state.check_out.diff(date) < 0) {
       this.state.checkInErrors.style.display = "inline-block";
@@ -88,7 +101,7 @@ class Booking extends React.Component {
   render() {
     return (
       <div>
-
+        {this.renderErrors()}
         <div className='check-in-out'>
         <div className='check-in-out-label'>Check In:</div>
         <DatePicker
