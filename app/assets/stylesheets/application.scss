@@ -380,11 +380,19 @@ h2 {
   margin-bottom: 10px;
 }
 
-.listing-show-description {
+.host-information {
   margin-left: 80px;
+}
+
+.host-name-label {
+  font-weight: bold;
+}
+.listing-show-description {
+  margin-left: 50px;
   max-width: 300px;
   font-family: 'Abel', sans-serif;
   font-size: 15px;
+  margin-right: 50px;
 }
 
 .listing-description-booking {
@@ -422,15 +430,22 @@ h2 {
   font-size: 20px;
   border-bottom: 2px solid #333333;
   margin-bottom: 10px;
+  margin-right: 80px;
 }
 
 .add-review-label {
   margin-top: 10px;
   margin-left: 80px;
-  max-width: 300px;
-  color: blue;
-  font-size: 15px;
-  border: 1px solid gray;
+  max-width: 500px;
   padding: 5px;
-  border-radius: 3px;
+  border: 1px solid gray;
+  font-family: Helvetica;
+  margin: 10px;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: rgb(64, 217, 172);
+  color: white;
+  height: 20px;
 }

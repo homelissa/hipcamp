@@ -32,8 +32,12 @@ class ListingShow extends React.Component {
 
 
           <div className="listing-show-name">{this.props.listing.name}</div>
-
           <div className='listing-description-booking'>
+          <div className='host-information'>
+            <div className='host-name-label'>Hosted By:</div>
+            <div>{this.props.listing.host_name}</div>
+          </div>
+
 
             <div className="listing-show-description">{this.props.listing.description}</div>
             <div className='booking-container'>

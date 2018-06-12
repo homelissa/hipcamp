@@ -22,3 +22,4 @@ json.extract! listing,
   :check_in_after,
   :check_out_before,
   :icon_url
+  json.host_name listing.host.first_name

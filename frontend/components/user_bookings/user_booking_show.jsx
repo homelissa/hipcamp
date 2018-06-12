@@ -19,7 +19,7 @@ const UserBookingItem = ({booking, deleteBooking}) => (
           <div className='booking-status'>{booking.status}</div>
           <div>{booking.check_in}</div>
           <div>{booking.check_out}</div>
-          <button onClick={() => deleteBooking(booking.id)}>Delete</button>
+          <button className='user-booking-delete' onClick={() => deleteBooking(booking.id)}>Delete</button>
         </div>
       </div>
   </div>

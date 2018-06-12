@@ -16,7 +16,7 @@ class CreateReview extends React.Component {
 
 
   componentDidMount() {
-
+    this.props.fetchListing(this.props.match.params.listingId)
   }
 
   renderErrors() {
@@ -43,10 +43,15 @@ class CreateReview extends React.Component {
   }
 
   render(){
+    console.log(this.props.listing)
+    if (!this.props.listing) {
+      return null
+    }
 
     return(
       <div>
         {this.renderErrors()}
+        <div>{this.props.listing.name}</div>
         <form onSubmit={this.handleSubmit}>
             <label>Date
               <input

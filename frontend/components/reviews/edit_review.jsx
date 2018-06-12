@@ -13,6 +13,7 @@ class EditReview extends React.Component {
 
   componentDidMount() {
     this.props.fetchReview(this.props.match.params.reviewId)
+    this.props.fetchListing(this.props.match.params.listingId)
   }
 
   update(field) {
@@ -28,8 +29,13 @@ class EditReview extends React.Component {
 
   render(){
 
+    if (!this.props.listing) {
+      return null
+    }
+
     return(
       <div>
+        <div>{this.props.listing.name}</div>
         <form onSubmit={this.handleSubmit}>
             <label>Date
               <input

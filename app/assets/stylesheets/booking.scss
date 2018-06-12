@@ -38,11 +38,18 @@
 }
 
 .book-now-button {
-  color: blue;
-  font-size: 15px;
-  border: 1px solid gray;
+  max-width: 500px;
   padding: 5px;
-  border-radius: 3px;
+  border: 1px solid gray;
+  font-family: Helvetica;
+  margin: 10px;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: rgb(64, 217, 172);
+  color: white;
+  height: 20px;
   margin-left: 10px;
   margin-bottom: 10px;
 }
