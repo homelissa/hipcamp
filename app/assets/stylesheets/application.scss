@@ -57,6 +57,8 @@
 @import 'booking.scss';
 @import 'errors/errors.scss';
 @import 'review.scss';
+@import 'create-review.scss';
+@import 'edit-review.scss';
 
 
 
@@ -375,7 +377,7 @@ h2 {
   margin-left: 80px;
   max-width: 300px;
   color: #333333;
-  font-size: 16px;
+  font-size: 25px;
   border-bottom: 2px solid rgb(229, 229, 229);
   margin-bottom: 10px;
 }
@@ -406,14 +408,24 @@ h2 {
   font-size: 15px;
 }
 
+.listing-show-label {
+  margin-right: 60px;
+}
+
+
+
 .listing-show-details {
-  color: gray;
   margin-top: 10px;
   margin-bottom: 40px;
   margin-left: 80px;
   margin-right: 180px;
   font-family: Helvetica;
   font-size: 15px;
+  display: flex;
+}
+
+.listing-show-values {
+  padding-right: 20px;
 }
 
 
@@ -426,11 +438,11 @@ h2 {
   margin-top: 10px;
   margin-left: 80px;
   max-width: 300px;
-  color: blue;
   font-size: 20px;
-  border-bottom: 2px solid #333333;
+  border-bottom: 2px solid rgb(229, 229, 229);
   margin-bottom: 10px;
   margin-right: 80px;
+  font-family: Helvetica;
 }
 
 .add-review-label {

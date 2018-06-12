@@ -16,6 +16,18 @@ class EditReview extends React.Component {
     this.props.fetchListing(this.props.match.params.listingId)
   }
 
+  renderErrors() {
+    return(
+      <ul className='review-errors'>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   update(field) {
     return(e) => {
       this.setState({ [field]: e.target.value })
@@ -34,10 +46,11 @@ class EditReview extends React.Component {
     }
 
     return(
-      <div>
-        <div>{this.props.listing.name}</div>
-        <form onSubmit={this.handleSubmit}>
-            <label>Date
+      <div className='edit-review-form'>
+        {this.renderErrors()}
+        <div className='edit-review-listing-name'>{this.props.listing.name}</div>
+        <form className='edit-form-submission'onSubmit={this.handleSubmit}>
+            <label className='edit-review-date'>Date:
               <input
                 type='date'
                 value={this.state.created_at}
@@ -45,13 +58,13 @@ class EditReview extends React.Component {
               />
             </label>
 
-            <label>Description
-              <textarea
+
+              <textarea className='edit-review-description'
                 value={this.state.description}
                 onChange={this.update('description')}  />
-            </label>
 
-            <input type='submit' value='Submit Review'/>
+
+            <input className='edit-review-submit' type='submit' value='Submit Review'/>
           </form>
       </div>
     );

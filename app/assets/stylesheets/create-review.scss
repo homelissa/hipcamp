@@ -1,0 +1,43 @@
+.create-review-form {
+  margin-left: 60px;
+}
+
+
+.create-review-listing-name {
+  font-size: 30px;
+  font-family: Helvetica;
+  margin-bottom: 10px;
+}
+
+
+.form-submission {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-review-date {
+  margin-bottom: 20px;
+  font-family: Helvetica;
+}
+
+.description {
+  border: 1px solid rgb(220, 220, 220);
+  max-width: 500px;
+  padding: 10px;
+  padding-bottom: 150px;
+  margin-bottom: 20px;
+  font-family: Helvetica;
+}
+.create-review-submit {
+  max-width: 500px;
+  padding: 5px;
+  border: 1px solid gray;
+  font-family: Helvetica;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: rgb(64, 217, 172);
+  color: white;
+  height: 20px;
+}

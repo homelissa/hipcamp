@@ -48,24 +48,28 @@ class ListingShow extends React.Component {
 
 
               <ul className='listing-show-details'>
-                <li>
-                   <strong>{this.props.listing.address}</strong>
-                </li>
+                <div className='listing-show-label'>Details:</div>
 
-                <li>
-                  <strong>${this.props.listing.daily_cost}/night</strong>
+                <div className='listing-show-values'>
+                  <li>
+                     <strong>{this.props.listing.address}</strong>
+                  </li>
 
-                </li>
+                  <li>
+                    <strong>${this.props.listing.daily_cost}/night</strong>
 
-
-                <li>Check In After:
-                   <strong> {this.props.listing.check_in_after}</strong>
-                </li>
+                  </li>
 
 
-                <li>Check Out Before:
-                   <strong> {this.props.listing.check_out_before}</strong>
-                </li>
+                  <li>Check In After:
+                     <strong> {this.props.listing.check_in_after}</strong>
+                  </li>
+
+
+                  <li>Check Out Before:
+                     <strong> {this.props.listing.check_out_before}</strong>
+                  </li>
+                </div>
               </ul>
 
 

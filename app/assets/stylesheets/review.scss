@@ -7,3 +7,59 @@
 .review-item-labels {
   margin-right: 50px;
 }
+
+
+.review-user-name {
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.review-user-created-date {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: rgb(194, 194, 194)
+}
+
+.review-item-values {
+  border-bottom: 2px solid rgb(229, 229, 229);
+  max-width: 800px;
+}
+
+.review-item-values li {
+  margin-bottom: 10px;
+}
+
+.edit-review-link {
+  margin-top: 10px;
+  margin-left: 80px;
+  max-width: 500px;
+  padding: 5px;
+  border: 1px solid gray;
+  font-family: Helvetica;
+  margin: 10px;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: rgb(64, 217, 172);
+  color: white;
+  height: 20px;
+}
+
+.delete-review-button{
+  margin-top: 10px;
+  margin-left: 80px;
+  max-width: 500px;
+  padding: 5px;
+  border: 1px solid gray;
+  font-family: Helvetica;
+  margin: 10px;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  background-color: rgb(64, 217, 172);
+  color: white;
+  height: 20px;
+}

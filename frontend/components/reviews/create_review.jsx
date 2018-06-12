@@ -49,11 +49,11 @@ class CreateReview extends React.Component {
     }
 
     return(
-      <div>
+      <div className='create-review-form'>
         {this.renderErrors()}
-        <div>{this.props.listing.name}</div>
-        <form onSubmit={this.handleSubmit}>
-            <label>Date
+        <div className='create-review-listing-name'>{this.props.listing.name}</div>
+        <form className='form-submission'onSubmit={this.handleSubmit}>
+            <label className='create-review-date'>Date: 
               <input
                 type='date'
                 value={this.state.created_at}
@@ -61,12 +61,13 @@ class CreateReview extends React.Component {
               />
             </label>
 
-            <label>Description
-              <textarea
+
+              <textarea className='description'
                 value={this.state.description}
-                onChange={this.update('description')}  />
-            </label>
-            <input type='submit' value='Submit Review'/>
+                onChange={this.update('description')}
+                placeholder='Share your experience here!'/>
+
+            <input className='create-review-submit' type='submit' value='Submit Review'/>
           </form>
       </div>
     );
