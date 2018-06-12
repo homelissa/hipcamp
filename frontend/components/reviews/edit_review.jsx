@@ -39,6 +39,12 @@ class EditReview extends React.Component {
     this.props.updateReview(this.props.match.params.listingId, this.state).then(() => this.props.history.push(`/listings/${this.props.match.params.listingId}`))
   }
 
+  toDateInputValue () {
+    let date = new Date();
+    return date.toJSON().slice(0, 10);
+  }
+
+
   render(){
 
     if (!this.props.listing) {
@@ -51,11 +57,11 @@ class EditReview extends React.Component {
         <div className='edit-review-listing-name'>{this.props.listing.name}</div>
         <form className='edit-form-submission'onSubmit={this.handleSubmit}>
             <label className='edit-review-date'>Date:
-              <input
-                type='date'
-                value={this.state.created_at}
-                onChange={this.update('created_at')}
-              />
+            <input
+                    type='date'
+                    value={this.toDateInputValue()}
+                    onChange={this.update('created_at')}
+                  />
             </label>
 
 

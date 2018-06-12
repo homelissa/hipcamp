@@ -7,7 +7,6 @@ class CreateReview extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      created_at: "",
       description: ""
     }
 
@@ -42,6 +41,12 @@ class CreateReview extends React.Component {
     this.props.createReview(this.props.match.params.listingId, this.state).then(() => this.props.history.push(`/listings/${this.props.match.params.listingId}`))
   }
 
+  toDateInputValue () {
+    let date = new Date();
+    return date.toJSON().slice(0, 10);
+  }
+
+
   render(){
     console.log(this.props.listing)
     if (!this.props.listing) {
@@ -53,13 +58,6 @@ class CreateReview extends React.Component {
         {this.renderErrors()}
         <div className='create-review-listing-name'>{this.props.listing.name}</div>
         <form className='form-submission'onSubmit={this.handleSubmit}>
-            <label className='create-review-date'>Date: 
-              <input
-                type='date'
-                value={this.state.created_at}
-                onChange={this.update('created_at')}
-              />
-            </label>
 
 
               <textarea className='description'

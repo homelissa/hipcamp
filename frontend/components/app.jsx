@@ -26,9 +26,9 @@ const App = () => (
       <Route exact path="/" component={Index}/>
       <Route exact path="/listings" component={SearchContainer}/>
       <Route exact path="/listings/:listingId" component={ListingShowContainer}/>
-      <Route path="/user/:userId" component={UserBookingContainer}/>
-      <Route path="/listings/:listingId/review/new" component={CreateReviewContainer}/>
-      <Route path="/listings/:listingId/reviews/:reviewId" component={EditReviewContainer}/>
+      <ProtectedRoute path="/user/:userId" component={UserBookingContainer}/>
+      <ProtectedRoute path="/listings/:listingId/review/new" component={CreateReviewContainer}/>
+      <ProtectedRoute path="/listings/:listingId/reviews/:reviewId" component={EditReviewContainer}/>
       <Redirect to="/" />
     </Switch>
   </div>

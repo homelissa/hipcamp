@@ -10,11 +10,11 @@
 #
 
 class Review < ApplicationRecord
-  validates :author, :listing_id, :created_at, :description, presence: true
+  validates :listing_id, :description, presence: true
 
   belongs_to :author,
     primary_key: :id,
-    foreign_key: :author,
+    foreign_key: :author_id,
     class_name: :User
 
   belongs_to :listing,
