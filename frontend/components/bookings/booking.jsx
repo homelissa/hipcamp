@@ -100,7 +100,7 @@ class Booking extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='booking-container-form'>
         {this.renderErrors()}
         <div className='check-in-out'>
         <div className='check-in-out-label'>Check In:</div>
@@ -128,22 +128,16 @@ class Booking extends React.Component {
         </div>
 
         <form onSubmit={this.handleSubmit}>
-          <label>Number of Guests:
+          <label className='check-in-out'>Number of Guests:
             <input className='form-input'
               type='text'
               value= {this.state.num_guest}
               onChange={this.update('num_guest')} />
           </label>
 
-          <label>Total Price:
-            <input className='form-input'
-              type='text'
-              value={50}
-              onChange={this.update('total_price')} />
-          </label>
 
 
-            <input type='submit' value="Book Now!" />
+            <input className='book-now-button'type='submit' value="Book Now!" />
         </form>
       </div>
     )

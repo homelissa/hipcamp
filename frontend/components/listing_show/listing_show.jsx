@@ -32,9 +32,16 @@ class ListingShow extends React.Component {
 
 
           <div className="listing-show-name">{this.props.listing.name}</div>
-          <div className="listing-show-description">{this.props.listing.description}</div>
 
           <div className='listing-description-booking'>
+
+            <div className="listing-show-description">{this.props.listing.description}</div>
+            <div className='booking-container'>
+              <div><BookingContainer /></div>
+            </div>
+
+          </div>
+
 
               <ul className='listing-show-details'>
                 <li>
@@ -46,9 +53,6 @@ class ListingShow extends React.Component {
 
                 </li>
 
-                <li>Maximum Guests:
-                   <strong> {this.props.listing.max_guest}</strong>
-                </li>
 
                 <li>Check In After:
                    <strong> {this.props.listing.check_in_after}</strong>
@@ -61,13 +65,11 @@ class ListingShow extends React.Component {
               </ul>
 
 
-              <div className='booking-container'>
-                <div><BookingContainer /></div>
-              </div>
 
+            <div className='listing-review-container'>
+              <div className="review-label">Reviews</div>
+              <div className='add-review-label'><Link to={`/listings/${this.props.listing.id}/review/new`}>Add a Review!</Link></div>
             </div>
-
-          <Link to={`/listings/${this.props.listing.id}/review/new`}>Add a Review!</Link>
           <div><ReviewIndexContainer listingId={this.props.match.params.listingId}/></div>
 
 

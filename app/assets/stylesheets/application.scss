@@ -358,7 +358,7 @@ h2 {
   margin-left: 80px;
   max-width: 300px;
   color: blue;
-  font-size: 30px;
+  font-size: 20px;
   border-bottom: 2px solid #333333;
   margin-bottom: 10px;
 }
@@ -371,16 +371,49 @@ h2 {
 }
 
 .listing-description-booking {
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   margin-bottom: 40px;
-  margin-left: 80px;
   margin-right: 180px;
-  font-family: 'Abel', sans-serif;
+  font-family: Helvetica;
   font-size: 15px;
 }
 
 .listing-show-details {
   color: gray;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+  margin-right: 180px;
+  font-family: Helvetica;
+  font-size: 15px;
+}
+
+
+.listing-review-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.review-label {
+  margin-top: 10px;
+  margin-left: 80px;
+  max-width: 300px;
+  color: blue;
+  font-size: 20px;
+  border-bottom: 2px solid #333333;
+  margin-bottom: 10px;
+}
+
+.add-review-label {
+  margin-top: 10px;
+  margin-left: 80px;
+  max-width: 300px;
+  color: blue;
+  font-size: 15px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 3px;
 }

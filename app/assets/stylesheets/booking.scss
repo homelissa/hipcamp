@@ -1,5 +1,15 @@
+.booking-container-form {
+  color: blue;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid gray;
+
+}
+
 .check-in-out {
   display: flex;
+  padding: 10px;
 }
 
 .form-input {
@@ -25,4 +35,14 @@
 
 .booking-details {
   margin-left: 25px;
+}
+
+.book-now-button {
+  color: blue;
+  font-size: 15px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }

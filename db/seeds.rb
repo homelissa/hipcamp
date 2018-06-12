@@ -32,6 +32,8 @@ end
 
 ActiveRecord::Base.transaction do
   Listing.destroy_all
+  ListingPhoto.destroy_all
+  Reviews.destroy_all
 
   Listing.create!(
     host_id: User.find_by(first_name: "Beyonce").id,
@@ -254,5 +256,6 @@ Listing.create!(
     image_url: "https://images.unsplash.com/photo-1519058454075-e16cb18dd56d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb9e4af886c93da5e89b6b3dbd163490&auto=format&fit=crop&w=500&q=60",
     order: 3
   )
+
 
 end
