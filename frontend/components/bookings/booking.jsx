@@ -28,6 +28,13 @@ class Booking extends React.Component {
     })
   }
 
+  
+  componentWillUnmount () {
+    this.props.clearErrors();
+  }
+
+
+
   componentWillReceiveProps(newProps) {
     if (this.props.current_user !== newProps.current_user) {
       this.setState({guest_id: newProps.current_user})

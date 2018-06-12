@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createBooking } from '../../actions/booking_actions';
+import { createBooking, receiveErrors } from '../../actions/booking_actions';
 import Booking from './booking';
 import { withRouter } from 'react-router';
 
@@ -11,7 +11,8 @@ const mSTP = (state, ownProps) => ({
 });
 
 const mDTP = dispatch => ({
-  createBooking: bookingParams => dispatch(createBooking(bookingParams))
+  createBooking: bookingParams => dispatch(createBooking(bookingParams)),
+  clearErrors: () => dispatch(receiveErrors([]))
 });
 
 export default connect(
