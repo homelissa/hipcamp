@@ -1,7 +1,6 @@
 .booking-container-form {
   color: blue;
   font-size: 15px;
-  padding: 5px;
   border-radius: 3px;
   border: 1px solid gray;
 
@@ -62,20 +61,22 @@
 
 
 .book-now-button {
-  max-width: 500px;
-  padding: 5px;
+  width: 95%;
   border: 1px solid gray;
   font-family: Helvetica;
-  margin: 10px;
+  margin-top: 10px;
   font-size: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
   border-radius: 5px;
   background-color: rgb(64, 217, 172);
   color: white;
-  height: 20px;
+  height: 30px;
   margin-left: 10px;
   margin-bottom: 10px;
+  margin-right: 0px;
+  text-align: center;
+  padding-right: 0px;
 }
 
 .user-booking-delete {
@@ -91,6 +92,7 @@
   color: white;
   width: 170px;
   padding-left: 5px;
+  padding-right: 0px;
 }
 
 .booking-status{

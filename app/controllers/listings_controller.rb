@@ -1,7 +1,19 @@
 class Api::ListingsController < ApplicationController
 
   def index
-    @listings = Listing.all
+
+    # if params[:search_by_address]
+    #   render ''
+    # elsif params[:search_by_allow_pets]
+    #   render ''
+    # elsif params[:search_by_is_camping]
+    #   render ''
+    # elsif params[:search_by_under_fifty]
+    #   render ''
+    # else
+      @listings = Listing.all
+    # end
+
   end
 
   def show

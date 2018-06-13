@@ -119,7 +119,7 @@ class ListingShow extends React.Component {
           </div>
 
 
-    
+
 
         </div>
 
@@ -152,7 +152,7 @@ class ListingShow extends React.Component {
 
 
         <div className='listing-review-container'>
-
+        <div>{this.props.numReviews}</div>
         <div className="review-label">Reviews</div>
 
         </div>

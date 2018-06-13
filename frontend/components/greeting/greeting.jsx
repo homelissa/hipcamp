@@ -20,7 +20,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
         <Link to={`/`} className='hipcamp-logo'>hipCamp</Link>
       </div>
       <div className="header-name-button">
-        <h2 className="header-name">Hi, {`${currentUser.first_name} ${currentUser.last_name}!`}</h2>
+        <h2 className="header-name">Hi, {`${currentUser.first_name}!`}</h2>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <button className="header-button" onClick={logout}>Log Out</button>
       </div>

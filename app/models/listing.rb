@@ -55,4 +55,21 @@ class Listing < ApplicationRecord
     primary_key: :id,
     foreign_key: :listing_id,
     class_name: :Review
+
+  # def self.search_by_address(string) {
+  #   Listings.where('address = ?', 'string')
+  # }
+  #
+  # def self.search_by_allow_pets(string) {
+  #   Listings.where('allow_pets = ?', true )
+  # }
+  #
+  # def self.search_by_is_camping(string) {
+  #   Listings.where('is_camping = ?', true)
+  # }
+  #
+  # def self.search_by_under_fifty(string) {
+  #   Listings.where('daily_cost < ?', 50)
+  # }
+
 end

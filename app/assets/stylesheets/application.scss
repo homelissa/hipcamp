@@ -59,7 +59,7 @@
 @import 'review.scss';
 @import 'create-review.scss';
 @import 'edit-review.scss';
-
+@import 'index.scss';
 
 
 .login-signup {
@@ -181,31 +181,6 @@
   border-bottom: 1px solid gray;
 }
 
-.landing-page {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.landing-page-title {
-  margin-left: 15px;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.landing-page-image {
-  max-width: 400px;
-  height: 300px;
-  margin-right: 60px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.index-to-listings {
-  color: blue;
-  font-size: 20px;
-}
 
 .hipcamp-logo {
   text-decoration: none;
@@ -231,7 +206,6 @@
 }
 
 .login-form-box {
-  outline: 1px solid black;
   padding: 40px;
   background: white;
   position: relative;
@@ -239,6 +213,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  box-shadow: 0px 0px 5px grey;
 
 
 }
@@ -250,7 +225,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 10;
 }
 
@@ -388,6 +363,7 @@ h2 {
 
 .host-name-label {
   font-weight: bold;
+  width: 100px;
 }
 .listing-show-description {
   margin-left: 50px;
@@ -413,7 +389,7 @@ h2 {
 }
 
 .listing-show-label {
-  margin-right: 60px;
+  margin-right: 75px;
 }
 
 
@@ -429,7 +405,8 @@ h2 {
 }
 
 .listing-show-values {
-  padding-right: 20px;
+  padding-right: 100px;
+  padding-top: 50px;
 }
 
 

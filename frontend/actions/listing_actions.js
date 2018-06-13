@@ -21,3 +21,19 @@ export const fetchListings = () => dispatch => (
 export const fetchListing = id => dispatch => (
   APIUtil.fetchListing(id).then(listing => dispatch(receiveListing(listing)))
 );
+
+// export const searchListingsByAddress = searchByAddress => dispatch => (
+//   APIUtil.searchListingsByAddress(searchByAddress).then(payload => dispatch(receiveListings(payload)))
+// );
+//
+// export const searchListingsByAllowPets = searchByAllowPets => dispatch => (
+//   APIUtil.searchListings(searchByAllowPets).then(payload => dispatch(receiveListings(payload)))
+// );
+//
+// export const searchListingsByIsCamping = searchByIsCamping => dispatch => (
+//   APIUtil.searchListingsByIsCamping(searchByIsCamping).then(payload => dispatch(receiveListings(payload)))
+// );
+//
+// export const searchListingsByUnderFifty = searchByUnderFifty => dispatch => (
+//   APIUtil.searchListings(searchByUnderFifty).then(payload => dispatch(receiveListings(payload)))
+// );

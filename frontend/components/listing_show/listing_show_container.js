@@ -6,7 +6,8 @@ import ListingShow from './listing_show';
 const mSTP = (state, ownProps) => ({
   listing: state.entities.listings[ownProps.match.params.listingId],
   listingPhotos: Object.values(state.entities.listingPhotos),
-  currentUser: state.session.id
+  currentUser: state.session.id,
+  numReviews: state.entities.reviews.length
 });
 
 const mDTP = dispatch => ({

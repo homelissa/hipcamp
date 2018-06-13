@@ -1,0 +1,49 @@
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.landing-page-title {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.index-to-listings {
+  color: blue;
+  font-size: 20px;
+}
+
+.landing-page-image {
+  max-width: 400px;
+  height: 300px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.discover-camping {
+  font-size: 30px;
+  margin-left: 350px;
+  font-family: Helvetica;
+  margin-bottom: 20px;
+}
+
+.first-row-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+.second-row-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 25px;
+}
