@@ -22,6 +22,30 @@ ActiveRecord::Base.transaction do
       first_name: 'Kevin',
       last_name: 'Durant',
       password: 'password'
+    },
+    {
+      email_address: 'seedemail3',
+      first_name: 'Sheryl',
+      last_name: 'Sandberg',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail4',
+      first_name: 'Amy',
+      last_name: 'Woodson',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail5',
+      first_name: 'Caleb',
+      last_name: 'Bass',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail6',
+      first_name: 'Nathan',
+      last_name: 'Carlson',
+      password: 'password'
     }
   ]
 
@@ -33,6 +57,7 @@ end
 ActiveRecord::Base.transaction do
   Listing.destroy_all
   ListingPhoto.destroy_all
+  Review.destroy_all
 
 
   Listing.create!(
@@ -255,6 +280,72 @@ Listing.create!(
     listing_id: Listing.find_by(name: "Misty Hill").id,
     image_url: "https://images.unsplash.com/photo-1519058454075-e16cb18dd56d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb9e4af886c93da5e89b6b3dbd163490&auto=format&fit=crop&w=500&q=60",
     order: 3
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Wawona Campgrounds").id,
+    description: 'This is a special piece of land that is being lovingly restored.... both back to nature and to showcase the history of the land. There is lots to explore and great trails to hike. Myrna is a very welcoming and lovely host.... be sure to hang out by the camp fire at night to get to meet her!',
+    author_id: User.find_by(first_name: "Kevin").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Wawona Campgrounds").id,
+    description: ' went above and beyond to accommodate our group, and provided helpful amenities like water, firewood, and even chocolate! The site itself is incredible, with ocean views and (and sounds!). The tipi was a savior during the cold and windy night, and there was plenty of space to pitch our two additional tents.',
+    author_id: User.find_by(first_name: "Beyonce").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Wawona Campgrounds").id,
+    description: 'What an awesome place to stay! Beyonce was a super helpful host and we had just everything we needed and more. I would recommend this place to anybody',
+    author_id: User.find_by(first_name: "Sheryl").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Amphipod").id,
+    description: 'This is a special piece of land that is being lovingly restored.... both back to nature and to showcase the history of the land. There is lots to explore and great trails to hike. Myrna is a very welcoming and lovely host.... be sure to hang out by the camp fire at night to get to meet her!',
+    author_id: User.find_by(first_name: "Sheryl").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Bridalveil Creek").id,
+    description: 'a magical place. As soon as you enter the first gate, you are met by friendly horses and expansive views. The positive energy of the land is infectious! Also a great spot for larger groups as there is tons of flat areas to camp and a really cool area built specifically to protect you from the wind',
+    author_id: User.find_by(first_name: "Caleb").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "White Wolf").id,
+    description: 'So glad I stumbled across this gem!',
+    author_id: User.find_by(first_name: "Nathan").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Porcupine Flat").id,
+    description: 'This is a special piece of land that is being lovingly restored.... both back to nature and to showcase the history of the land. There is lots to explore and great trails to hike. Myrna is a very welcoming and lovely host.... be sure to hang out by the camp fire at night to get to meet her!',
+    author_id: User.find_by(first_name: "Sheryl").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Porcupine Flat").id,
+    description: 'a magical place. As soon as you enter the first gate, you are met by friendly horses and expansive views. The positive energy of the land is infectious! Also a great spot for larger groups as there is tons of flat areas to camp and a really cool area built specifically to protect you from the wind',
+    author_id: User.find_by(first_name: "Caleb").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Red Snow").id,
+    description: 'So glad I stumbled across this gem!',
+    author_id: User.find_by(first_name: "Nathan").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Misty Hill").id,
+    description: 'This is a special piece of land that is being lovingly restored.... both back to nature and to showcase the history of the land. There is lots to explore and great trails to hike. Myrna is a very welcoming and lovely host.... be sure to hang out by the camp fire at night to get to meet her!',
+    author_id: User.find_by(first_name: "Kevin").id
+  )
+
+  Review.create!(
+    listing_id: Listing.find_by(name: "Misty Hill").id,
+    description: ' went above and beyond to accommodate our group, and provided helpful amenities like water, firewood, and even chocolate! The site itself is incredible, with ocean views and (and sounds!). The tipi was a savior during the cold and windy night, and there was plenty of space to pitch our two additional tents.',
+    author_id: User.find_by(first_name: "Beyonce").id
   )
 
 
