@@ -359,7 +359,7 @@ h2 {
 .listing-show-carousel {
   display: flex;
   max-width: 100%;
-  justify-content: center;
+  margin-left: 80px;
 
 }
 
@@ -391,7 +391,7 @@ h2 {
 }
 .listing-show-description {
   margin-left: 50px;
-  max-width: 300px;
+  width: 280px;
   font-family: 'Abel', sans-serif;
   font-size: 15px;
   margin-right: 50px;
@@ -406,6 +406,10 @@ h2 {
   margin-right: 180px;
   font-family: Helvetica;
   font-size: 15px;
+}
+
+.host-listing-description {
+  display: flex;
 }
 
 .listing-show-label {

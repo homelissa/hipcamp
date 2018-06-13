@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const UserBookingItem = ({booking, deleteBooking}) => (
+const UserBookingItem = ({booking, deleteBooking, currentUser}) => (
 
   <div>
+  
       <div className='user-booking-container'>
         <div className='booking-name-photo'>
           <div className='booking-listing-name'>{booking.listing.name}</div>

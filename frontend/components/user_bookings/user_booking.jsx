@@ -19,7 +19,8 @@ class UserBooking extends React.Component {
               <UserBookingItem
               key={booking.id}
               booking={booking}
-              deleteBooking={this.props.deleteBooking}  />
+              deleteBooking={this.props.deleteBooking}
+              />
           		)
 			}
 		)
