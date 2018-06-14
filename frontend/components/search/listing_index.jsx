@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 class ListingIndex extends React.Component {
 
   componentDidMount() {
-    this.props.fetchListings();
+    if (this.props.fetchListings) {
+      this.props.fetchListings();
+    } 
   }
 
   render() {

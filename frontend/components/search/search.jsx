@@ -9,7 +9,7 @@ class Search extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchListings()
+    // this.props.fetchListings()
   }
 
 
@@ -18,8 +18,8 @@ class Search extends React.Component {
     return(
 
       <div className="search">
-        <ListingIndex listings={this.props.listings} fetchListings={this.props.fetchListings}/>
-        <ListingMap listings={this.props.listings} fetchListings={this.props.fetchListings} />
+        <ListingIndex listings={this.props.listings} />
+        <ListingMap listings={this.props.listings} updateFilter={this.props.updateFilter} />
       </div>
     )
   }
