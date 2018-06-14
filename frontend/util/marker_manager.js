@@ -6,7 +6,7 @@ class MarkerManager {
   constructor(map) {
     this.map = map;
     this.markers = {};
-
+    this.geocoder = new google.maps.Geocoder;
   }
 
   createMarkerFromListing(listing) {
@@ -27,10 +27,9 @@ class MarkerManager {
   }
 
 
-  updateMarkers(listings) {
-    console.log('asdf');
+  updateMarkers(listings, geolocation) {
 
-  
+
     const listingsObj = {};
     listings.forEach(listing => listingsObj[listing.id] = listing);
 

@@ -10,11 +10,11 @@ const ReviewIndexItem = ({review, currentUser, deleteReview, updateReview}) => {
     return (
       <div className='review-index-item'>
 
-        <div className='review-item-values'>
-          <div className='review-user-name'>{review.user.first_name}</div>
-          <div className='review-user-created-date'>{review.created_at}</div>
-          <div className='reivew-user-description'>{review.description}</div>
-        </div>
+      <div className='review-item-values'>
+        <li className='review-user-name'>{review.user.first_name}</li>
+        <li className='review-user-created-date'>{review.created_at}</li>
+        <li className='review-user-description'>{review.description}</li>
+      </div>
 
         <div>
           <Link className='edit-review-link' to={`/listings/${listingId}/reviews/${review.id}`}>Edit</Link>

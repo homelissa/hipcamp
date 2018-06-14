@@ -84,6 +84,16 @@ class Booking extends React.Component {
     });
   }
 
+  handleStep(stepParam) {
+  return e => {
+    if (stepParam === '+') {
+      this.setState({ num_guest: (this.state.num_guest + 1) });
+    } else if (stepParam === '-' ) {
+      this.setState({ num_guest: (this.state.num_guest - 1) });
+    }
+  }
+}
+
   handleSubmit(e) {
      e.preventDefault();
      let submission = {
@@ -139,11 +149,13 @@ class Booking extends React.Component {
           </div>
 
         <form onSubmit={this.handleSubmit}>
-          <label className='check-in-out guests-label'>Guests:
-            <input className='form-input'
-              type='text'
-              value= {this.state.num_guest}
-              onChange={this.update('num_guest')} />
+
+          <label className='booking-form-container check-in-out guests-label'>Guests:
+            <div className="booking-guests">
+              <a onClick={this.handleStep('-')}> - </a>
+                <p> {this.state.num_guest} </p>
+              <a onClick={this.handleStep('+')}> + </a>
+            </div>
           </label>
 
 

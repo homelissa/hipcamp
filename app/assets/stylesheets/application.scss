@@ -69,25 +69,51 @@
   margin-right: 0px;
   padding: 15px;
   font-family: 'Abel', sans-serif;
+  height: 18px;
   // border-bottom: 1px solid #ebebeb;
 
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px;
+  margin: auto;
+  margin-right: 0px;
+  font-family: 'Abel', sans-serif;
+  height: 18px;
 }
 
 .login-signup-button {
   margin: auto;
   margin-right: 0px;
-  padding-bottom: 5px;
   font-family: 'Abel', sans-serif;
   text-transform: capitalize;
 
 }
 
+.header-name {
+  padding-top: 1px;
+}
+
+.header-name-button {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-right: 0px;
+  font-family: 'Abel', sans-serif;
+  vertical-align: middle;
+}
+
 .signup-button:hover {
   text-decoration: underline;
+  text-decoration-color: grey;
 }
 
 .login-button:hover {
   text-decoration: underline;
+  text-decoration-color: grey;
 }
 
 .login-form label {
@@ -105,24 +131,12 @@
 
 
 
-.header-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 20px;
-}
-
-.header-name-button {
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  margin-right: 0px;
-  font-family: 'Abel', sans-serif;
-}
 
 .header-button {
   margin: auto;
   margin-right: 0px;
+  font-size: 15px;
+  font-family: 'Abel', sans-serif;
 }
 
 .session-welcome-header {
