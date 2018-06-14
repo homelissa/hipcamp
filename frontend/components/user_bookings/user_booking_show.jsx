@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 const UserBookingItem = ({booking, deleteBooking, currentUser}) => (
 
   <div>
-  
+
       <div className='user-booking-container'>
         <div className='booking-name-photo'>
+          <div>{currentUser.first_name}</div>
+          <div>{currentUser.bookings.length}</div>
           <div className='booking-listing-name'>{booking.listing.name}</div>
           <img className="listing-photo user-booking" src={booking.listing.icon_url}></img>
         </div>

@@ -118,51 +118,50 @@ class Booking extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-      <div className='booking-container-form'>
-        {this.renderErrors()}
-        <div className='check-in-out'>
-          <div className='check-in-container'>
-            <div className='check-in-out-label'>Check In</div>
-            <DatePicker className='click-in-picker'
-              minDate={moment()}
-              maxDate={this.state.check_out}
-              selected={this.state.check_in}
-              selectsStart
+
+      <div className='booking-form'>
+        <div className='booking-container-form'>
+          {this.renderErrors()}
+          <div className='check-in-out'>
+            <div className='check-in-container'>
+              <div className='check-in-out-label'>Check In</div>
+              <DatePicker className='click-in-picker'
+                minDate={moment()}
+                maxDate={this.state.check_out}
+                selected={this.state.check_in}
+                selectsStart
+                check_in={this.state.check_in}
+                check_out={this.state.check_out}
+                onChange={this.handleChangeStart}
+                placeholderText="Click to select a date" />
+                <p id="checkInErrors">Can't pick a check in date after check out</p>
+            </div>
+
+            <div className='check-out-container'>
+              <div className='check-in-out-label'>Check Out</div>
+              <DatePicker className='check-out-picker'
+              minDate={this.state.check_in}
+              selected={this.state.check_out}
+              selectsEnd
               check_in={this.state.check_in}
               check_out={this.state.check_out}
-              onChange={this.handleChangeStart}
-              placeholderText="Click to select a date" />
-              <p id="checkInErrors">Can't pick a check in date after check out</p>
-          </div>
-
-          <div className='check-out-container'>
-            <div className='check-in-out-label'>Check Out</div>
-            <DatePicker className='check-out-picker'
-            minDate={this.state.check_in}
-            selected={this.state.check_out}
-            selectsEnd
-            check_in={this.state.check_in}
-            check_out={this.state.check_out}
-            onChange={this.handleChangeEnd}
-            placeholderText="Select a date"/>
-            <p id="checkOutErrors">Can't pick a check out date before check in</p>
-            </div>
-          </div>
-
-
-
-            <label className='booking-form-container check-in-out guests-label'>Guests:
-              <div className="booking-guests">
-                <a onClick={this.handleStep('-')}> - </a>
-                  <p> {this.state.num_guest} </p>
-                <a onClick={this.handleStep('+')}> + </a>
+              onChange={this.handleChangeEnd}
+              placeholderText="Select a date"/>
+              <p id="checkOutErrors">Can't pick a check out date before check in</p>
               </div>
-            </label>
+          </div>
+          <label className='booking-form-container check-in-out guests-label'>Guests:
+            <div className="booking-guests">
+              <a onClick={this.handleStep('-')}> - </a>
+                <p> {this.state.num_guest} </p>
+              <a onClick={this.handleStep('+')}> + </a>
+            </div>
+          </label>
+        </div>
 
 
-          <br />
 
-            <input className='book-now-button'type='submit' value="Book Now!" />
+        <input className='book-now-button'type='submit' value="Book Now!" />
       </div>
       </form>
     )

@@ -5,7 +5,7 @@ import UserBooking from './user_booking';
 
 const mSTP = (state, ownProps) => ({
   bookings: state.entities.bookings,
-  currentUser: state.session
+  currentUser: state.entities.users[state.session.id]
 });
 
 const mDTP = dispatch => ({

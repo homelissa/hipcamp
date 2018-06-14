@@ -6,6 +6,7 @@ const ListingIndexItem = ({listing}) => {
 
   return (
     <div className='listing-index-li'>
+      Number of Reviews:{listing.reviews.length}
       <Link to={`/listings/${listing.id}`}>
         <img className="listing-photo" src={listing.icon_url}></img>
       </Link>

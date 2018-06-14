@@ -13,6 +13,7 @@
 
  *= require_self
  */
+ @import url("https://fonts.googleapis.com/css?family=Lato:400,900");
 
  html, body, header, nav, h1, a,
  ul, li, strong, main, button, i,
@@ -23,7 +24,7 @@
    padding: 0;
    // border: 0;
    // outline: 0;
-   font: inherit;
+   font-family: 'Lato', "Lato", Helvetica;
    color: inherit;
    text-align: inherit;
    text-decoration: inherit;
@@ -64,7 +65,7 @@
 
 body {
   color: #333333;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
 }
 
 .login-signup {
@@ -73,7 +74,6 @@ body {
   margin: auto;
   margin-right: 0px;
   padding: 15px;
-  font-family: 'Abel', sans-serif;
   height: 18px;
   color: #333333;
   // border-bottom: 1px solid #ebebeb;
@@ -87,20 +87,20 @@ body {
   padding: 15px;
   margin: auto;
   margin-right: 0px;
-  font-family: 'Abel', sans-serif;
   height: 18px;
 }
 
 .login-signup-button {
   margin: auto;
   margin-right: 0px;
-  font-family: 'Abel', sans-serif;
   text-transform: capitalize;
+  font-size: 15px;
 
 }
 
 .header-name {
   padding-top: 1px;
+  font-family: 'Lato';
 }
 
 .header-name-button {
@@ -108,7 +108,6 @@ body {
   justify-content: space-between;
   margin: auto;
   margin-right: 0px;
-  font-family: 'Abel', sans-serif;
   vertical-align: middle;
 }
 
@@ -142,7 +141,6 @@ body {
   margin: auto;
   margin-right: 0px;
   font-size: 15px;
-  font-family: 'Abel', sans-serif;
   color: #333333;
 }
 
@@ -168,7 +166,7 @@ body {
   text-align: left;
   border-radius: 3px;
   padding-left: 5px;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
   margin-left: 0px;
 
 }
@@ -176,7 +174,7 @@ body {
 .session-submit {
   text-transform: capitalize;
   border: 1px solid gray;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
   margin: 10px;
   font-size: 12px;
   padding-top: 3px;
@@ -218,11 +216,10 @@ body {
   text-decoration: none;
   color: rgb(51, 51, 51)
   font-size 16px;
-  font-family: Helvetica;
-  font-weight: 400;
+  font-family: "Lato", Helvetica;
+  font-weight: 600;
   width: 135px;
-  line-height: 22.72px
-  margin-left 100px;
+  line-height: 22.72px;
   letter-spacing: 3px;
 }
 
@@ -314,17 +311,9 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
   font-weight: 400px;
+  padding-right: 15px;
 }
 
-h1 {
-  font-family: 'Abel', sans-serif;
-  font-size: 18px;
-}
-
-h2 {
-  font-family: 'Abel', sans-serif;
-  font-size: 15px;
-}
 
 .search {
   display: flex;
@@ -404,12 +393,14 @@ h2 {
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(229, 229, 229);
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
 }
 
 .host-information {
   margin-left: 80px;
   padding-bottom: 10px;
+  font-size: 13px;
 
 }
 
@@ -420,9 +411,9 @@ h2 {
 .listing-show-description {
   margin-left: 50px;
   width: 280px;
-  font-family: 'Abel', sans-serif;
   font-size: 15px;
   margin-right: 50px;
+  line-height: 20px;
 
 }
 
@@ -433,7 +424,7 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 180px;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
   font-size: 15px;
 }
 
@@ -454,7 +445,7 @@ h2 {
   margin-bottom: 40px;
   margin-left: 80px;
   margin-right: 180px;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
   font-size: 15px;
   display: flex;
   width: 450px;
@@ -482,22 +473,22 @@ h2 {
   border-bottom: 1px solid rgb(229, 229, 229);
   margin-bottom: 10px;
   margin-right: 80px;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
 }
 
 .add-review-label {
   margin-top: 10px;
   margin-left: 80px;
   max-width: 500px;
-  padding: 5px;
+  padding: 10px;
   border: 1px grey;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
   margin: 10px;
   font-size: 15px;
   // padding-top: 3px;
   // padding-bottom: 3px;
   border-radius: 3px;
-  background-color: #6fd6af;
+  background-color: #40d9ac;
   color: white;
   height: 20px;
 }

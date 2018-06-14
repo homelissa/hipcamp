@@ -1,3 +1,9 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .booking-container-form {
   font-size: 13px;
   border-radius: 3px;
@@ -56,7 +62,7 @@
 .booking-detail-labels {
   margin-top: 30px;
   margin-left: 20px;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
 
   li {
     margin-bottom: 10px;
@@ -67,7 +73,7 @@
 .booking-details {
   margin-left: 25px;
   margin-top: 30px;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
 
   li {
     margin-bottom: 10px;
@@ -91,7 +97,7 @@
 .book-now-button {
   width: 390px;
   border: 1px grey;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
   margin-top: 10px;
   font-size: 15px;
   padding-top: 3px;
@@ -110,7 +116,7 @@
 
 .user-booking-delete {
   text-transform: capitalize;
-  font-family: Helvetica;
+  font-family: "Lato", Helvetica;
   margin-top: 10px;
   font-size: 15px;
   padding-top: 3px;

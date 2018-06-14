@@ -82,7 +82,7 @@ class ListingShow extends React.Component {
 
 
         <div className='listing-review-container'>
-
+        <div>{this.props.listing.reviews.length}</div>
         <div className="review-label">Reviews</div>
         <div className='add-review-label'><Link to={`/listings/${this.props.listing.id}/review/new`}>Add a Review!</Link></div>
         </div>
