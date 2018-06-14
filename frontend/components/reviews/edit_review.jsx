@@ -16,6 +16,12 @@ class EditReview extends React.Component {
     this.props.fetchListing(this.props.match.params.listingId)
   }
 
+  componentWillReceiveProps(newProps) {
+    if (this.props.review !== newProps.review) {
+      this.setState(newProps.review)
+    }
+  }
+
   renderErrors() {
     return(
       <ul className='review-errors'>
@@ -46,6 +52,13 @@ class EditReview extends React.Component {
 
 
   render(){
+
+    if (!this.props.review) {
+      console.log("hi")
+      return null
+    }
+
+    console.log(this.props.review)
 
     if (!this.props.listing) {
       return null
