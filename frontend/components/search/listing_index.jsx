@@ -7,7 +7,7 @@ class ListingIndex extends React.Component {
   componentDidMount() {
     if (this.props.fetchListings) {
       this.props.fetchListings();
-    } 
+    }
   }
 
   render() {
@@ -23,7 +23,7 @@ class ListingIndex extends React.Component {
 
     return (
       <div className="listing-index">
-        <div className='listing-index-header'>The best camping near San Francisco, California. </div>
+        <div className='listing-index-header'>The best camping near me. </div>
         <ul className="listing-index-photos">
           {listings}
         </ul>

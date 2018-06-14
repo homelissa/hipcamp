@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchReviews, fetchReview, createReview, updateReview, deleteReview } from '../../actions/review_actions';
+import { fetchReviews, fetchReview, createReview, updateReview, deleteReview, receiveErrors } from '../../actions/review_actions';
 import { fetchListing } from '../../actions/listing_actions';
 import CreateReview from './create_review';
 import { withRouter } from 'react-router';
@@ -18,7 +18,8 @@ const mDTP = dispatch => ({
   createReview: (listingId, review) => dispatch(createReview(listingId, review)),
   updateReview: (listingId, review) => dispatch(updateReview(listingId, review)),
   deleteReview: reviewId => dispatch(deleteReview(reviewId)),
-  fetchListing: listingId => dispatch(fetchListing(listingId))
+  fetchListing: listingId => dispatch(fetchListing(listingId)),
+  clearErrors: () => dispatch(receiveErrors([]))
 });
 
 export default connect(

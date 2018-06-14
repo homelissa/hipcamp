@@ -21,6 +21,11 @@
   color: rgb(194, 194, 194)
 }
 
+.review-user-description {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
 .review-item-values {
   border-bottom: 1px solid rgb(229, 229, 229);
   max-width: 800px;
@@ -35,13 +40,13 @@
   margin-left: 80px;
   max-width: 500px;
   padding: 5px;
-  border: 1px solid gray;
+  border: 1px grey;
   font-family: Helvetica;
   margin: 10px;
   font-size: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: rgb(64, 217, 172);
   color: white;
   height: 20px;
@@ -52,13 +57,13 @@
   margin-left: 80px;
   max-width: 500px;
   padding: 5px;
-  border: 1px solid gray;
+  border: 1px grey;
   font-family: Helvetica;
   margin: 10px;
   font-size: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: rgb(64, 217, 172);
   color: white;
   height: 20px;

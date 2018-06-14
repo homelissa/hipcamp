@@ -28,7 +28,7 @@ class Booking extends React.Component {
     })
   }
 
-  
+
   componentWillUnmount () {
     this.props.clearErrors();
   }
@@ -110,32 +110,36 @@ class Booking extends React.Component {
       <div className='booking-container-form'>
         {this.renderErrors()}
         <div className='check-in-out'>
-        <div className='check-in-out-label'>Check In:</div>
-        <DatePicker
-        minDate={moment()}
-        maxDate={this.state.check_out}
-        selected={this.state.check_in}
-        selectsStart
-        check_in={this.state.check_in}
-        check_out={this.state.check_out}
-        onChange={this.handleChangeStart}
-        placeholderText="Click to select a date" />
-        <p id="checkInErrors">Can't pick a check in date after check out</p>
+          <div className='check-in-container'>
+            <div className='check-in-out-label'>Check In</div>
+            <DatePicker className='click-in-picker'
+              minDate={moment()}
+              maxDate={this.state.check_out}
+              selected={this.state.check_in}
+              selectsStart
+              check_in={this.state.check_in}
+              check_out={this.state.check_out}
+              onChange={this.handleChangeStart}
+              placeholderText="Click to select a date" />
+              <p id="checkInErrors">Can't pick a check in date after check out</p>
+          </div>
 
-        <div className='check-in-out-label'>Check Out:</div>
-        <DatePicker
-        minDate={this.state.check_in}
-        selected={this.state.check_out}
-        selectsEnd
-        check_in={this.state.check_in}
-        check_out={this.state.check_out}
-        onChange={this.handleChangeEnd}
-        placeholderText="Click to select a date"/>
-        <p id="checkOutErrors">Can't pick a check out date before check in</p>
-        </div>
+          <div className='check-out-container'>
+            <div className='check-in-out-label'>Check Out</div>
+            <DatePicker className='check-out-picker'
+            minDate={this.state.check_in}
+            selected={this.state.check_out}
+            selectsEnd
+            check_in={this.state.check_in}
+            check_out={this.state.check_out}
+            onChange={this.handleChangeEnd}
+            placeholderText="Select a date"/>
+            <p id="checkOutErrors">Can't pick a check out date before check in</p>
+            </div>
+          </div>
 
         <form onSubmit={this.handleSubmit}>
-          <label className='check-in-out'>Number of Guests:
+          <label className='check-in-out guests-label'>Guests:
             <input className='form-input'
               type='text'
               value= {this.state.num_guest}

@@ -19,18 +19,6 @@ class Index extends React.Component {
         <div><Link className="index-to-listings discover-camping" to="/listings">Discover camping...</Link></div>
 
 
-        <div className='first-row-filters'>
-          <div >Pet friendly camping</div>
-          <div>Under $25</div>
-          <div>Glamping near me</div>
-        </div>
-
-
-        <div className='second-row-filters'>
-          <div>Yosemite</div>
-          <div>Muir Woods</div>
-          <div>Mission Dolores</div>
-        </div>
 
 
       </div>
