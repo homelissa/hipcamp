@@ -62,6 +62,11 @@
 @import 'index.scss';
 
 
+body {
+  color: #333333;
+  font-family: Helvetica;
+}
+
 .login-signup {
   display: flex;
   justify-content: space-between;
@@ -70,6 +75,7 @@
   padding: 15px;
   font-family: 'Abel', sans-serif;
   height: 18px;
+  color: #333333;
   // border-bottom: 1px solid #ebebeb;
 
 }
@@ -137,6 +143,7 @@
   margin-right: 0px;
   font-size: 15px;
   font-family: 'Abel', sans-serif;
+  color: #333333;
 }
 
 .session-welcome-header {
@@ -216,6 +223,7 @@
   width: 135px;
   line-height: 22.72px
   margin-left 100px;
+  letter-spacing: 3px;
 }
 
 
@@ -337,10 +345,20 @@ h2 {
   margin-top: 10px;
 }
 
+.listing-index-header {
+  font-size: 20px;
+  font-weight: 500px;
+}
+
+
 .listing-index-details {
   font-family: 'Abel', sans-serif;
   font-size: 15px;
   margin-left: 30px;
+}
+
+.listing-index-name {
+  font-weight: 900px;
 }
 
 .address-and-cost {
@@ -382,10 +400,11 @@ h2 {
   margin-left: 80px;
   max-width: 450px;
   color: #333333;
-  font-size: 25px;
+  font-size: 36px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(229, 229, 229);
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 .host-information {
@@ -478,7 +497,7 @@ h2 {
   // padding-top: 3px;
   // padding-bottom: 3px;
   border-radius: 3px;
-  background-color: rgb(64, 217, 172);
+  background-color: #6fd6af;
   color: white;
   height: 20px;
 }

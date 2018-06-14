@@ -117,6 +117,7 @@ class Booking extends React.Component {
 
   render() {
     return (
+      <form onSubmit={this.handleSubmit}>
       <div className='booking-container-form'>
         {this.renderErrors()}
         <div className='check-in-out'>
@@ -148,21 +149,22 @@ class Booking extends React.Component {
             </div>
           </div>
 
-        <form onSubmit={this.handleSubmit}>
-
-          <label className='booking-form-container check-in-out guests-label'>Guests:
-            <div className="booking-guests">
-              <a onClick={this.handleStep('-')}> - </a>
-                <p> {this.state.num_guest} </p>
-              <a onClick={this.handleStep('+')}> + </a>
-            </div>
-          </label>
 
 
+            <label className='booking-form-container check-in-out guests-label'>Guests:
+              <div className="booking-guests">
+                <a onClick={this.handleStep('-')}> - </a>
+                  <p> {this.state.num_guest} </p>
+                <a onClick={this.handleStep('+')}> + </a>
+              </div>
+            </label>
+
+
+          <br />
 
             <input className='book-now-button'type='submit' value="Book Now!" />
-        </form>
       </div>
+      </form>
     )
   }
 }

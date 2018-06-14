@@ -10,7 +10,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
 
       <div className='login-signup-button'>
         <button className='signup-button' onClick={() => openModal('signup')}>Sign up</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
         <button className='login-button' onClick={() => openModal('login')}>Log in</button>
       </div>
     </nav>
@@ -22,7 +22,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
       </div>
       <div className="header-name-button">
         <h2 className="header-name">Hi, {`${currentUser.first_name}!`}</h2>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
         <button className="header-button" onClick={logout}>Log Out</button>
       </div>
     </hgroup>

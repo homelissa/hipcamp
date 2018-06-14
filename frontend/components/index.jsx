@@ -16,7 +16,7 @@ class Index extends React.Component {
           <img className="landing-page-image" src={"https://www.banfflakelouise.com/sites/default/files/styles/m_960_natural/public/lake-louise-canoe-summer.jpg?itok=AXfYR9Gl"} />
         </div>
 
-        <div><Link className="index-to-listings discover-camping" to="/listings">Discover camping...</Link></div>
+        <div className='index-to-listings'><Link to="/listings">Discover camping...</Link></div>
 
 
 
