@@ -69,14 +69,25 @@
   margin-right: 0px;
   padding: 15px;
   font-family: 'Abel', sans-serif;
+  // border-bottom: 1px solid #ebebeb;
 
 }
 
 .login-signup-button {
   margin: auto;
   margin-right: 0px;
+  padding-bottom: 5px;
   font-family: 'Abel', sans-serif;
+  text-transform: capitalize;
 
+}
+
+.signup-button:hover {
+  text-decoration: underline;
+}
+
+.login-button:hover {
+  text-decoration: underline;
 }
 
 .login-form label {
@@ -184,8 +195,13 @@
 
 .hipcamp-logo {
   text-decoration: none;
-  color: green;
-  font-size: 20px;
+  color: rgb(51, 51, 51)
+  font-size 16px;
+  font-family: Helvetica;
+  font-weight: 400;
+  width: 135px;
+  line-height: 22.72px
+  margin-left 100px;
 }
 
 
@@ -350,15 +366,18 @@ h2 {
 .listing-show-name {
   margin-top: 10px;
   margin-left: 80px;
-  max-width: 300px;
+  max-width: 450px;
   color: #333333;
   font-size: 25px;
-  border-bottom: 2px solid rgb(229, 229, 229);
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(229, 229, 229);
   margin-bottom: 10px;
 }
 
 .host-information {
   margin-left: 80px;
+  padding-bottom: 10px;
+
 }
 
 .host-name-label {
@@ -371,6 +390,7 @@ h2 {
   font-family: 'Abel', sans-serif;
   font-size: 15px;
   margin-right: 50px;
+
 }
 
 .listing-description-booking {
@@ -378,7 +398,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   margin-right: 180px;
   font-family: Helvetica;
   font-size: 15px;
@@ -386,27 +406,33 @@ h2 {
 
 .host-listing-description {
   display: flex;
+
 }
 
 .listing-show-label {
   margin-right: 75px;
+
 }
 
 
 
 .listing-show-details {
-  margin-top: 10px;
+
   margin-bottom: 40px;
   margin-left: 80px;
   margin-right: 180px;
   font-family: Helvetica;
   font-size: 15px;
   display: flex;
+  width: 450px;
 }
 
 .listing-show-values {
   padding-right: 100px;
   padding-top: 50px;
+  margin-left: 25px;
+
+
 }
 
 
@@ -420,7 +446,7 @@ h2 {
   margin-left: 80px;
   max-width: 300px;
   font-size: 20px;
-  border-bottom: 2px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
   margin-bottom: 10px;
   margin-right: 80px;
   font-family: Helvetica;

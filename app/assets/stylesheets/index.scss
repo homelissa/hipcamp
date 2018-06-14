@@ -1,37 +1,54 @@
 .landing-page {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 
 }
 
 .landing-page-title {
-  margin-left: 15px;
-  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 70px;
+  margin-bottom: 15px;
+  font-size: 54px;
   font-weight: 400;
+  color: rgb(51, 51, 51);
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.landing-page-tagline {
+  margin-left: 70px;
+  max-width: 300px;
+  color: #a1a1a1;
+  font-family: Helvetica;
+
+  strong {
+    font-weight: bold;
+  }
 }
 
 .index-to-listings {
-  color: blue;
-  font-size: 20px;
+  font-size: 25px;
+  color: rgb(51, 51, 51)
 }
 
 .landing-page-image {
-  max-width: 400px;
-  height: 300px;
-  margin-right: 60px;
+  width: 500px;
+  height: 400px;
   margin-bottom: 30px;
   border-radius: 4px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .discover-camping {
-  font-size: 30px;
-  margin-left: 350px;
+  margin-left: 450px;
   font-family: Helvetica;
-  margin-bottom: 20px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 100px;
 }
 
 .first-row-filters {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   margin-left: 60px;

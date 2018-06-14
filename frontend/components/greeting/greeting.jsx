@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 const Greeting = ({ currentUser, logout, openModal }) => {
   const sessionLinks = () => (
     <nav className="login-signup">
-      <Link to={`/`} className='hipcamp-logo'>hipCamp</Link>
+      <Link to={`/`} className='hipcamp-logo'>HIPCAMP</Link>
       <div className='login-signup-button'>
-        <button onClick={() => openModal('login')}>LOGIN</button>
+        <button className='login-button' onClick={() => openModal('login')}>Log in</button>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <button onClick={() => openModal('signup')}>SIGNUP</button>
+        <button className='signup-button' onClick={() => openModal('signup')}>Sign up</button>
       </div>
     </nav>
   );
