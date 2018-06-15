@@ -31,13 +31,13 @@ class UserBooking extends React.Component {
 
         <div className='user-booking-header'>
           <div className='user-booking-first-name'>{this.props.currentUser.first_name} {this.props.currentUser.last_name}</div>
-          <ul>
-            <li>Verified Hipcamper</li>
-            <li>Where are you from?</li>
-            <li>Edit profile</li>
+          <ul className='user-booking-profile'>
+            <li className='user-booking-verified'>Verified Hipcamper</li>
+            <li className='user-booking-from'>Where are you from?</li>
+            <li className='user-booking-edit-profile'>Edit profile</li>
           </ul>
 
-          <div>Upcoming trips</div>
+          <div className='user-booking-upcoming-trips'>Upcoming trips</div>
           <div className='user-num-bookings'>{this.props.currentUser.bookings.length} Booking Requests</div>
         </div>
 

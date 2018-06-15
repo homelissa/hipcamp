@@ -1,8 +1,38 @@
 .user-booking-first-name {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.user-booking-verified {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.user-booking-from {
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.user-booking-edit-profile {
+  font-size: 13px;
+  padding-top: 6px;
+  padding-bottom: 3px;
+  color: grey;
+}
+
+.user-booking-edit-profile:hover {
+  text-decoration: underline;
+}
+
+
+.user-booking-upcoming-trips {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 18px;
 }
-
 
 .booking-form {
   display: flex;
