@@ -1,3 +1,9 @@
+.user-booking-first-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -66,6 +72,11 @@
 
 }
 
+.user-booking-header {
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
 .user-booking-container {
   display: flex;
   margin-bottom: 40px;
@@ -123,7 +134,7 @@
   padding-top: 3px;
   padding-bottom: 3px;
   border-radius: 3px;
-  background-color: rgb(64, 217, 172);
+  background-color: #40d9ac;;
   color: white;
   height: 30px;
   margin-bottom: 10px;
@@ -138,14 +149,10 @@
   font-family: "Lato", Helvetica;
   margin-top: 10px;
   font-size: 15px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 10px;
   border-radius: 5px;
-  background-color: rgb(64, 217, 172);
+  background-color: #40d9ac;
   color: white;
-  width: 170px;
-  padding-left: 5px;
-  padding-right: 0px;
   border: 1px grey;
 }
 

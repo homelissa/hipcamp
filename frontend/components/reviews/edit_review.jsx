@@ -67,19 +67,15 @@ class EditReview extends React.Component {
     return(
       <div className='edit-review-form'>
         {this.renderErrors()}
-    
+
         <div className='edit-review-listing-name'>{this.props.listing.name}</div>
         <form className='edit-form-submission'onSubmit={this.handleSubmit}>
-            <label className='edit-review-date'>Date:
-            <input
-                    type='date'
-                    value={this.toDateInputValue()}
-                    onChange={this.update('created_at')}
-                  />
-            </label>
+          
 
 
               <textarea className='edit-review-description'
+                cols='50'
+                rows='3'
                 value={this.state.description}
                 onChange={this.update('description')}  />
 
