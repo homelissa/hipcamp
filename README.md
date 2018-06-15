@@ -6,6 +6,8 @@
 
 HIPCAMP is a single page Hipcamp clone built with a React/Redux frontend and Ruby on Rails backend. Users can view camp listings, filter the listings by location using the Google Map API, and read reviews. Logged in users can also create and delete bookings, and create, edit, view, and delete reviews, and see their user profile page.
 
+[![Screen_Shot_2018-06-15_at_2.27.16_PM.png](https://s15.postimg.cc/p6mj0axuz/Screen_Shot_2018-06-15_at_2.27.16_PM.png)](https://postimg.cc/image/c2gynm5t3/)
+
 [Live Demo](https://hippycamp.herokuapp.com/#/)
 
 ## Code Highlights
