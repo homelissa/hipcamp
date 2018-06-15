@@ -64,12 +64,16 @@ class ListingShow extends React.Component {
               <li className='listing-show-daily-cost'>${this.props.listing.daily_cost}/night</li>
 
 
-              <li><div className='new-check-in-after'>Check In After:</div>{this.props.listing.check_in_after}</li>
+              <div className='check-in-row'>
+                <div className='new-check-in-after'>Check In After:</div>
+                <div className='new-val'>{this.props.listing.check_in_after}</div>
+              </div>
 
 
-              <li><div className='new-check-in-after'>Check Out Before:</div>
+              <div className='check-out-row'>
+                <div className='new-check-in-after'>Check Out Before:</div>
                 <div className='new-val'> {this.props.listing.check_out_before}</div>
-              </li>
+              </div>
 
             </div>
           </ul>
@@ -126,14 +130,15 @@ class ListingShow extends React.Component {
               <li className='listing-show-daily-cost'>${this.props.listing.daily_cost}/night</li>
 
 
-              <li><div className='new-check-in-after'>Check In After:</div>
-              <div className='new-val'>{this.props.listing.check_in_after}</div>
-              </li>
+                <div className='check-in-row'>
+                  <div className='new-check-in-after'>Check In After:</div>
+                  <div className='new-val'>{this.props.listing.check_in_after}</div>
+                </div>
 
-
-              <li><div className='new-check-in-after'>Check Out Before:</div>
-                <div className='new-val'> {this.props.listing.check_out_before}</div>
-              </li>
+                <div className='check-out-row'>
+                  <div className='new-check-in-after'>Check Out Before:</div>
+                  <div className='new-val'> {this.props.listing.check_out_before}</div>
+                </div>
 
             </div>
           </ul>

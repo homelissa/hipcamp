@@ -63,11 +63,12 @@
 
 .listing-show-details {
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 65px;
   margin-left: 80px;
   margin-right: 180px;
   display: flex;
   width: 450px;
+  height: 60px;
 }
 
 
@@ -82,7 +83,30 @@
   padding-top: 50px;
   margin-left: 25px;
   font-size: 13px;
-  width: 200px;
+  width: 150px;
+
+}
+
+.listing-show-address {
+  padding-top: 16px;
+}
+
+.listing-show-daily-cost {
+  padding-top: 8px;
+}
+
+.check-in-row {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.check-out-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8px;
 }
 
 .new-check-in-after {
