@@ -61,6 +61,8 @@
 @import 'create-review.scss';
 @import 'edit-review.scss';
 @import 'index.scss';
+@import 'listing-index-item.scss';
+@import 'listing-show.scss';
 
 
 body {
@@ -74,7 +76,7 @@ body {
   margin: auto;
   margin-right: 0px;
   padding: 15px;
-  height: 18px;
+  height: 28px;
   color: #333333;
   // border-bottom: 1px solid #ebebeb;
 
@@ -133,6 +135,16 @@ body {
   text-align: center;
 }
 
+.hipcamp-logo {
+  text-decoration: none;
+  color: rgb(51, 51, 51)
+  font-size 20px;
+  font-family: "Lato", Helvetica;
+  font-weight: 600;
+  width: 135px;
+  line-height: 22.72px;
+  letter-spacing: 3px;
+}
 
 
 
@@ -212,16 +224,6 @@ body {
 }
 
 
-.hipcamp-logo {
-  text-decoration: none;
-  color: rgb(51, 51, 51)
-  font-size 16px;
-  font-family: "Lato", Helvetica;
-  font-weight: 600;
-  width: 135px;
-  line-height: 22.72px;
-  letter-spacing: 3px;
-}
 
 
 .login-form-container {
@@ -320,175 +322,4 @@ body {
   justify-content: space-between;
   margin-left: 17px;
 
-}
-
-
-
-
-
-.listing-index-li {
-  margin-bottom: 30px;
-}
-
-.listing-index-name {
-  margin-top: 10px;
-}
-
-.listing-index-header {
-  font-size: 20px;
-  font-weight: 500px;
-}
-
-
-.listing-index-details {
-  font-family: 'Abel', sans-serif;
-  font-size: 15px;
-  margin-left: 30px;
-}
-
-.listing-index-name {
-  font-weight: 900px;
-}
-
-.address-and-cost {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.daily-cost {
-  margin-right: 130px;
-  font-weight: bold;
-}
-
-.listing-show-container {
-  margin: 13px;
-  margin-bottom: 20px;
-}
-
-.listing-show-carousel {
-  display: flex;
-  max-width: 100%;
-  margin-left: 80px;
-
-}
-
-.listing-show-photos {
-  display: flex;
-  margin-right: 100px;
-}
-
-.listing-show-details {
-  align-items: center;
-}
-
-.listing-show-name {
-  margin-top: 10px;
-  margin-left: 80px;
-  max-width: 450px;
-  color: #333333;
-  font-size: 36px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(229, 229, 229);
-  margin-bottom: 10px;
-  font-weight: 900;
-  font-family: 'Lato', sans-serif;
-}
-
-.host-information {
-  margin-left: 80px;
-  padding-bottom: 10px;
-  font-size: 13px;
-
-}
-
-.host-name-label {
-  font-weight: bold;
-  width: 100px;
-}
-.listing-show-description {
-  margin-left: 50px;
-  width: 280px;
-  font-size: 15px;
-  margin-right: 50px;
-  line-height: 20px;
-
-}
-
-.listing-description-booking {
-  max-width: 1000px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 180px;
-  font-family: "Lato", Helvetica;
-  font-size: 15px;
-}
-
-.host-listing-description {
-  display: flex;
-
-}
-
-.listing-show-label {
-  margin-right: 75px;
-
-}
-
-
-
-.listing-show-details {
-
-  margin-bottom: 40px;
-  margin-left: 80px;
-  margin-right: 180px;
-  font-family: "Lato", Helvetica;
-  font-size: 15px;
-  display: flex;
-  width: 450px;
-}
-
-.listing-show-values {
-  padding-right: 100px;
-  padding-top: 50px;
-  margin-left: 25px;
-
-
-}
-
-
-.listing-review-container {
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.review-label {
-  margin-top: 10px;
-  margin-left: 80px;
-  max-width: 300px;
-  font-size: 18px;
-  border-bottom: 1px solid rgb(229, 229, 229);
-  margin-bottom: 10px;
-  margin-right: 80px;
-  font-family: "Lato", Helvetica;
-}
-
-.add-review-label {
-  margin-top: 10px;
-  margin-left: 80px;
-  max-width: 500px;
-  padding: 10px;
-  border: 1px grey;
-  font-family: "Lato", Helvetica;
-  margin: 10px;
-  font-size: 15px;
-  // padding-top: 3px;
-  // padding-bottom: 3px;
-  border-radius: 3px;
-  background-color: #40d9ac;
-  color: white;
-  height: 20px;
 }

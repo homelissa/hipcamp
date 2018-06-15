@@ -1,0 +1,43 @@
+.listing-index-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.listing-index-li {
+  margin-bottom: 30px;
+}
+
+.listing-index-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  font-weight: 400px;
+  padding-right: 15px;
+}
+
+
+.listing-index-name {
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.listing-index-details {
+  font-size: 13px;
+}
+
+.reviews-and-cost {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.daily-cost {
+  margin-right: 150px;
+  font-weight: bold;
+}

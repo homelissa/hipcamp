@@ -6,25 +6,32 @@ const ListingIndexItem = ({listing}) => {
 
   return (
     <div className='listing-index-li'>
-      Number of Reviews:{listing.reviews.length}
+
       <Link to={`/listings/${listing.id}`}>
-        <img className="listing-photo" src={listing.icon_url}></img>
-      </Link>
-      <div className='listing-index-name'>{listing.name}</div>
-        <ul className='listing-index-details'>
 
-          <div className='address-and-cost'>
-            <li>
-               <strong>{listing.address}</strong>
-            </li>
+          <Link to={`/listings/${listing.id}`}>
+            <img className="listing-index-photo" src={listing.icon_url}></img>
+          </Link>
 
-            <li className='daily-cost'>
-               <strong>${listing.daily_cost}/night</strong>
-            </li>
-          </div>
+          <div className='listing-index-name'>{listing.name}</div>
 
-          <Link to={`/listings/${listing.id}`}>See More Details</Link>
-        </ul>
+          <ul className='listing-index-details'>
+            <li className='listing-address'>{listing.address}</li>
+
+            <div className='reviews-and-cost'>
+              <li>
+                 <div className='number-of-reviews'>{listing.reviews.length} Reviews</div>
+              </li>
+
+              <li className='daily-cost'>
+                 <strong>${listing.daily_cost}/night</strong>
+              </li>
+
+            </div>
+          </ul>
+
+        </Link>
+
     </div>
 
   )

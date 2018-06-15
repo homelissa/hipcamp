@@ -1,0 +1,116 @@
+.listing-show-container {
+  margin: 13px;
+  margin-bottom: 20px;
+}
+
+.listing-show-carousel {
+  display: flex;
+  max-width: 100%;
+  margin-left: 80px;
+
+}
+
+.listing-show-photos {
+  display: flex;
+  margin-right: 100px;
+}
+
+.listing-show-name {
+  margin-top: 10px;
+  margin-left: 80px;
+  max-width: 450px;
+  color: #333333;
+  font-size: 36px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  margin-bottom: 10px;
+  font-weight: 900;
+
+}
+
+.listing-description-booking {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 180px;
+  font-size: 15px;
+}
+
+.host-listing-description {
+  display: flex;
+}
+
+.host-information {
+  margin-left: 80px;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+
+.host-name-label {
+  font-weight: bold;
+  width: 100px;
+}
+
+.listing-show-description {
+  margin-left: 50px;
+  width: 280px;
+  font-size: 13px;
+  margin-right: 50px;
+  line-height: 20px;
+}
+
+.listing-show-details {
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 80px;
+  margin-right: 180px;
+  display: flex;
+  width: 450px;
+}
+
+
+.listing-show-label {
+  margin-right: 80px;
+  font-size: 13px;
+}
+
+
+.listing-show-values {
+  padding-right: 100px;
+  padding-top: 50px;
+  margin-left: 25px;
+  font-size: 13px;
+}
+
+
+
+.listing-review-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.review-label {
+  margin-top: 10px;
+  margin-left: 80px;
+  max-width: 300px;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  margin-bottom: 10px;
+  margin-right: 80px;
+}
+
+.add-review-label {
+  margin-top: 10px;
+  margin-left: 80px;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px grey;
+  margin: 10px;
+  font-size: 15px;
+  border-radius: 3px;
+  background-color: #40d9ac;
+  color: white;
+  height: 20px;
+}
