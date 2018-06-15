@@ -153,8 +153,8 @@ class Booking extends React.Component {
           <label className='check-in-out guests-label'>
             <div className='please'>
                 <div className="booking-guests">Guests</div>
-                <div>
-                  <a onClick={this.handleStep('-')}> - </a><p> {this.state.num_guest} </p><a onClick={this.handleStep('+')}> + </a>
+                <div className='minusplusguests'>
+                  <a className='minus' onClick={this.handleStep('-')}> - </a><p> {this.state.num_guest} </p><a className='minus' onClick={this.handleStep('+')}> + </a>
                 </div>
             </div>
 

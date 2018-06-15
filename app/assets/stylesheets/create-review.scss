@@ -1,11 +1,13 @@
 .create-review-form {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
 
 .create-review-listing-name {
-  font-size: 30px;
+  font-size: 26px;
   font-family: "Lato", Helvetica;
   margin-bottom: 10px;
 }
@@ -23,7 +25,6 @@
 
 .description {
   border: 1px solid rgb(220, 220, 220);
-  max-width: 500px;
   padding: 10px;
   padding-bottom: 150px;
   margin-bottom: 20px;

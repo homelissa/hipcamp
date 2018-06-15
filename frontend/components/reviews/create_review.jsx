@@ -65,6 +65,8 @@ class CreateReview extends React.Component {
 
 
               <textarea className='description'
+                cols='50'
+                rows='3'
                 value={this.state.description}
                 onChange={this.update('description')}
                 placeholder='Share your experience here!'/>
