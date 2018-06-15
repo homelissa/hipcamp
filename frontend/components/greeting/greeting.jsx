@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Greeting = ({ currentUser, logout, openModal }) => {
   const sessionLinks = () => (
     <nav className="login-signup">
-      <Link to={`/`} className='hipcamp-logo'>HIPCAMP</Link>
+      <Link to={`/`} className='hipcamp-logo' >HIPCAMP</Link>
 
       <div className='login-signup-button'>
         <button className='signup-button' onClick={() => openModal('signup')}>Sign up</button>
@@ -16,7 +16,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
     </nav>
   );
   const personalGreeting = () => (
-    <hgroup className="header-group">
+    <hgroup className="login-signup">
       <div className='global-nav'>
         <Link to={`/`} className='hipcamp-logo'>HIPCAMP</Link>
       </div>

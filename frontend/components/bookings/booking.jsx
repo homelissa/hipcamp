@@ -150,12 +150,14 @@ class Booking extends React.Component {
               <p id="checkOutErrors">Can't pick a check out date before check in</p>
               </div>
           </div>
-          <label className='booking-form-container check-in-out guests-label'>Guests:
-            <div className="booking-guests">
-              <a onClick={this.handleStep('-')}> - </a>
-                <p> {this.state.num_guest} </p>
-              <a onClick={this.handleStep('+')}> + </a>
+          <label className='check-in-out guests-label'>
+            <div className='please'>
+                <div className="booking-guests">Guests</div>
+                <div>
+                  <a onClick={this.handleStep('-')}> - </a><p> {this.state.num_guest} </p><a onClick={this.handleStep('+')}> + </a>
+                </div>
             </div>
+
           </label>
         </div>
 

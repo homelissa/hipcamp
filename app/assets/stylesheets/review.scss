@@ -31,6 +31,7 @@
   margin-bottom:10px;
   line-height: 24px;
   font-weight: 200px;
+  max-width: 300
 }
 
 .review-item-values {
@@ -43,35 +44,32 @@
 // }
 
 .edit-review-link {
-  margin-top: 10px;
   margin-left: 80px;
   max-width: 500px;
-  padding: 5px;
+  padding: 10px;
   border: 1px grey;
-  font-family: "Lato", Helvetica;
   margin: 10px;
   font-size: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
   border-radius: 3px;
-  background-color: #6fdfaf;
+  background-color:  #40d9ac;
   color: white;
   height: 20px;
 }
 
 .delete-review-button{
-  margin-top: 10px;
+
   margin-left: 80px;
   max-width: 500px;
-  padding: 5px;
+  padding: 10px;
   border: 1px grey;
-  font-family: "Lato", Helvetica;
   margin: 10px;
   font-size: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
   border-radius: 3px;
-  background-color: #6fdfaf;
+  background-color:  #40d9ac;
   color: white;
   height: 20px;
 }
