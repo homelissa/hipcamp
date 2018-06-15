@@ -10,18 +10,20 @@ const UserBookingItem = ({booking, deleteBooking, currentUser}) => (
       <div className='user-booking-container'>
         <div className='booking-name-photo'>
           <div className='booking-listing-name'>{booking.listing.name}</div>
-          <img className="listing-photo user-booking" src={booking.listing.icon_url}></img>
+          <Link to={`/listings/${booking.listing.id}`}><img className="listing-photo user-booking" src={booking.listing.icon_url}></img></Link>
         </div>
         <div className='booking-detail-labels'>
           <li>Booking Status: </li>
           <li>Check In: </li>
           <li>Check Out: </li>
+          <li>Number of Guests: </li>
         </div>
 
         <div className='booking-details'>
           <li className='booking-status'>{booking.status}</li>
           <li>{booking.check_in}</li>
           <li>{booking.check_out}</li>
+          <li>{booking.num_guest}</li>
           <button className='user-booking-delete' onClick={() => deleteBooking(booking)}>Delete Booking Request</button>
         </div>
       </div>
