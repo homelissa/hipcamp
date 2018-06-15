@@ -9,7 +9,7 @@ HIPCAMP is a single page Hipcamp clone built with a React/Redux frontend and Rub
 [Live Demo](https://hippycamp.herokuapp.com/#/)
 
 ## Code Highlights
-I wanted users to be able to see the number of reviews for a listing and the number of booking requests. These numbers will dynamically update as users delete their review and/or delete their booking request.
+I wanted users to be able to see the number of reviews for a listing and the number of booking requests. These numbers will dynamically update as users delete their review and/or delete their booking request, by interacting the listing reducer with the review actions.
 
 ```javascript
 
@@ -35,7 +35,7 @@ export default listingsReducer;
 ```
 
 ### Google Map Api
-I wanted users to filter listings based on location by zooming in and out of the google map.
+I wanted users to filter listings based on location by zooming in and out of the google map. I used event listeners to update the coordinate bounds when users click on the map.
 
 ```javascript
 registerListeners() {
@@ -58,8 +58,8 @@ registerListeners() {
 ## Technologies
 * React/Redux
 * Rails
-* Google Map Api
-* React Datepicker
+* Google Map API
+* React Datepicker API
 * SASS for all styling
 
 ## MVP List
