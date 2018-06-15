@@ -43,6 +43,36 @@ ActiveRecord::Base.transaction do
     },
     {
       email_address: 'seedemail6',
+      first_name: 'Serena',
+      last_name: 'Mays',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail7',
+      first_name: 'Alexis',
+      last_name: 'Aniston',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail8',
+      first_name: 'Ryan',
+      last_name: 'Reynolds',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail9',
+      first_name: 'Chad',
+      last_name: 'Jefferson',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail10',
+      first_name: 'Sahar',
+      last_name: 'Carlson',
+      password: 'password'
+    },
+    {
+      email_address: 'seedemail11',
       first_name: 'Nathan',
       last_name: 'Carlson',
       password: 'password'
@@ -61,9 +91,9 @@ ActiveRecord::Base.transaction do
 
 
   Listing.create!(
-    host_id: User.find_by(first_name: "Beyonce").id,
+    host_id: User.find_by(first_name: "Serena").id,
     name: "Wawona Campgrounds",
-    description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+    description:"The clouds and sunsets at our hilltop vista point can be magnificent. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. Join us for a natural season of wildness and gathering at one of our Walk-in campsites. Tent camp spots on the Navy’s oldest ammunition depot in the Pacific, are guaranteed to be eclectic and unique!",
     address:"Yosemite",
     daily_cost: 50,
     max_guest: 5,
@@ -86,9 +116,9 @@ ActiveRecord::Base.transaction do
 )
 
   Listing.create!(
-    host_id: User.find_by(first_name: "Kevin").id,
+    host_id: User.find_by(first_name: "Ryan").id,
     name: "Amphipod",
-    description:"Will add creative description later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+    description:"The clouds and sunsets at our hilltop vista point can be magnificent. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. Join us for a natural season of wildness and gathering at one of our Walk-in campsites. Tent camp spots on the Navy’s oldest ammunition depot in the Pacific, are guaranteed to be eclectic and unique!",
     address:"Muir Woods",
     daily_cost: 100,
     max_guest: 3,
@@ -110,9 +140,9 @@ ActiveRecord::Base.transaction do
     icon_url: "https://images.unsplash.com/photo-1486999619268-6aa409dbecd1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f86046749a2c99bb728c6c72e4603f5a&auto=format&fit=crop&w=1500&q=80"
   )
   Listing.create!(
-    host_id: User.find_by(first_name: "Beyonce").id,
+    host_id: User.find_by(first_name: "Chad").id,
     name: "Bridalveil Creek",
-    description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+    description:"While the Preserve is a a vibrant and spectacular natural, scenic, historic and cultural land, it is not protected forever as parkland. Your stay helps us make a strong case for a permanent park on the 300 acres of wildlands of the Navy’s now closed oldest ammunition depot in the West, with 7-county panoramic views of the Bay Area. The Preserve is grassroots and volunteer-run with no funding from the owner, the City of Vallejo. We are so excited to share our second yurt campsite and, recently, we added a caravan style tiny house camp across the way from your yurt camp. ",
     address:"Yosemite",
     daily_cost: 25,
     max_guest: 5,
@@ -135,9 +165,9 @@ ActiveRecord::Base.transaction do
 )
 
 Listing.create!(
-  host_id: User.find_by(first_name: "Beyonce").id,
+  host_id: User.find_by(first_name: "Ryan").id,
   name: "White Wolf",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description: "Our campsite is the best! The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
   address:"Yosemite",
   daily_cost: 20,
   max_guest: 5,
@@ -162,9 +192,9 @@ Listing.create!(
 
 
 Listing.create!(
-  host_id: User.find_by(first_name: "Beyonce").id,
+  host_id: User.find_by(first_name: "Alexis").id,
   name: "Porcupine Flat",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description: "Very peaceful and private immersion into the beautiful wild lands of the Coast. Amazing! Views! of Ocean and Coastal mountains. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
   address:"Yosemite",
   daily_cost: 50,
   max_guest: 5,
@@ -189,9 +219,9 @@ Listing.create!(
 
 
 Listing.create!(
-  host_id: User.find_by(first_name: "Beyonce").id,
+  host_id: User.find_by(first_name: "Serena").id,
   name: "Red Snow",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description:"Come join us at our amazing campsite! The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
   address:"Muir Woods",
   daily_cost: 50,
   max_guest: 5,
@@ -216,9 +246,9 @@ Listing.create!(
 
 
 Listing.create!(
-  host_id: User.find_by(first_name: "Beyonce").id,
+  host_id: User.find_by(first_name: "Ryan").id,
   name: "Misty Hill",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description:"While the Preserve is a a vibrant and spectacular natural, scenic, historic and cultural land, it is not protected forever as parkland. Your stay helps us make a strong case for a permanent park on the 300 acres of wildlands of the Navy’s now closed oldest ammunition depot in the West, with 7-county panoramic views of the Bay Area. The Preserve is grassroots and volunteer-run with no funding from the owner, the City of Vallejo. We are so excited to share our second yurt campsite and, recently, we added a caravan style tiny house camp across the way from your yurt camp. ",
   address:"Muir Woods",
   daily_cost: 50,
   max_guest: 5,
@@ -241,9 +271,9 @@ Listing.create!(
 )
 
 Listing.create!(
-  host_id: User.find_by(first_name: "Beyonce").id,
+  host_id: User.find_by(first_name: "Alexis").id,
   name: "Cotton Hills",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description: "Very peaceful and private immersion into the beautiful wild lands of the Coast. Amazing! Views! of Ocean and Coastal mountains. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
   address:"Arizona",
   daily_cost: 150,
   max_guest: 5,
@@ -266,9 +296,9 @@ Listing.create!(
 )
 
 Listing.create!(
-  host_id: User.find_by(first_name: "Amy").id,
+  host_id: User.find_by(first_name: "Serena").id,
   name: "Dancing Disco",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description: "If you are reading this, you should camp at our site! The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
   address:"Arizona",
   daily_cost: 50,
   max_guest: 5,
@@ -293,7 +323,7 @@ Listing.create!(
 Listing.create!(
   host_id: User.find_by(first_name: "Amy").id,
   name: "Evergreen",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description: "The Warriors camped here last weekend",
   address:"Arizona",
   daily_cost: 15,
   max_guest: 3,
@@ -319,7 +349,7 @@ Listing.create!(
 Listing.create!(
   host_id: User.find_by(first_name: "Amy").id,
   name: "Firnwood Cedar",
-  description:"Will add creative descirption later Lorem ipsum dolor sit amet, mei ea nisl nostrud contentiones, simul pertinacia nam ex. Ex animal malorum offendit vix, vitae denique ne sit. Assum iisque accusata te eam. Lucilius reprehendunt et mei, vix at suscipit legendos, sit volumus mediocrem ut. Fastidii intellegam vix ea.",
+  description:"Our location is circled by young oak, pinze, manzanita, remove, private and beautfiul",
   address:"Arizona",
   daily_cost: 50,
   max_guest: 5,
@@ -517,7 +547,7 @@ Listing.create!(
   Review.create!(
     listing_id: Listing.find_by(name: "White Wolf").id,
     description: 'So glad I stumbled across this gem!',
-    author_id: User.find_by(first_name: "Nathan").id
+    author_id: User.find_by(first_name: "Serena").id
   )
 
   Review.create!(
@@ -543,7 +573,7 @@ Listing.create!(
   Review.create!(
     listing_id: Listing.find_by(name: "Red Snow").id,
     description: 'So glad I stumbled across this gem!',
-    author_id: User.find_by(first_name: "Nathan").id
+    author_id: User.find_by(first_name: "Amy").id
   )
 
   Review.create!(
