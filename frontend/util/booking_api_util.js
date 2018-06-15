@@ -32,9 +32,9 @@ export const createBooking = bookingParams => (
 );
 
 
-export const deleteBooking = id => (
+export const deleteBooking = booking => (
   $.ajax({
     method: 'DELETE',
-    url: `api/bookings/${id}`
+    url: `api/bookings/${booking.id}`
   })
 );

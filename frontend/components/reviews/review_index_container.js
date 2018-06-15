@@ -15,7 +15,7 @@ const mSTP = (state, ownProps) => {
 const mDTP = dispatch => ({
   fetchReviews: listingId => dispatch(fetchReviews(listingId)),
   fetchReview: reviewId => dispatch(fetchReview(reviewId)),
-  deleteReview: reviewId => dispatch(deleteReview(reviewId)),
+  deleteReview: review => dispatch(deleteReview(review)),
   updateReview: (listingId, review) => dispatch(updateReview(listingId, review))
 });
 

@@ -10,7 +10,7 @@ const mSTP = (state, ownProps) => ({
 
 const mDTP = dispatch => ({
   fetchBookings: currentUser => dispatch(fetchBookings(currentUser)),
-  deleteBooking: id => dispatch(deleteBooking(id))
+  deleteBooking: booking => dispatch(deleteBooking(booking))
 });
 
 export default connect(

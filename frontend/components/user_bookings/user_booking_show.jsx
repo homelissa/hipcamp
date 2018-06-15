@@ -22,7 +22,7 @@ const UserBookingItem = ({booking, deleteBooking, currentUser}) => (
           <li className='booking-status'>{booking.status}</li>
           <li>{booking.check_in}</li>
           <li>{booking.check_out}</li>
-          <button className='user-booking-delete' onClick={() => deleteBooking(booking.id)}>Delete Booking Request</button>
+          <button className='user-booking-delete' onClick={() => deleteBooking(booking)}>Delete Booking Request</button>
         </div>
       </div>
   </div>

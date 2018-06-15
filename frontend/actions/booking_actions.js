@@ -15,9 +15,9 @@ export const receiveBooking = booking => ({
   booking
 });
 
-export const removeBooking = id => ({
+export const removeBooking = booking => ({
   type: REMOVE_BOOKING,
-  id
+  booking
 });
 
 export const receiveErrors = errors => ({
@@ -35,8 +35,8 @@ export const createBooking = bookingParams => dispatch => (
 
 );
 
-export const deleteBooking = id => dispatch => (
-  APIUtil.deleteBooking(id).then(booking => dispatch(removeBooking(id)))
+export const deleteBooking = booking => dispatch => (
+  APIUtil.deleteBooking(booking).then(booking => dispatch(removeBooking(booking)))
 );
 
 export const fetchBookings = (currentUser) => dispatch => (
