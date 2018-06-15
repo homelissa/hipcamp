@@ -8,10 +8,15 @@ const UserBookingItem = ({booking, deleteBooking, currentUser}) => (
 
 
       <div className='user-booking-container'>
-        <div className='booking-name-photo'>
-          <div className='booking-listing-name'>{booking.listing.name}</div>
-          <Link to={`/listings/${booking.listing.id}`}><img className="listing-photo user-booking" src={booking.listing.icon_url}></img></Link>
-        </div>
+
+        <Link to={`/listings/${booking.listing.id}`}>
+          <div className='booking-name-photo'>
+            <div className='booking-listing-name'>{booking.listing.name}</div>
+            <img className="listing-photo user-booking" src={booking.listing.icon_url}></img>
+          </div>
+        </Link>
+
+
         <div className='booking-detail-labels'>
           <li>Booking Status: </li>
           <li>Check In: </li>
