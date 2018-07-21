@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import BookingContainer from '../bookings/booking_container'
 import CreateReviewContainer from '../reviews/create_review_container';
 import ReviewIndexContainer from '../reviews/review_index_container';
+import LoginFormContainer from '../session_form/login_form_container';
 
 class ListingShow extends React.Component {
 
@@ -117,6 +118,9 @@ class ListingShow extends React.Component {
               <div className="listing-show-description">{this.props.listing.description}</div>
             </div>
 
+            <div className='booking-container'>
+              <div><BookingContainer /></div>
+            </div>
 
           </div>
 

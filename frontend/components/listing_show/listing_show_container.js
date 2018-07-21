@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchListing } from '../../actions/listing_actions';
+import { login } from '../../actions/session_actions';
+import { openModal } from '../../actions/modal_actions';
 import ListingShow from './listing_show';
 
 const mSTP = (state, ownProps) => ({
@@ -11,7 +13,9 @@ const mSTP = (state, ownProps) => ({
 });
 
 const mDTP = dispatch => ({
-  fetchListing: id => dispatch(fetchListing(id))
+  fetchListing: id => dispatch(fetchListing(id)),
+  login: user => dispatch(login(user)),
+  openModal: modal => dispatch(openModal(modal))
 });
 
 export default connect(

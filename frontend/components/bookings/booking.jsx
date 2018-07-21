@@ -19,6 +19,7 @@ class Booking extends React.Component {
     this.handleChangeStart = this.handleChangeStart.bind(this);
     this.handleChangeEnd = this.handleChangeEnd.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.showLogin = this.showLogin.bind(this);
   }
 
   componentDidMount() {
@@ -53,6 +54,9 @@ class Booking extends React.Component {
     );
   }
 
+  showLogin() {
+    this.props.openModal('login');
+  }
 
   handleChangeStart(date) {
     if (this.state.check_out.diff(date) < 0) {
@@ -116,7 +120,23 @@ class Booking extends React.Component {
   }
 
   render() {
-    return (
+
+
+      if (!this.props.current_user) {
+        return (
+
+           <div className='show-login'>
+             <button onClick={this.showLogin}>Login To Book</button>
+           </div>
+
+        )
+      } else {
+        return (
+
+
+
+
+
       <form onSubmit={this.handleSubmit}>
       <div className='booking-outer-most'>
         <div className='booking-form'>
@@ -167,7 +187,10 @@ class Booking extends React.Component {
         </div>
       </div>
       </form>
+
     )
+  }
+
   }
 }
 

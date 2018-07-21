@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { createBooking, receiveErrors } from '../../actions/booking_actions';
 import Booking from './booking';
 import { withRouter } from 'react-router';
+import { openModal } from '../../actions/modal_actions';
 
 const mSTP = (state, ownProps) => ({
   bookings: state.entities.bookings,
@@ -12,7 +13,8 @@ const mSTP = (state, ownProps) => ({
 
 const mDTP = dispatch => ({
   createBooking: bookingParams => dispatch(createBooking(bookingParams)),
-  clearErrors: () => dispatch(receiveErrors([]))
+  clearErrors: () => dispatch(receiveErrors([])),
+  openModal: modal => dispatch(openModal(modal))
 });
 
 export default connect(

@@ -112,10 +112,11 @@ class SessionForm extends React.Component {
             <div className='session-options'>
             {this.props.otherForm}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
+            <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
            </div>
 
           </form>
+          <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
         </div>
       );
     } else {
@@ -157,7 +158,7 @@ class SessionForm extends React.Component {
           <div className='session-options'>
           {this.props.otherForm}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
+          <button className='session-demo' onClick={(e) => this.demo(e)} >DEMO</button>
          </div>
         </form>
         </div>

@@ -20,6 +20,7 @@ const mapOptions = {
 
 
 
+
 class ListingMap extends React.Component {
   constructor(props) {
     super(props);
