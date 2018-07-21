@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { createBooking, receiveErrors } from '../../actions/booking_actions';
 import Booking from './booking';
