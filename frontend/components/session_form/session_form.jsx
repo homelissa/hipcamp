@@ -58,7 +58,7 @@ class SessionForm extends React.Component {
       return (
         <div className="login-form-container">
           <form onSubmit={this.handleSubmit} className="login-form-box">
-            <div className="session-welcome-header">Welcome to hipCamp!</div>
+            <div className="session-welcome-header">Welcome to Hippycamp!</div>
             <div className="modal-discover-caption">Discover the best camping near me</div>
             <br/>
 
@@ -108,7 +108,7 @@ class SessionForm extends React.Component {
               <input className="session-submit" type="submit" value={this.props.formType} />
           </div>
 
-            <div className='session-question'>Already a hipCamp member?</div>
+            <div className='session-question'>Already a Hippycamp member?</div>
             <div className='session-options'>
             {this.props.otherForm}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -125,7 +125,7 @@ class SessionForm extends React.Component {
       <div className='outerDivSessionForm' >
         <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
-        <div className="session-welcome-header">Welcome to hipCamp!</div>
+        <div className="session-welcome-header">Welcome to Hippycamp!</div>
           <div className="modal-discover-caption">Discover the best camping near me</div>
         <br/>
 
