@@ -14,7 +14,7 @@ class Index extends React.Component {
             <div className='landing-page-title'>Find yourself outside.</div>
             <div className='landing-page-tagline'> Search, discover, and book over <strong>285, 000 </strong>campsites in the neighborhoods of San Francisco.</div>
             <div className = 'search-bar-container'><SearchBarContainer /></div>
-            <div className='index-to-listings'><Link to="/listings">or Discover the best camps near me <span>&#8594;</span> </Link></div>
+            <div className='index-to-listings'><Link to="/listings"><span>or Discover the best camps near me &#8594;</span> </Link></div>
 
           </div>
 

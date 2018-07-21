@@ -112,6 +112,11 @@ body {
   font-weight: normal;
 }
 
+.header-name:hover {
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
+}
+
 .signup-button {
   font-size: 15px;
 }
@@ -129,6 +134,17 @@ body {
   padding: 3px;
 }
 
+.demo-user-button:hover {
+  font-size: 15px;
+  margin-left: 11px;
+  color: white;
+  border: 2px grey;
+  background-color: #40d9ac;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+
 .header-name-button {
   display: flex;
   justify-content: space-between;
@@ -138,13 +154,13 @@ body {
 }
 
 .signup-button:hover {
-  text-decoration: underline;
-  text-decoration-color: grey;
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
 }
 
 .login-button:hover {
-  text-decoration: underline;
-  text-decoration-color: grey;
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
 }
 
 .login-form label {
@@ -178,6 +194,11 @@ body {
   font-size: 15px;
   height: 18px;
 
+}
+
+.header-button:hover {
+  border-bottom: 2px solid #40d9ac;
+  padding-bottom: 3px;
 }
 
 .session-welcome-header {
