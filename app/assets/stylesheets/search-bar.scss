@@ -35,6 +35,8 @@
   justify-content: center;
 }
 
+
+
 .user-booking {
   border-bottom: 2px solid rgb(229, 229, 229);
 }
@@ -64,31 +66,17 @@
 }
 
 
-.user-booking-header {
-  margin-bottom: 40px;
-  margin-left: 40px;
-}
-
-.user-booking-container {
-  display: flex;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-top: 20px;
-  font-family: 'Abel', sans-serif;
-  font-size: 15px;
-}
 
 
 
 
 .search-now-button {
-  width: 100px;
+  width: 150px;
   border: 1px grey;
   font-family: "Lato", Helvetica;
   font-size: 15px;
   padding-top: 3px;
   padding-bottom: 3px;
-  border-radius: 3px;
   background-color: #40d9ac;;
   color: white;
   height: 30px;

@@ -1,3 +1,11 @@
+.listing-index-photos {
+  column-count: 2;
+  column-gap: 75px;
+  break-inside: avoid;
+  margin: 0;
+  -webkit-column-break-inside: avoid;
+}
+
 .listing-index-header {
   font-size: 20px;
   font-weight: bold;
@@ -37,6 +45,6 @@
 
 
 .daily-cost {
-  margin-right: 150px;
+  margin-right: 100px;
   font-weight: bold;
 }

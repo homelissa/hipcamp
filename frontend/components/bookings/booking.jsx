@@ -125,6 +125,7 @@ class Booking extends React.Component {
       if (!this.props.current_user) {
         return (
 
+          
            <div className='show-login'>
              <button onClick={this.showLogin}>Login To Book</button>
            </div>

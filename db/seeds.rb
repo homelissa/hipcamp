@@ -371,6 +371,32 @@ Listing.create!(
   icon_url: "https://images.unsplash.com/photo-1522416263954-d5de6077e321?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b8a5d13896a337d0a5f09e27121d7c4&auto=format&fit=crop&w=500&q=60"
 )
 
+Listing.create!(
+  host_id: User.find_by(first_name: "Amy").id,
+  name: "Amster Cellar",
+  description:"Our location is circled by young oak, pinze, manzanita, remove, private and beautfiul",
+  address:"Richmond",
+  daily_cost: 50,
+  max_guest: 5,
+  lat: 37.7797,
+  lng: -122.4829,
+  is_camping: true,
+  allow_pets: false,
+  is_wifi: true,
+  is_toilets: true,
+  is_showers: false,
+  is_biking: true,
+  is_fishing: false,
+  is_paddling: false,
+  is_horseback_riding: false,
+  is_surfing: true,
+  is_climbing: true,
+  check_in_after: "4:00",
+  check_out_before: "12:00",
+  icon_url: "https://images.unsplash.com/photo-1522416263954-d5de6077e321?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b8a5d13896a337d0a5f09e27121d7c4&auto=format&fit=crop&w=500&q=60"
+)
+
+
 
 
   ListingPhoto.create!(
@@ -503,6 +529,18 @@ Listing.create!(
     listing_id: Listing.find_by(name: "Misty Hill").id,
     image_url: "https://images.unsplash.com/photo-1493160612397-4a7813290efd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bb0d75ef7d64705637b089b06e21b651&auto=format&fit=crop&w=500&q=60",
     order: 1
+  )
+
+  ListingPhoto.create!(
+    listing_id: Listing.find_by(name: "Amster Cellar").id,
+    image_url: "https://images.unsplash.com/photo-1493160612397-4a7813290efd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bb0d75ef7d64705637b089b06e21b651&auto=format&fit=crop&w=500&q=60",
+    order: 1
+  )
+
+  ListingPhoto.create!(
+    listing_id: Listing.find_by(name: "Amster Cellar").id,
+    image_url: "https://images.unsplash.com/photo-1487149506474-cbf9196c4f9f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=541883e5cca156202955c073d1f60eef&auto=format&fit=crop&w=500&q=60",
+    order: 2
   )
 
 

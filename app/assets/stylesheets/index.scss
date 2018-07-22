@@ -2,7 +2,7 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+
 }
 
 .landing-page-title {
@@ -54,9 +54,17 @@
 .landing-page-image {
   width: 500px;
   height: 400px;
-  margin-bottom: 30px;
   border-radius: 4px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.landing-page-image-caption {
+  text-align: right;
+  margin-top: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: "Lato", Helvetica;
+  color: #a1a1a1;
 }
 
 // .discover-camping {

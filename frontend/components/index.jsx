@@ -21,6 +21,7 @@ class Index extends React.Component {
           <img className="landing-page-image" src={"https://www.banfflakelouise.com/sites/default/files/styles/m_960_natural/public/lake-louise-canoe-summer.jpg?itok=AXfYR9Gl"} />
         </div>
 
+        <div className='landing-page-image-caption'><strong>The Banffy Campsite</strong> hosted by Melissa in the Sunset</div>
 
 
 
