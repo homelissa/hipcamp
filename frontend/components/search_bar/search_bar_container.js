@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
 import SearchBar from './search_bar';
-import { receiveErrors } from '../../actions/booking_actions';
+import { searchListings } from '../../actions/listing_actions';
 
 const mSTP = state => ({
   errors: state.errors.booking
 })
 
 const mDTP = dispatch => ({
-  clearErrors: () => dispatch(receiveErrors([])),
+  searchListings: (query) => dispatch(searchListings(query)),
 })
 
 export default connect(

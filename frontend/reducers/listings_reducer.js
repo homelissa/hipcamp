@@ -1,4 +1,4 @@
-import { RECEIVE_LISTINGS, RECEIVE_LISTING } from '../actions/listing_actions';
+import { RECEIVE_LISTINGS, RECEIVE_LISTING, RECEIVE_SEARCH_RESULTS } from '../actions/listing_actions';
 import { REMOVE_REVIEW } from '../actions/review_actions';
 import merge from 'lodash/merge';
 
@@ -15,6 +15,8 @@ const listingsReducer = (state = {}, action) => {
       let idx = listing.reviews.indexOf(action.review.id);
       listing.reviews.splice(idx, 1);
       return newState;
+    case RECEIVE_SEARCH_RESULTS:
+      return action.searchResults;
     default:
       return state;
   }

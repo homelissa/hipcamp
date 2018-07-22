@@ -63,6 +63,11 @@ class Listing < ApplicationRecord
       .where("lng < ?", bounds[:northEast][:lng])
   end
 
+  def self.search_results(query_params)
+    param = '%' + query_params.downcase + '%'
+    Listing.where('lower(address) LIKE ?', param)
+  end
+
 
 
 end

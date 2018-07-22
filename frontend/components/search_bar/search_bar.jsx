@@ -9,7 +9,7 @@ class SearchBar extends React.Component {
     this.state = {
       check_in: moment(),
       check_out: moment().add(30, "days"),
-      searchText: ''
+      near: ''
     }
 
     this.handleChangeStart = this.handleChangeStart.bind(this);
@@ -56,10 +56,11 @@ class SearchBar extends React.Component {
 
 
   handleSubmit(e) {
-     e.preventDefault();
-     this.props.history.push(`/listings`)
+    e.preventDefault();
+    this.props.searchListings(this.state.near)
+      .then(this.props.history.push(`/listings?near=${this.state.near}`));
+  }
 
-   }
 
    update(field) {
      return (e) => {
@@ -85,8 +86,8 @@ class SearchBar extends React.Component {
       <div className='search-bar-outer-most'>
         <form onSubmit={this.handleSubmit}>
         <input
-          value={this.state.search}
-          onChange={this.update('searchText')}
+          value={this.state.near}
+          onChange={this.update('near')}
           className="search-bar"
           placeholder="Find camping near North Beach, Castro, Sunset..."
         />

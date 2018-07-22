@@ -1,7 +1,11 @@
 class Api::ListingsController < ApplicationController
 
   def index
-    @listings = Listing.in_bounds(params[:bounds])
+    if params[:search]
+      @listings = Listing.search_results(params[:search][:query])
+    else
+      @listings = Listing.in_bounds(params[:bounds])
+    end
   end
 
   def show

@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     end
     resources :bookings, only: [:destroy, :show]
     resources :reviews, only: [:show, :destroy]
+    resources :listing_searches, only: [:index]
   end
   root "static_pages#root"
 end

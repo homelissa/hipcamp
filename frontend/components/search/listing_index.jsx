@@ -21,14 +21,22 @@ class ListingIndex extends React.Component {
       )
     })
 
-    return (
-      <div className="listing-index">
+    if (!listings) {
+      return (
+        <div>Sorry no listings found!</div>
+      )
+    } else {
+      return (
+        <div className="listing-index">
         <div className='listing-index-header'>The best camping near me. </div>
         <ul className="listing-index-photos">
-          <li className='listings'>{listings}</li>
+        <li className='listings'>{listings}</li>
         </ul>
-      </div>
-    );
+        </div>
+      );
+
+    }
+
   }
 }
 
