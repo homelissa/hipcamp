@@ -100,7 +100,7 @@ class SearchBar extends React.Component {
 
               <div className='search-check-in-out'>
                 <div className='check-in-container'>
-                  <div className='check-in-out-label'>Check In</div>
+                  <div className='search-check-in-out-label'>Check In</div>
 
                   <div className='search-check-in'>
                   <DatePicker className='search-click-in-picker'
@@ -117,7 +117,7 @@ class SearchBar extends React.Component {
                 </div>
 
                 <div className='check-out-container'>
-                  <div className='check-in-out-label'>Check Out</div>
+                  <div className='search-check-in-out-label'>Check Out</div>
                     <DatePicker className='search-check-out-picker'
                     minDate={this.state.check_in}
                     selected={this.state.check_out}
