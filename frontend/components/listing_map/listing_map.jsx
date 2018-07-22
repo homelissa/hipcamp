@@ -58,7 +58,11 @@ class ListingMap extends React.Component {
     });
   }
 
-
+  recenterMap() {
+    if (this.state.near === 'Marina') {
+      this.map.setCenter({lat: 37.8037, lng: -122.4368,});
+    }
+  }
 
 
 

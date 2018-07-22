@@ -1,4 +1,4 @@
-class Api::ListingsSearchesController < ApplicationController
+class Api::ListingSearchesController < ApplicationController
   def index
     # @listings = Listing.search_results(params[:search][:query][:near])
     @listings = Listing.search_results(params[:near])
