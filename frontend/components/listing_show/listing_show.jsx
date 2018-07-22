@@ -49,7 +49,7 @@ class ListingShow extends React.Component {
             </div>
 
 
-            <div className='booking-container'>
+            <div className='booking-container-logged'>
               <div className='listing-daily-cost'><strong>${this.props.listing.daily_cost}</strong>  per night</div>
               <div><BookingContainer /></div>
             </div>
@@ -119,7 +119,7 @@ class ListingShow extends React.Component {
               <div className="listing-show-description">{this.props.listing.description}</div>
             </div>
 
-            <div className='booking-container'>
+            <div className='booking-container-unlogged'>
               <div className='listing-daily-cost'><strong>${this.props.listing.daily_cost}</strong>  per night</div>
               <div><BookingContainer /></div>
             </div>
