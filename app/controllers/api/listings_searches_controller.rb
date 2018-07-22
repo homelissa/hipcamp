@@ -1,6 +1,6 @@
 class Api::ListingsSearchesController < ApplicationController
   def index
-    @listings = Listing.search_results(params[:search][:query])
+    @listings = Listing.search_results(params[:search][:query][:near])
     render :index
   end
 
