@@ -1,7 +1,7 @@
-export const getListingByNeighborhood = (query) => (
+export const getListingByNeighborhood = (near) => (
   $.ajax({
     method: 'GET',
     url: 'api/business_searches/',
-    data: { search: {query} }
+    data: { near }
   })
 );

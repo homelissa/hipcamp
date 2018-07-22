@@ -65,7 +65,7 @@ class Listing < ApplicationRecord
 
   def self.search_results(query_params)
     param = '%' + query_params.downcase + '%'
-    Listing.where('lower(address) LIKE ?', param)
+    self.where('lower(address) LIKE ?', param)
   end
 
 

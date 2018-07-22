@@ -1,8 +1,11 @@
 class Api::ListingsController < ApplicationController
 
   def index
-    if params[:search]
-      @listings = Listing.search_results(params[:search][:query])
+    # if params[:search]
+    if params[:near]
+      # @listings = Listing.search_results(params[:search][:query])
+
+      @listings = Listing.search_results(params[:near])
     else
       @listings = Listing.in_bounds(params[:bounds])
     end
