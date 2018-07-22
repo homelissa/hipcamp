@@ -127,6 +127,7 @@ class Booking extends React.Component {
 
 
            <div className='show-login'>
+
              <button className='show-login' onClick={this.showLogin}>Login To Book</button>
            </div>
 
@@ -184,7 +185,7 @@ class Booking extends React.Component {
 
 
 
-          <input className='book-now-button'type='submit' value="Book Now!" />
+          <input className='book-now-button'type='submit' value="Request to Book!" />
         </div>
       </div>
       </form>

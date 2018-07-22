@@ -10,4 +10,5 @@ json.extract! booking,
     json.id booking.listing.id
     json.name booking.listing.name
     json.icon_url booking.listing.icon_url
+    json.daily_cost booking.listing.daily_cost
   end
