@@ -4,6 +4,8 @@
   break-inside: avoid;
   margin: 0;
   -webkit-column-break-inside: avoid;
+  height: 1000px;
+  overflow-y: auto;
 }
 
 .listing-index-header {
@@ -13,12 +15,17 @@
 
 
 .listing-index-li {
+  // column-count: 2;
+  //  column-gap: 75px;
+  //  break-inside: avoid;
+  //  margin: 0;
+  //  -webkit-column-break-inside: avoid;
   margin-bottom: 30px;
 }
 
 .listing-index-photo {
-  width: 280px;
-  height: 280px;
+  width: 225px;
+  height: 225px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 10px;
