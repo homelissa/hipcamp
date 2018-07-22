@@ -98,7 +98,7 @@ class SearchBar extends React.Component {
 
 
 
-              <div className='check-in-out'>
+              <div className='search-check-in-out'>
                 <div className='check-in-container'>
                   <div className='check-in-out-label'>Check In</div>
 
