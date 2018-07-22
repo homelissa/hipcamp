@@ -167,7 +167,7 @@ ActiveRecord::Base.transaction do
 Listing.create!(
   host_id: User.find_by(first_name: "Ryan").id,
   name: "White Wolf",
-  description: "Our campsite is the best! The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
+  description: "Our campsite is the best! The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. The clouds and sunsets at our hilltop vista point can be magnificent. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. Join us for a natural season of wildness and gathering at one of our Walk-in campsites. Tent camp spots on the Navy’s oldest ammunition depot in the Pacific, are guaranteed to be eclectic and unique!",
   address:"Mission",
   daily_cost: 20,
   max_guest: 5,
@@ -194,7 +194,7 @@ Listing.create!(
 Listing.create!(
   host_id: User.find_by(first_name: "Alexis").id,
   name: "Porcupine Flat",
-  description: "Very peaceful and private immersion into the beautiful wild lands of the Coast. Amazing! Views! of Ocean and Coastal mountains. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
+  description: "Very peaceful and private immersion into the beautiful wild lands of the Coast. Amazing! Views! of Ocean and Coastal mountains. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. The clouds and sunsets at our hilltop vista point can be magnificent. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. Join us for a natural season of wildness and gathering at one of our Walk-in campsites. Tent camp spots on the Navy’s oldest ammunition depot in the Pacific, are guaranteed to be eclectic and unique!",
   address:"Marina",
   daily_cost: 50,
   max_guest: 5,
@@ -221,7 +221,7 @@ Listing.create!(
 Listing.create!(
   host_id: User.find_by(first_name: "Serena").id,
   name: "Red Snow",
-  description:"Come join us at our amazing campsite! The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. ",
+  description:"Come join us at our amazing campsite! The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. The clouds and sunsets at our hilltop vista point can be magnificent. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. Join us for a natural season of wildness and gathering at one of our Walk-in campsites. Tent camp spots on the Navy’s oldest ammunition depot in the Pacific, are guaranteed to be eclectic and unique!",
   address:"Marina",
   daily_cost: 50,
   max_guest: 5,
@@ -323,7 +323,7 @@ Listing.create!(
 Listing.create!(
   host_id: User.find_by(first_name: "Amy").id,
   name: "Evergreen",
-  description: "The Warriors camped here last weekend",
+  description: "The Warriors camped here last weekend. The clouds and sunsets at our hilltop vista point can be magnificent. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. Join us for a natural season of wildness and gathering at one of our Walk-in campsites. Tent camp spots on the Navy’s oldest ammunition depot in the Pacific, are guaranteed to be eclectic and unique!",
   address:"Castro",
   daily_cost: 15,
   max_guest: 3,
@@ -374,7 +374,7 @@ Listing.create!(
 Listing.create!(
   host_id: User.find_by(first_name: "Amy").id,
   name: "Amster Cellar",
-  description:"Our location is circled by young oak, pinze, manzanita, remove, private and beautfiul",
+  description:"Our location is circled by young oak, pinze, manzanita, remove, private and beautfiul. The clouds and sunsets at our hilltop vista point can be magnificent. The campfire at the visitor center still feels sooo great. Mosquitoes are definitely around...we admit it, so come prepared. Join us for a natural season of wildness and gathering at one of our Walk-in campsites. Tent camp spots on the Navy’s oldest ammunition depot in the Pacific, are guaranteed to be eclectic and unique!",
   address:"Richmond",
   daily_cost: 50,
   max_guest: 5,
