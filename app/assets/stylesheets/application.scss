@@ -130,7 +130,6 @@ body {
   font-size: 15px;
   margin-left: 8px;
   border: 2px solid rgb(64, 217, 172);
-  border-radius: 3px;
   padding: 3px;
 }
 
@@ -140,7 +139,6 @@ body {
   color: white;
   border: 2px grey;
   background-color: #40d9ac;
-  border-radius: 3px;
   padding: 3px;
 }
 
@@ -337,6 +335,7 @@ body {
   background-color: blue;
   margin-top: 30px;
   margin-left: 80px;
+  background-attachment: fixed;
 }
 
 .listing-index {

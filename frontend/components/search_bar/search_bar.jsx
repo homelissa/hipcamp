@@ -100,6 +100,8 @@ class SearchBar extends React.Component {
               <div className='check-in-out'>
                 <div className='check-in-container'>
                   <div className='check-in-out-label'>Check In</div>
+
+                  <div className='search-check-in'>
                   <DatePicker className='search-click-in-picker'
                     minDate={moment()}
                     maxDate={this.state.check_out}
@@ -110,6 +112,7 @@ class SearchBar extends React.Component {
                     onChange={this.handleChangeStart}
                     placeholderText="Check In" />
                     <p id="checkInErrors">Can't pick a check in date after check out</p>
+                  </div>
                 </div>
 
                 <div className='check-out-container'>
