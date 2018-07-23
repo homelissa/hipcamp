@@ -34,60 +34,60 @@ class ListingShow extends React.Component {
           </div>
 
 
+          <div className='listing-show-body'>
+            <div className="listing-show-name">{this.props.listing.name}</div>
 
-          <div className="listing-show-name">{this.props.listing.name}</div>
+            <div className='listing-description-booking'>
 
-          <div className='listing-description-booking'>
+              <div className='host-listing-description'>
+                <div className='host-information'>
+                  <div className='host-name-label'>Hosted By:</div>
+                  <div>{this.props.listing.host_name}</div>
+                </div>
 
-            <div className='host-listing-description'>
-              <div className='host-information'>
-                <div className='host-name-label'>Hosted By:</div>
-                <div>{this.props.listing.host_name}</div>
+                <div className="listing-show-description">{this.props.listing.description}</div>
               </div>
 
-              <div className="listing-show-description">{this.props.listing.description}</div>
+
+              <div className='booking-container-logged'>
+                <div className='listing-daily-cost'><strong>${this.props.listing.daily_cost}</strong>  per night</div>
+                <div><BookingContainer /></div>
+              </div>
+
             </div>
 
 
-            <div className='booking-container-logged'>
-              <div className='listing-daily-cost'><strong>${this.props.listing.daily_cost}</strong>  per night</div>
-              <div><BookingContainer /></div>
-            </div>
+            <ul className='listing-show-details'>
+              <div className='listing-show-label'>Details:</div>
 
+              <div className='listing-show-values'>
+                <li className='listing-show-address'>{this.props.listing.address}</li>
+
+                <li className='listing-show-daily-cost'>${this.props.listing.daily_cost}/night</li>
+
+
+                <div className='check-in-row'>
+                  <div className='new-check-in-after'>Check In After:</div>
+                  <div className='new-val'>{this.props.listing.check_in_after}</div>
+                </div>
+
+
+                <div className='check-out-row'>
+                  <div className='new-check-in-after'>Check Out Before:</div>
+                  <div className='new-val'> {this.props.listing.check_out_before}</div>
+                </div>
+
+              </div>
+            </ul>
+
+
+
+            <div className='listing-review-container'>
+              <div className='review-label'>{this.props.listing.reviews.length} Reviews</div>
+              <div className='add-review-label'><Link to={`/listings/${this.props.listing.id}/review/new`}>Add a Review!</Link></div>
+            </div>
+            <div><ReviewIndexContainer listingId={this.props.match.params.listingId}/></div>
           </div>
-
-
-          <ul className='listing-show-details'>
-            <div className='listing-show-label'>Details:</div>
-
-            <div className='listing-show-values'>
-              <li className='listing-show-address'>{this.props.listing.address}</li>
-
-              <li className='listing-show-daily-cost'>${this.props.listing.daily_cost}/night</li>
-
-
-              <div className='check-in-row'>
-                <div className='new-check-in-after'>Check In After:</div>
-                <div className='new-val'>{this.props.listing.check_in_after}</div>
-              </div>
-
-
-              <div className='check-out-row'>
-                <div className='new-check-in-after'>Check Out Before:</div>
-                <div className='new-val'> {this.props.listing.check_out_before}</div>
-              </div>
-
-            </div>
-          </ul>
-
-
-
-          <div className='listing-review-container'>
-            <div className='review-label'>{this.props.listing.reviews.length} Reviews</div>
-            <div className='add-review-label'><Link to={`/listings/${this.props.listing.id}/review/new`}>Add a Review!</Link></div>
-          </div>
-          <div><ReviewIndexContainer listingId={this.props.match.params.listingId}/></div>
-
 
         </div>
       );
@@ -105,57 +105,57 @@ class ListingShow extends React.Component {
           </div>
 
 
+          <div className='listing-show-body'>
+            <div className="listing-show-name">{this.props.listing.name}</div>
 
-          <div className="listing-show-name">{this.props.listing.name}</div>
+            <div className='listing-description-booking'>
 
-          <div className='listing-description-booking'>
+              <div className='host-listing-description'>
+                <div className='host-information'>
+                  <div className='host-name-label'>Hosted By:</div>
+                  <div>{this.props.listing.host_name}</div>
+                </div>
 
-            <div className='host-listing-description'>
-              <div className='host-information'>
-                <div className='host-name-label'>Hosted By:</div>
-                <div>{this.props.listing.host_name}</div>
+                <div className="listing-show-description">{this.props.listing.description}</div>
               </div>
 
-              <div className="listing-show-description">{this.props.listing.description}</div>
+              <div className='booking-container-unlogged'>
+                <div className='listing-daily-cost'><strong>${this.props.listing.daily_cost}</strong>  per night</div>
+                <div><BookingContainer /></div>
+              </div>
+
             </div>
 
-            <div className='booking-container-unlogged'>
-              <div className='listing-daily-cost'><strong>${this.props.listing.daily_cost}</strong>  per night</div>
-              <div><BookingContainer /></div>
-            </div>
 
+            <ul className='listing-show-details'>
+              <div className='listing-show-label'>Details:</div>
+
+              <div className='listing-show-values'>
+                <li className='listing-show-address'>{this.props.listing.address}</li>
+
+                <li className='listing-show-daily-cost'>${this.props.listing.daily_cost}/night</li>
+
+
+                  <div className='check-in-row'>
+                    <div className='new-check-in-after'>Check In After:</div>
+                    <div className='new-val'>{this.props.listing.check_in_after}</div>
+                  </div>
+
+                  <div className='check-out-row'>
+                    <div className='new-check-in-after'>Check Out Before:</div>
+                    <div className='new-val'> {this.props.listing.check_out_before}</div>
+                  </div>
+
+              </div>
+            </ul>
+
+
+
+            <div className='listing-review-container'>
+              <div className='review-label'>{this.props.listing.reviews.length} Reviews</div>
+            </div>
+            <div><ReviewIndexContainer listingId={this.props.match.params.listingId}/></div>
           </div>
-
-
-          <ul className='listing-show-details'>
-            <div className='listing-show-label'>Details:</div>
-
-            <div className='listing-show-values'>
-              <li className='listing-show-address'>{this.props.listing.address}</li>
-
-              <li className='listing-show-daily-cost'>${this.props.listing.daily_cost}/night</li>
-
-
-                <div className='check-in-row'>
-                  <div className='new-check-in-after'>Check In After:</div>
-                  <div className='new-val'>{this.props.listing.check_in_after}</div>
-                </div>
-
-                <div className='check-out-row'>
-                  <div className='new-check-in-after'>Check Out Before:</div>
-                  <div className='new-val'> {this.props.listing.check_out_before}</div>
-                </div>
-
-            </div>
-          </ul>
-
-
-
-          <div className='listing-review-container'>
-            <div className='review-label'>{this.props.listing.reviews.length} Reviews</div>
-          </div>
-          <div><ReviewIndexContainer listingId={this.props.match.params.listingId}/></div>
-
 
         </div>
       );

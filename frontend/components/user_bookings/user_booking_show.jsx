@@ -12,7 +12,7 @@ const UserBookingItem = ({booking, deleteBooking, currentUser}) => (
         <Link to={`/listings/${booking.listing.id}`}>
           <div className='booking-name-photo'>
             <div className='booking-listing-name'>{booking.listing.name}</div>
-            <img className="listing-photo user-booking" src={booking.listing.icon_url}></img>
+            <img className="user-booking" src={booking.listing.icon_url}></img>
           </div>
         </Link>
 

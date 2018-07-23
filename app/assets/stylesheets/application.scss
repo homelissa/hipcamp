@@ -328,13 +328,23 @@ body {
   cursor: pointer;
 }
 
-// .search {
-//   height: 100%
-// }
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  // margin-left: 17px;
+
+}
 
 .map {
   width: 480px;
   height: 700px;
+  position: fixed;
+  // height: 90%;
+  // position: absolute;
+  float: right;
   margin-right: 70px;
   background-color: blue;
   margin-top: 30px;
@@ -345,6 +355,7 @@ body {
 .listing-index {
   padding-top: 5px;
   font-weight: 600px;
+  // width: 60%;
   max-width: 800px;
   border-top: 3px solid #333333;
   line-height: 1.1;
@@ -363,12 +374,4 @@ body {
   margin-top: 10px;
   font-weight: 400px;
   margin-right: 15px;
-}
-
-
-.search {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 17px;
-
 }
