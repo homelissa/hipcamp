@@ -24,7 +24,9 @@ const mapOptions = {
 class ListingMap extends React.Component {
   constructor(props) {
     super(props);
-
+    // this.state = {
+    //   listings: this.props.listings
+    // }
   }
 
 
@@ -37,10 +39,17 @@ class ListingMap extends React.Component {
 
   }
 
+  // componentWillReceiveProps(newProps) {
+  //   if (this.props.listings !== newProps.listings) {
+  //     this.setState({listings: newProps.listings})
+  //   }
+  // }
+
 
 
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.listings);
+    // this.recenterMap();
   }
 
   registerListeners() {
@@ -58,11 +67,17 @@ class ListingMap extends React.Component {
     });
   }
 
-  recenterMap() {
-    if (this.state.near === 'Marina') {
-      this.map.setCenter({lat: 37.8037, lng: -122.4368,});
-    }
-  }
+  // recenterMap() {
+  //   console.log(this.props.listings)
+  //
+  //   const listing = Object.values(this.props.listings)[0]
+  //   if (listing) {
+  //
+  //     console.log('hits recenter')
+  //     console.log(listing)
+  //     this.map.setCenter({lat: listing.lat, lng: listing.lng})
+  //   }
+  // }
 
 
 

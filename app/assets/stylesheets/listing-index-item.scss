@@ -1,11 +1,19 @@
+// .listing-index-photos {
+//   // column-count: 2;
+//   // column-gap: 50px;
+//   // break-inside: avoid;
+//   // margin: 0;
+//   // -webkit-column-break-inside: avoid;
+//   height: 1000px;
+//   overflow-y: auto;
+// }
+
 .listing-index-photos {
-  column-count: 2;
-  column-gap: 50px;
-  break-inside: avoid;
-  margin: 0;
-  -webkit-column-break-inside: avoid;
-  height: 1000px;
-  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 300px 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 700px;
 }
 
 .listing-index-header {
@@ -26,12 +34,13 @@
 }
 
 .listing-index-photo {
-  width: 252px;
-  height: 168px;
+  width: 275px;
+  height: 225px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   // margin-top: 10px;
   font-weight: 400px;
+
 }
 
 

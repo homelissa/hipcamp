@@ -18,7 +18,7 @@ class ListingShow extends React.Component {
     }
 
     let photos = this.props.listingPhotos.map((photo) =>
-      <li key={photo.id}><img className="listing-photo" src={photo.image_url}></img></li>
+      <li key={photo.id}><img src={photo.image_url}></img></li>
     )
 
     if (this.props.currentUser) {
@@ -27,8 +27,8 @@ class ListingShow extends React.Component {
         <div className='listing-show-container'>
 
           <div className='listing-show-carousel'>
-            <img className="listing-photo" src={this.props.listing.icon_url}></img>
             <ul className='listing-show-photos'>
+            <li><img src={this.props.listing.icon_url}></img></li>
               {photos}
             </ul>
           </div>
@@ -98,8 +98,8 @@ class ListingShow extends React.Component {
         <div className='listing-show-container'>
 
           <div className='listing-show-carousel'>
-            <img className="listing-photo" src={this.props.listing.icon_url}></img>
             <ul className='listing-show-photos'>
+            <li><img src={this.props.listing.icon_url}></img></li>
               {photos}
             </ul>
           </div>

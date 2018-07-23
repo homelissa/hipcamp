@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 const ListingIndexItem = ({listing}) => {
 
   return (
-    <div className='listing-index-li'>
+    <li className='listing-index-li'>
 
       <Link to={`/listings/${listing.id}`}>
 
@@ -32,7 +32,7 @@ const ListingIndexItem = ({listing}) => {
 
         </Link>
 
-    </div>
+    </li>
 
   )
 

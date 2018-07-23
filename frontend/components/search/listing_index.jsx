@@ -30,7 +30,7 @@ class ListingIndex extends React.Component {
         <div className="listing-index">
         <div className='listing-index-header'>The best camping near me. </div>
         <ul className="listing-index-photos">
-        <li className='listings'>{listings}</li>
+            {listings}
         </ul>
         </div>
       );

@@ -5,14 +5,21 @@
 
 .listing-show-carousel {
   display: flex;
-  max-width: 100%;
-  margin-left: 80px;
+  width: 100%;
 
 }
 
 .listing-show-photos {
   display: flex;
-  margin-right: 100px;
+  width: 100%;
+  li {
+    width: 33%;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  img {
+    height: 300px;
+  }
 }
 
 .listing-show-name {
