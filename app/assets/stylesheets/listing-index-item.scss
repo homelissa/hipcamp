@@ -11,6 +11,8 @@
 .listing-index-photos {
   display: grid;
   grid-template-columns: 300px 300px;
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
   overflow-y: scroll;
   overflow-x: hidden;
   height: 700px;
@@ -30,11 +32,17 @@
   //  break-inside: avoid;
   //  margin: 0;
   //  -webkit-column-break-inside: avoid;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+
 }
 
+.listing-index-li:hover{
+  background-color: rgb(249, 249, 249);
+}
+
+
 .listing-index-photo {
-  width: 275px;
+  width: 300px;
   height: 225px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
