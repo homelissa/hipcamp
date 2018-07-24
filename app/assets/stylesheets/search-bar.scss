@@ -1,5 +1,5 @@
 .search-bar-container {
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: 15px;
   box-sizing: border-box;
 
@@ -10,13 +10,13 @@
   box-shadow: 0 0 30px rgb(229, 229, 229);
   color: rgb(51, 51, 51);
   border-radius: 3px;
-  max-width: 553px;
+  max-width: 515px;
 }
 
 
 .search-bar {
-  width: 553px;
-  height: 50px;
+  width: 515px;
+  height: 75px;
   font-size: 15px;
   padding-left: 5px;
   border-bottom: 1px solid rgb(229, 229, 229);
@@ -33,7 +33,7 @@
   font-size: 14px;
   border-radius: 3px;
   height: 75px;
-  width: 450px;
+  width: 416px;
   display: flex;
   justify-content: center;
 }
@@ -48,11 +48,11 @@
 }
 
 .search-click-in-picker {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .search-check-out-picker {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .search-check-in-out {
