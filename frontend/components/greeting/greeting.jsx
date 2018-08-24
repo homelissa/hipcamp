@@ -7,6 +7,7 @@ const Greeting = ({ currentUser, demoUser, logout, openModal, login }) => {
   const sessionLinks = () => (
     <nav className="login-signup">
       <Link to={`/`} className='hipcamp-logo' >HIPPYCAMP</Link>
+  
 
       <div className='login-signup-button'>
         <button className='signup-button' onClick={() => openModal('signup')}>Sign up</button>

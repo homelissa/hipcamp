@@ -8,7 +8,7 @@ class Api::BookingsController < ApplicationController
   #  end
 
   def show
-    @bookings = current_user.bookings
+    @bookings = current_user.bookings.includes(:listing)
     render :index
   end
 
