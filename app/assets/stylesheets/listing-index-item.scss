@@ -16,6 +16,17 @@
   overflow-y: scroll;
   overflow-x: hidden;
   height: 700px;
+
+  @media only screen and (min-width: 1300px) {
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+
+    img {
+      width: 100%;
+      height: 25vh;
+    }
+  }
 }
 
 .listing-index-header {

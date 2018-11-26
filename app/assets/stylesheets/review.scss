@@ -34,11 +34,22 @@
   width: 500px;
   max-width: 500px;
   word-wrap: break-word;
+
+  @media only screen and (min-width: 1300px) {
+    width: 100%;
+    max-width: none;
+    font-size: 15px;
+    line-height: 28px;
+  }
 }
 
 .review-item-values {
   border-bottom: 1px solid rgb(229, 229, 229);
   max-width: 500px;
+  @media only screen and (min-width: 1300px) {
+    width: 45%;
+    max-width: none;
+  }
 }
 
 .edit-delete-review-opt {

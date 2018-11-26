@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 
 const ReviewIndexItem = ({review, currentUser, deleteReview, updateReview}) => {
-  debugger
   const listingId = review.listing_id;
 
   if (review.user.id === currentUser) {

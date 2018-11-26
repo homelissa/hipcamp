@@ -350,6 +350,10 @@ body {
   margin-top: 30px;
   margin-left: 30px;
   background-attachment: fixed;
+  @media only screen and (min-width: 1300px) {
+    width: 45%;
+    margin-left: 5%;
+  }
 }
 
 .listing-index {
@@ -363,6 +367,9 @@ body {
   margin-left: 90px;
   font-family: 'Abel', sans-serif;
   font-size: 18px;
+  @media only screen and (min-width: 1300px) {
+    width: 50%;
+  }
 }
 
 .listing-photo {
