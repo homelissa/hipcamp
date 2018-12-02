@@ -1,12 +1,5 @@
 class Api::ReviewsController < ApplicationController
 
-
-  # helper method in application controller
-  #  def current_user
-  #   @current_user = User.find_by_session_token(session[:session_token])
-  #  end
-
-  #listings/1
   def create
     @review = Review.new(review_params)
     @review.author = current_user
@@ -18,7 +11,6 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
-  #listings/1
   def index
     if params[:listing_id]
       @reviews = Listing.find_by(id: params[:listing_id]).reviews
@@ -26,7 +18,6 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
-  #listings/1
   def show
     @review = Review.find_by(id: params[:id])
     render :show
@@ -41,14 +32,11 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
-
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
     render :show
   end
-
-
 
   private
 

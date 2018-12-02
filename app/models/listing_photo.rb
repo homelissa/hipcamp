@@ -11,7 +11,6 @@
 class ListingPhoto < ApplicationRecord
   validates :listing_id, :image_url, :order, presence: true
 
-
   belongs_to :listing,
     primary_key: :id,
     foreign_key: :listing_id,

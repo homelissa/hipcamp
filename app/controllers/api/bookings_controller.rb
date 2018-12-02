@@ -1,12 +1,5 @@
 class Api::BookingsController < ApplicationController
 
-  # before_action :require_login
-
-  # helper method in application controller
-  #  def current_user
-  #   @current_user = User.find_by_session_token(session[:session_token])
-  #  end
-
   def show
     @bookings = current_user.bookings.includes(:listing)
     render :index
@@ -37,8 +30,6 @@ class Api::BookingsController < ApplicationController
       render json: @booking.errors.full_messages, status: 401
     end
   end
-
-
 
   private
 

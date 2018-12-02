@@ -68,6 +68,4 @@ class Listing < ApplicationRecord
     self.where('lower(address) LIKE ?', param)
   end
 
-
-
 end
