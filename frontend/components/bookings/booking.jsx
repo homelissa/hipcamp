@@ -2,8 +2,6 @@ import React from 'react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 
-
-
 class Booking extends React.Component {
   constructor (props) {
     super(props)
@@ -29,12 +27,9 @@ class Booking extends React.Component {
     })
   }
 
-
   componentWillUnmount () {
     this.props.clearErrors();
   }
-
-
 
   componentWillReceiveProps(newProps) {
     if (this.props.current_user !== newProps.current_user) {
@@ -89,14 +84,14 @@ class Booking extends React.Component {
   }
 
   handleStep(stepParam) {
-  return e => {
-    if (stepParam === '+') {
-      this.setState({ num_guest: (this.state.num_guest + 1) });
-    } else if (stepParam === '-' ) {
-      this.setState({ num_guest: (this.state.num_guest - 1) });
+    return e => {
+      if (stepParam === '+') {
+        this.setState({ num_guest: (this.state.num_guest + 1) });
+      } else if (stepParam === '-' ) {
+        this.setState({ num_guest: (this.state.num_guest - 1) });
+      }
     }
   }
-}
 
   handleSubmit(e) {
      e.preventDefault();
@@ -111,8 +106,6 @@ class Booking extends React.Component {
      this.props.createBooking(submission).then(() => this.props.history.push(`/user/${this.state.guest_id}`));
    }
 
-
-
   update(field) {
     return (e) => {
       this.setState({[field]: e.target.value});
@@ -120,79 +113,64 @@ class Booking extends React.Component {
   }
 
   render() {
-
-
       if (!this.props.current_user) {
         return (
-
-
            <div className='show-login'>
-
              <button className='show-login' onClick={this.showLogin}>Login To Book</button>
            </div>
 
         )
       } else {
         return (
+          <form onSubmit={this.handleSubmit}>
+            <div className='booking-outer-most'>
+              <div className='booking-form'>
+                <div className='booking-container-form'>
+                  {this.renderErrors()}
+                  <div className='check-in-out'>
+                    <div className='check-in-container'>
+                      <div className='check-in-out-label'>Check In</div>
+                      <DatePicker className='click-in-picker'
+                        minDate={moment()}
+                        maxDate={this.state.check_out}
+                        selected={this.state.check_in}
+                        selectsStart
+                        check_in={this.state.check_in}
+                        check_out={this.state.check_out}
+                        onChange={this.handleChangeStart}
+                        placeholderText="Click to select a date" />
+                        <p id="checkInErrors">Can't pick a check in date after check out</p>
+                    </div>
 
-
-
-
-
-      <form onSubmit={this.handleSubmit}>
-      <div className='booking-outer-most'>
-        <div className='booking-form'>
-          <div className='booking-container-form'>
-            {this.renderErrors()}
-            <div className='check-in-out'>
-              <div className='check-in-container'>
-                <div className='check-in-out-label'>Check In</div>
-                <DatePicker className='click-in-picker'
-                  minDate={moment()}
-                  maxDate={this.state.check_out}
-                  selected={this.state.check_in}
-                  selectsStart
-                  check_in={this.state.check_in}
-                  check_out={this.state.check_out}
-                  onChange={this.handleChangeStart}
-                  placeholderText="Click to select a date" />
-                  <p id="checkInErrors">Can't pick a check in date after check out</p>
-              </div>
-
-              <div className='check-out-container'>
-                <div className='check-in-out-label'>Check Out</div>
-                <DatePicker className='check-out-picker'
-                minDate={this.state.check_in}
-                selected={this.state.check_out}
-                selectsEnd
-                check_in={this.state.check_in}
-                check_out={this.state.check_out}
-                onChange={this.handleChangeEnd}
-                placeholderText="Select a date"/>
-                <p id="checkOutErrors">Can't pick a check out date before check in</p>
-                </div>
-            </div>
-            <label className='check-in-out guests-label'>
-              <div className='please'>
-                  <div className="booking-guests">Guests</div>
-                  <div className='minusplusguests'>
-                    <a className='minus' onClick={this.handleStep('-')}> - </a><p> {this.state.num_guest} </p><a className='minus' onClick={this.handleStep('+')}> + </a>
+                    <div className='check-out-container'>
+                      <div className='check-in-out-label'>Check Out</div>
+                      <DatePicker className='check-out-picker'
+                      minDate={this.state.check_in}
+                      selected={this.state.check_out}
+                      selectsEnd
+                      check_in={this.state.check_in}
+                      check_out={this.state.check_out}
+                      onChange={this.handleChangeEnd}
+                      placeholderText="Select a date"/>
+                      <p id="checkOutErrors">Can't pick a check out date before check in</p>
+                      </div>
                   </div>
+                  <label className='check-in-out guests-label'>
+                    <div className='please'>
+                        <div className="booking-guests">Guests</div>
+                        <div className='minusplusguests'>
+                          <a className='minus' onClick={this.handleStep('-')}> - </a><p> {this.state.num_guest} </p><a className='minus' onClick={this.handleStep('+')}> + </a>
+                        </div>
+                    </div>
+                  </label>
+                </div>
+                <input className='book-now-button'type='submit' value="Request to Book!" />
               </div>
+            </div>
+          </form>
 
-            </label>
-          </div>
-
-
-
-          <input className='book-now-button'type='submit' value="Request to Book!" />
-        </div>
-      </div>
-      </form>
-
-    )
-  }
-
+        )
+      }
   }
 }
 

@@ -1,6 +1,4 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-
 
 const ReviewIndexItem = ({review, currentUser, deleteReview, updateReview}) => {
   const listingId = review.listing_id;
@@ -20,7 +18,6 @@ const ReviewIndexItem = ({review, currentUser, deleteReview, updateReview}) => {
           <li><button className='delete-review-button' onClick={() => deleteReview(review)}>Delete</button></li>
         </div>
 
-
       </div>
     )
 
@@ -37,7 +34,6 @@ const ReviewIndexItem = ({review, currentUser, deleteReview, updateReview}) => {
       </div>
     )
   }
-
 
 };
 

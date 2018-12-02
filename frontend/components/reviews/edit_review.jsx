@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 
 class EditReview extends React.Component {
 
@@ -9,7 +7,6 @@ class EditReview extends React.Component {
     this.state = this.props.review
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
 
   componentDidMount() {
     this.props.fetchReview(this.props.match.params.reviewId)
@@ -50,15 +47,11 @@ class EditReview extends React.Component {
     return date.toJSON().slice(0, 10);
   }
 
-
   render(){
 
     if (!this.props.review) {
-      console.log("hi")
       return null
     }
-
-    console.log(this.props.review)
 
     if (!this.props.listing) {
       return null
@@ -70,16 +63,11 @@ class EditReview extends React.Component {
 
         <div className='edit-review-listing-name'>{this.props.listing.name}</div>
         <form className='edit-form-submission'onSubmit={this.handleSubmit}>
-          
-
-
               <textarea className='edit-review-description'
                 cols='50'
                 rows='3'
                 value={this.state.description}
                 onChange={this.update('description')}  />
-
-
             <input className='edit-review-submit' type='submit' value='Submit Review'/>
           </form>
       </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { fetchReviews, fetchReview, deleteReview, updateReview } from '../../actions/review_actions';
 import ReviewIndex from './review_index';

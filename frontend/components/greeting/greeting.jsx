@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
-
 const Greeting = ({ currentUser, demoUser, logout, openModal, login }) => {
   const sessionLinks = () => (
     <nav className="login-signup">
       <Link to={`/`} className='hipcamp-logo' >HIPPYCAMP</Link>
-  
-
       <div className='login-signup-button'>
         <button className='signup-button' onClick={() => openModal('signup')}>Sign up</button>
         &nbsp;&nbsp;
@@ -32,6 +28,5 @@ const Greeting = ({ currentUser, demoUser, logout, openModal, login }) => {
 
   return currentUser ? personalGreeting() : sessionLinks();
 };
-
 
 export default Greeting;

@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BookingContainer from '../bookings/booking_container'
-import CreateReviewContainer from '../reviews/create_review_container';
 import ReviewIndexContainer from '../reviews/review_index_container';
-import LoginFormContainer from '../session_form/login_form_container';
 
 class ListingShow extends React.Component {
 
@@ -149,8 +147,6 @@ class ListingShow extends React.Component {
               </div>
             </ul>
 
-
-
             <div className='listing-review-container'>
               <div className='review-label'>{this.props.listing.reviews.length} Reviews</div>
             </div>
@@ -164,7 +160,5 @@ class ListingShow extends React.Component {
 
   }
 }
-
-
 
 export default ListingShow;

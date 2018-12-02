@@ -1,6 +1,5 @@
 import React from 'react';
 import ReviewIndexItem from './review_index_item';
-import { Link } from 'react-router-dom';
 
 class ReviewIndex extends React.Component {
 

@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import CreateReviewContainer from '../reviews/create_review_container'
 
 class CreateReview extends React.Component {
 
@@ -12,7 +10,6 @@ class CreateReview extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
 
   componentDidMount() {
     this.props.fetchListing(this.props.match.params.listingId)
