@@ -8,13 +8,7 @@ class Search extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    // this.props.fetchListings()
-  }
-
-
   render() {
-    // console.log(this.props.listings)
     return(
 
       <div className="search">
@@ -25,7 +19,5 @@ class Search extends React.Component {
   }
 
 }
-
-
 
 export default Search;

@@ -1,6 +1,5 @@
 import React from 'react';
 import ListingIndexItem from './listing_index_item';
-import { Link } from 'react-router-dom';
 
 class ListingIndex extends React.Component {
 
@@ -34,9 +33,7 @@ class ListingIndex extends React.Component {
         </ul>
         </div>
       );
-
     }
-
   }
 }
 

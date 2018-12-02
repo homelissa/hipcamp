@@ -7,7 +7,6 @@ class Index extends React.Component {
   render () {
     return (
       <div>
-
         <div className="landing-page">
 
           <div className='landing-page-top-left'>
@@ -23,15 +22,6 @@ class Index extends React.Component {
         </div>
 
         <div className='landing-page-image-caption'><strong>The Banffy Campsite</strong> hosted by Melissa in the Sunset</div>
-
-
-
-
-
-
-
-
-
       </div>
     )
   }

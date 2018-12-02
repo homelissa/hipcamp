@@ -1,7 +1,5 @@
 import React from 'react';
 import { withRouter, Link } from 'react-router-dom';
-import { login } from '../../actions/session_actions';
-
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -34,9 +32,6 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    // this.props.processForm(user).then(this.props.history.push('/'))
-
-    // this.props.processForm(user).then(()=> this.props.history.push('/'))
      this.props.processForm(user).then(this.props.closeModal)
   }
 
@@ -169,12 +164,6 @@ class SessionForm extends React.Component {
 
 
  }
-
-
-
-
-
-
 
 }
 

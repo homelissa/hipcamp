@@ -1,7 +1,6 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import { Link } from 'react-router-dom';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -95,9 +94,6 @@ class SearchBar extends React.Component {
           <div className='search-form'>
             <div className='search-container-form'>
               {this.renderErrors()}
-
-
-
               <div className='search-check-in-out'>
                 <div className='check-in-container'>
                   <div className='search-check-in-out-label'>Check In</div>
@@ -132,8 +128,6 @@ class SearchBar extends React.Component {
               </div>
 
             </div>
-
-
 
           </div>
           </form>
