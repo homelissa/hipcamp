@@ -1,11 +1,10 @@
 class Api::ListingsController < ApplicationController
-
   def index
-    if params[:near]
-      @listings = Listing.search_results(params[:near])
-    else
-      @listings = Listing.in_bounds(params[:bounds])
-    end
+    @listings = if params[:near]
+                  Listing.search_results(params[:near])
+                else
+                  Listing.in_bounds(params[:bounds])
+                end
   end
 
   def show
@@ -43,7 +42,5 @@ class Api::ListingsController < ApplicationController
       :check_out_before,
       :icon_url
     )
-
   end
-
 end

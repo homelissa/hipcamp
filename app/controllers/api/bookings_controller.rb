@@ -1,5 +1,4 @@
 class Api::BookingsController < ApplicationController
-
   def show
     @bookings = current_user.bookings.includes(:listing)
     render :index
@@ -16,7 +15,7 @@ class Api::BookingsController < ApplicationController
       elsif @booking.check_out < @booking.check_in
         render json: ['Check out must come after check in'], status: 401
       else
-      render json: @booking.errors.full_messages, status: 401
+        render json: @booking.errors.full_messages, status: 401
       end
     end
   end
