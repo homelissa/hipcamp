@@ -25,7 +25,6 @@ export const receiveErrors = errors => ({
   errors
 });
 
-
 export const createBooking = bookingParams => dispatch => (
   APIUtil.createBooking(bookingParams).then(booking => (
     dispatch(receiveBooking(booking))
